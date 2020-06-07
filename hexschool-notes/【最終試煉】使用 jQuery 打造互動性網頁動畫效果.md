@@ -1,5 +1,27 @@
 # [使用 jQuery 打造互動性網頁動畫效果](https://www.udemy.com/course/jquery-learning/)
 
+## FrameWork 比較
+
+### jQuery
+
+1. 動畫效果最容易
+2. 執行 Ajax 效果、組合要達到應用程式等級較困難
+
+### Angular、React
+
+1. 動畫效果不容易
+2. Render、整合架構、串接 API 內容，較容易
+
+### 如要製作 NG、RE 的 Side Project 可參考以下
+
+政府資料開放平台 Open Data API - JSON (CORS)
+
+1. 全台空氣品質 API...
+2. 政治選票圖表資訊 API...
+3. 不動產買賣 API...
+
+---
+
 ## 此任務你會獲得以下技能
 
 1. jQuery 套件整合應用
