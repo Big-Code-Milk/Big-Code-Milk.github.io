@@ -10,6 +10,9 @@
 
 ---
 
+<details>
+<summary>一變應萬變的響應式網頁設計</summary>
+
 ## 此任務你會獲得以下技能
 
 1. RWD 響應式設計原理
@@ -497,9 +500,12 @@ video icon
 開始
 show all lectures icon
 
+</details>
+
 ---
 
-## 【網頁切版直播班】帶您做出前端面試作品
+<details>
+<summary>【網頁切版直播班】帶您做出前端面試作品</summary>
 
 ### 第一週：1 px 也不差的版型控制術
 
@@ -613,3 +619,5 @@ SMACSS、OOCSS、Template 元件設計
 [Adobe XD](https://xd.adobe.com/view/0cf6ec93-07a3-492f-58f2-9767ba1cfdfb-7ac7/)
 
 ---
+
+</details>
