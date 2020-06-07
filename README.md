@@ -20,4 +20,4 @@
 
 會有許多範例檔跟回饋，最後有想要加強的再買線上課程就好。目前評估跟直接買線上課程要花的時間差不多。
 
-![IMG]()
+![IMG](https://github.com/Big-Cold-Milk/Big-Cold-Milk.github.io/blob/master/main.png?raw=true)
