@@ -1,6 +1,16 @@
 # [Flex 修煉時光屋](https://courses.hexschool.com/courses/html/lectures/14727672)
 
-## 使用 HTML、CSS 開發一個網站
+<https://www.udemy.com/course/html-css-learning/>
+
+## 此任務你會獲得以下技能
+
+1. 背景處理
+2. 了解 Flex 排版技術
+3. 理解 inline、block、Flex 的使用時機
+
+## 完成任務條件
+
+1. 完成本週 [Adobe XD](https://xd.adobe.com/view/7cc08d73-d444-4b6f-7a94-01ffbdf8ce0a-0af1/) 版型
 
 ### 1.六角學院線上資源
 
@@ -32,6 +42,12 @@
 
  第一章測驗
 
+ 圖片練習
+1 问题
+
+ul、li 的練習
+1 问题
+
 ### CSS 常用語法
 
  CSS 標籤選擇器 - 插入 CSS 檔案，讓文字變大變顏色吧！ (12:16)
@@ -49,6 +65,12 @@
  作業：優化第一節作業吧！ (2:50)
 
  第二章測驗
+
+ 文字大小及顏色的練習
+1 问题
+
+CSS border 的練習
+1 问题
 
 ### 使用 CSS 變更 HTML 標籤特性
 
@@ -72,6 +94,12 @@
 
  CODEPEN：線上撰寫網頁服務 (5:58)
 
+ 後代選擇器的使用練習
+1 问题
+
+box-model 的練習
+1 问题
+
 ### 頁排版技巧 Part I
 
  Float 浮動定位技巧 (6:39)
@@ -90,6 +118,15 @@
 
  其他常見 clear 清除浮動效果
 
+ float 浮動定位的練習
+1 问题
+
+clearfix 的練習
+1 问题
+
+三欄式排版的練習
+1 问题
+
 ### 網頁排版技巧 Part II
 
  使用絕對定位 / 相對定位 設計版型 (9:06)
@@ -107,6 +144,15 @@
  第五章測驗
 
  名片練習
+
+ 絕對定位與相對定位的練習
+1 问题
+
+z-index 的練習
+1 问题
+
+position fixd 的練習
+1 问题
 
 ### 切圖技巧
 
@@ -136,6 +182,18 @@
 
  第六章測驗
 
+background-repeat 練習
+1 问题
+
+background-position 的練習
+1 问题
+
+background 縮寫練習
+1 问题
+
+圖片取代文字技巧練習
+1 问题
+
 ### 表格與表單設計技巧
 
  認識 HTML 表格 (Table) 標籤 (7:36)
@@ -159,6 +217,12 @@
  使用 CSS 修改表單 (Form) 樣式 (10:40)
 
  第七章測驗
+
+radio、checkbox 練習
+1 问题
+
+label、placeholder 練習
+1 问题
 
 ### CSS3技巧
 
@@ -195,6 +259,14 @@
  網頁排版練習作業 - 個人履歷網頁設計
 
  第九章測驗
+
+ Iconfinder：免費下載 ICON 服務平台
+预览
+05:09
+
+unsplash、Flickr：免費高解析圖庫下載資源
+预览
+05:03
 
 ### 開發多頁式網站實戰講解
 
