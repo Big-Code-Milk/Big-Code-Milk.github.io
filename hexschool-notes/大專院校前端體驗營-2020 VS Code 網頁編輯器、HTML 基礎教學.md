@@ -1,5 +1,16 @@
 # [2020 VS Code 網頁編輯器、HTML 基礎教學](https://courses.hexschool.com/p/html)
 
+## 此任務你會獲得以下技能
+
+1. 充分了解 box model 盒模型概念
+2. 了解 margin、padding 使用時機
+3. inline 行內與 block 區塊元素運用
+4. 行距觀念
+
+## 完成任務條件
+
+1. 完成本週 Adobe XD 版型
+
 ## 大專院校前端體驗營 第一週 - 個人履歷
 
 課程最終任務說明
