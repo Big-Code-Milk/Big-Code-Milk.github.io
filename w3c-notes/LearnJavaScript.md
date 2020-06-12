@@ -3283,6 +3283,243 @@ add();
 
 </details>
 
+---
+
+<details>
+<summary><h3 style='display:inline'>JS HTML DOM</h3></summary>
+
+## [Document Object Model](https://www.w3schools.com/js/js_htmldom.asp)
+
+這一大章節基本上就是介紹如何利用 JS 操作 文件物件模型
+
+### [DOM Methods](https://www.w3schools.com/js/js_htmldom_methods.asp)
+
+### [DOM Document](https://www.w3schools.com/js/js_htmldom_document.asp)
+
+### [DOM Elements](https://www.w3schools.com/js/js_htmldom_elements.asp)
+
+### [DOM Changing HTML](https://www.w3schools.com/js/js_htmldom_html.asp)
+
+### [DOM Changing CSS](https://www.w3schools.com/js/js_htmldom_css.asp)
+
+### [DOM Animation](https://www.w3schools.com/js/js_htmldom_animate.asp)
+
+### [DOM Events](https://www.w3schools.com/js/js_htmldom_events.asp)
+
+### [DOM EventListener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
+
+### [DOM Navigation](https://www.w3schools.com/js/js_htmldom_navigation.asp)
+
+### [DOM Nodes](https://www.w3schools.com/js/js_htmldom_nodes.asp)
+
+### [DOM Collections](https://www.w3schools.com/js/js_htmldom_collections.asp)
+
+### [DOM Node Lists](https://www.w3schools.com/js/js_htmldom_nodelist.asp)
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS Browser BOM</h3></summary>
+
+## [Browser Object Model](https://www.w3schools.com/js/js_window.asp)
+
+允許JavaScript與瀏覽器"對話"。
+
+```JavaScript
+window.document.getElementById("header");
+===
+document.getElementById("header");
+```
+
+### [Window Screen](https://www.w3schools.com/js/js_window_screen.asp)
+
+### [Window Location](https://www.w3schools.com/js/js_window_location.asp)
+
+### [Window History](https://www.w3schools.com/js/js_window_history.asp)
+
+### [Window Navigator](https://www.w3schools.com/js/js_window_navigator.asp)
+
+### [Popup Boxes](https://www.w3schools.com/js/js_popup.asp)
+
+456. 要在彈出框中顯示換行符，請使用反斜杠後跟字符n。`alert("Hello\nHow are you?");`
+
+### [Timing Events](https://www.w3schools.com/js/js_timing.asp)
+
+457. window.setTimeout(function, milliseconds); 等待指定的毫秒數後執行功能。
+458. window.clearTimeout(timeoutVariable); 停止執行setTimeout（）中指定的函數。
+459. window.setInterval(function, milliseconds); 在每個給定的時間間隔重複給定的功能。
+460. window.clearInterval(timerVariable); 停止setInterval（）方法中指定的函數的執行。
+
+### [Cookies](https://www.w3schools.com/js/js_cookies.asp)
+
+461. Cookies 是存儲在計算機上的小型文本文件中的數據。Web服務器將網頁發送到瀏覽器後，連接將關閉，並且服務器會忘記有關用戶的所有信息。
+462. 如果您的瀏覽器關閉了本地 Cookie 支持，則下面的示例均無效。
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_cookie_username>
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS AJAX</h3></summary>
+
+### [Asynchronous JavaScript And XML](https://www.w3schools.com/js/js_ajax_intro.asp)
+
+463. 由兩個部分組成 1. XMLHttpRequest obj。2. JS & HTML Data (JSON/Text/XML)
+
+```JavaScript
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
+```
+
+---
+
+### [The XMLHttpRequest Object](https://www.w3schools.com/js/js_ajax_http.asp)
+
+464. 出於安全原因，現代瀏覽器不允許跨域訪問。這意味著該網頁及其嘗試加載的XML文件必須位於同一服務器上。
+
+XMLHttpRequest對象方法
+
+| Method                              | Description                         |
+| ----------------------------------- | ----------------------------------- |
+| new XMLHttpRequest()                | Creates a new XMLHttpRequest object |
+| abort()                             | 取消當前請求                        |
+| getAllResponseHeaders()             | Returns header information          |
+| getResponseHeader()                 | Returns 特定 header information     |
+| open(method, url, async, user, psw) | 指定 the request                    |
+|                                     | method：請求類型為GET或POST         |
+|                                     | url：文件位置                       |
+|                                     | async ：真（異步）或假（同步）      |
+|                                     | user: 可選用戶名                    |
+|                                     | psw  : 可選密碼                     |
+| send()                              | 將請求發送到服務器 用於GET請求      |
+| send(string)                        | 將請求發送到服務器。 用於POST請求   |
+| setRequestHeader()                  | 將標籤/值對添加到要發送的標頭中     |
+
+XMLHttpRequest對象屬性
+
+| Method             | Description                                                                                               |
+| ------------------ | --------------------------------------------------------------------------------------------------------- |
+| onreadystatechange | 定義當 readyState 屬性更改時要調用的函數                                                                  |
+| readyState         | 保留 XMLHttpRequest 的狀態。                                                                              |
+|                    | 0: 請求未初始化                                                                                           |
+|                    | 1：服務器連接建立                                                                                         |
+|                    | 2：收到請求                                                                                               |
+|                    | 3：處理要求                                                                                               |
+|                    | 4：請求已完成且響應已準備就緒                                                                             |
+| responseText       | 以字符串形式返迴響應數據                                                                                  |
+| responseXML        | 以XML數據形式返迴響應數據                                                                                 |
+| status             | 返回請求的狀態號                                                                                          |
+|                    | 200: "OK"                                                                                                 |
+|                    | 403："禁止"                                                                                               |
+|                    | 404: "Not Found"                                                                                          |
+|                    | For a complete list go to the Http Messages Reference https://www.w3schools.com/tags/ref_httpmessages.asp |
+| statusText         | 返回狀態文本（例如"確定"或"未找到"）                                                                      |
+
+### [Send a Request To a Server](https://www.w3schools.com/js/js_ajax_http_send.asp)
+
+465. 不建議使用同步XMLHttpRequest（async = false），因為JavaScript將在服務器響應就緒之前停止執行。如果服務器忙或慢，則應用程序將掛起或停止。同步XMLHttpRequest正在從Web標準中刪除，但是此過程可能需要很多年。
+
+### [Server Response]([Server Response](https://www.w3schools.com/js/js_ajax_http_response.asp))
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_callback>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_responsexml>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_header>
+
+### [XML Example](https://www.w3schools.com/js/js_ajax_xmlfile.asp)
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_xml2>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_xml2>
+* <https://www.w3schools.com/js/cd_catalog.xml>
+
+### [PHP Example](https://www.w3schools.com/js/js_ajax_php.asp)
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_suggest_php>
+
+### [ASP Example](https://www.w3schools.com/js/js_ajax_asp.asp)
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_suggest_asp>
+
+### [Database Example](https://www.w3schools.com/js/js_ajax_database.asp)
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_database>
+
+### [XML Applications](https://www.w3schools.com/js/js_ajax_applications.asp)
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_display_table>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_app_first>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_app_navigate>
+
+### [AJAX Examples](https://www.w3schools.com/js/js_ajax_examples.asp)
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS JSONP</h3></summary>
+
+* <https://www.w3schools.com/js/js_json_jsonp.asp>
+
+466. JSONP是一種發送JSON數據而無需擔心跨域問題的方法。JSONP不使用該XMLHttpRequest對象。JSONP使用`<script>`標記代替。
+467. 由於跨域策略，從另一個域請求文件可能會導致問題。從另一個域請求外部腳本不會出現此問題。JSONP利用了這一優勢，並使用腳本標籤而不是XMLHttpRequest對象來請求文件。
+
+* <https://www.w3schools.com/js/showphp.asp?filename=demo_jsonp>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjson_jsonp>
+
+468. 腳本標記僅應在需要時創建，通過將JSON發送到php文件來使示例動態化，並讓php文件根據獲取的信息返回JSON對象。
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjson_jsonp_create>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjson_jsonp_php>
+
+469. 當您無法控制服務器文件時，如何使服務器文件調用正確的功能？有時服務器文件提供回調函數作為參數，php文件將調用您作為回調參數傳遞的函數
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjson_jsonp_callback>
+
+---
+
+* JSONP
+* <https://www.google.com/search?q=JSONP&oq=JSONP&aqs=chrome..69i57j69i59j69i60l2&sourceid=chrome&ie=UTF-8>
+* 跨來源資源共享
+* <https://www.google.com/search?q=%E8%B7%A8%E4%BE%86%E6%BA%90%E8%B3%87%E6%BA%90%E5%85%B1%E4%BA%AB&oq=%E8%B7%A8%E4%BE%86%E6%BA%90%E8%B3%87%E6%BA%90%E5%85%B1%E4%BA%AB&aqs=chrome..69i57&sourceid=chrome&ie=UTF-8>
+
+---
+
+## Other
+
+### [Introduction](https://www.w3schools.com/js/js_json_intro.asp)
+
+### [Syntax](https://www.w3schools.com/js/js_json_syntax.asp)
+
+### [JSON vs XML](https://www.w3schools.com/js/js_json_xml.asp)
+
+### [Data Types](a)
+
+### [JSON.parse()](https://www.w3schools.com/js/js_json_parse.asp)
+
+### [JSON.stringify()](https://www.w3schools.com/js/js_json_stringify.asp)
+
+### [Objects](https://www.w3schools.com/js/js_json_objects.asp)
+
+### [Arrays](https://www.w3schools.com/js/js_json_arrays.asp)
+
+### [PHP](https://www.w3schools.com/js/js_json_php.asp)
+
+### [HTML](https://www.w3schools.com/js/js_json_html.asp)
+
+</details>
+
 </details> <!-- JS Basics 結束 -->
 
 ## [JS Exercises](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1)
