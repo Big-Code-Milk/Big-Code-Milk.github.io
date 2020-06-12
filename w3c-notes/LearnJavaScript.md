@@ -2342,7 +2342,8 @@ document.getElementById("demo").innerHTML = Car.hello(mycar);
 //this would raise an error.
 ```
 
-356. Inheritance 繼承 extends 擴展。通過類繼承創建的類將從另一個類繼承所有方法
+356. Inheritance 繼承 extends 擴展。通過類繼承創建的類將從另一個類繼承所有方法。
+357. super() 方法調用父方法的構造方法。並可以訪問父方法的屬性和方法。
 
 * <https://www.w3schools.com/js/tryit.asp?filename=tryjs_classes_inherit>
 
@@ -2369,6 +2370,916 @@ class Model extends Car {
 mycar = new Model("Ford", "Mustang");
 document.getElementById("demo").innerHTML = mycar.show();
 ```
+
+358. getter 和 setter 想在返回值或設置它們之前對值做一些特殊的事情。
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_classes_getters>
+
+359. getter / setter 方法的名稱不能與屬性的名稱相同，許多程序員在屬性名稱前使用下劃線字符 _ 與實際屬性分開。
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_classes_getters2>
+
+360. 要使用 setter，請使用與設置屬性值時相同的語法，不帶括號。
+
+```JavaScript
+class Car {
+  constructor(brand) {
+    this._carname = brand;
+  }
+  get carname() {
+    return this._carname;
+  }
+  set carname(x) {
+    this._carname = x;
+  }
+}
+
+mycar = new Car("Ford");
+mycar.carname = "Volvo";
+document.getElementById("demo").innerHTML = mycar.carname;
+```
+
+361. 與函數和其他 JavaScript 聲明不同，類聲明不會被提升。對於其他聲明，例如函數，在聲明之前嘗試使用它時不會出錯，因為 JavaScript 聲明的默認行為正在提升（將聲明移到頂部）。
+362. 類中的語法必須以"嚴格模式"編寫。如果您不遵循"嚴格模式"規則，則會收到錯誤消息。
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS Debugging</h3></summary>
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_console>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_debugger>
+
+363. 主流瀏覽器通常都有調試工具。
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS Style Guide and Coding Conventions</h3></summary>
+
+* <https://www.w3schools.com/js/js_conventions.asp>
+
+364. 變量和函數的命名和聲明規則。空格，縮進和註釋的使用規則。編程實踐和原則。提高代碼可讀性，使代碼維護更加容易。
+
+* camelCase
+* 所有名稱字母開頭
+* 在運算符（= +-* /）前後以及逗號後加空格
+* 使用2個空格來縮進代碼塊
+* 始終以分號結束簡單的語句
+* 將開口支架放在第一行的末尾
+* 在開口支架前留一個空間
+* 將右括號放在新的一行上，不要有空格
+* 不要以分號結束複雜的語句
+* 將左括號放在與對象名稱相同的行上
+* 在每個屬性及其值之間使用冒號加一個空格
+* 請在字符串值（而不是數字值）兩邊使用引號
+* 不要在最後一個屬性值對之後添加逗號
+* 將右括號放在新行上，沒有前導空格
+* 始終用分號結束對象定義
+* 可以將短對象壓縮壓縮成一行，僅在屬性之間使用空格
+* 避免使用超過80個字符的行
+* 不適合一行，則打破它的最佳位置是在運算符或逗號之後
+* 用大寫形式編寫的全局變量
+* 用大寫形式編寫的常量
+* 連字符可能被誤認為是減法嘗試。JavaScript名稱中不允許使用連字符
+* 許多程序員更喜歡使用下劃線（date_of_birth），尤其是在SQL數據庫中，下劃線通常在PHP文檔中使用
+* PascalCase 通常是 C 程序員首選的
+* camelCase 由 JavaScript 本身，jQuery 和其他 JavaScript 庫使用
+* 請勿以 $ 開頭名稱。這會使您與許多 JavaScript 庫名稱發生衝突
+
+---
+
+* 大多數Web服務器（Apache，Unix）對文件名區分大小寫
+* 其他Web服務器（Microsoft，IIS）不區分大小寫
+* 為避免這些問題，請始終使用小寫文件名（如果可能）。
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS est Practices</h3></summary>
+
+365. 避免全局變量，避免new，避免==，避免eval()
+366. 盡量減少使用全局變量。這包括所有數據類型，對象和功能。全局變量和函數可以被其他腳本覆蓋。請改用局部變量，並學習如何使用 閉包。
+367. 將所有聲明放在每個腳本或函數的頂部是一種很好的編碼做法。提供更乾淨的代碼、提供一個地方來查找局部變量、使避免不必要的（隱含的）全局變量更加容易、減少不必要的重新聲明的可能性。
+368. 聲明變量時初始化變量是一種好的編碼習慣。提供更乾淨的代碼、提供一個位置來初始化變量、避免未定義的值。初始化變量提供了預期用途（和預期數據類型）的概念
+369. 始終將數字，字符串或布爾值視為原始值。不作為對象。將這些類型聲明為對象，會降低執行速度並產生討厭的副作用
+370. 不要使用new Object（）
+
+* 使用{}代替new Object()
+* 使用""代替new String()
+* 使用0代替new Number()
+* 使用false代替new Boolean()
+* 使用[]代替new Array()
+* 使用/()/代替new RegExp()
+* 使用function (){}代替new Function()
+
+371. 當心自動類型轉換，JavaScript 是鬆散類型的。變量可以包含不同的數據類型，並且變量可以更改其數據類型
+372. 使用 === 比較
+373. 如果使用缺少的參數調用函數，則將缺少的參數的值設置為 undefined。
+374. ECMAScript 2015 允許在函數調用中使用默認參數 `function (a=1, b=1) { /*function code*/ }```JavaScript
+375. 始終 switch 以 default。結尾。即使您認為沒有必要
+376. eval()函數用於將文本作為代碼運行。在幾乎所有情況下，都沒有必要使用它。因為它允許運行任意代碼，所以它也表示一個安全問題。
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS Common Mistakes</h3></summary>
+
+* <https://www.w3schools.com/js/js_mistakes.asp>
+377. JSON不允許尾隨逗號。
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS Performance</h3></summary>
+
+* <https://www.w3schools.com/js/js_performance.asp>
+378. 循環中的每個語句（包括for語句）都針對循環的每次迭代執行。可以放在循環外部的語句或賦值將使循環運行更快。
+
+```JavaScript
+// BAD
+var i;
+for (i = 0; i < arr.length; i++) {
+// BATTER
+var i;
+var l = arr.length;
+for (i = 0; i < l; i++) {
+```
+
+379. 多次訪問DOM元素，請訪問一次，並將其用作局部變量
+
+```JavaScript
+var obj;
+obj = document.getElementById("demo");
+obj.innerHTML = "Hello";
+```
+
+380. 保持HTML DOM中的元素數量少。這將始終改善頁面加載，並加快渲染（頁面顯示），尤其是在較小的設備上。
+381. 如果您不打算保存值，請不要創建新變量。
+
+```JavaScript
+// BAD
+var fullName = firstName + " " + lastName;
+document.getElementById("demo").innerHTML = fullName;
+// BATTER
+document.getElementById("demo").innerHTML = firstName + " " + lastName;
+```
+
+382. 將腳本放在頁面正文的底部，使瀏覽器可以首先加載頁面。在下載腳本時，瀏覽器將不會開始其他任何下載。此外，所有解析和渲染活動都可能被阻止。
+383. 另一種方法是defer="true"在script標籤中使用。defer屬性指定腳本應在頁面解析完成後執行，但僅適用於外部腳本。
+384. 如果可能，您可以在頁面加載後按代碼將腳本添加到頁面
+
+```JavaScript
+<script>
+window.onload = function() {
+  var element = document.createElement("script");
+  element.src = "myScript.js";
+  document.body.appendChild(element);
+};
+</script>
+```
+
+385. 避免使用with關鍵字。它對速度有負面影響。它還會弄亂JavaScript範圍。
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS Reserved Words</h3></summary>
+
+* <https://www.w3schools.com/js/js_reserved.asp>
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS Versions</h3></summary>
+
+* <https://www.w3schools.com/js/js_versions.asp>
+386. ECMAScript 5 (2009) ES5
+387. ECMAScript 6 (2015) ES6
+388. 2018 Chrome 與 Opera 已支援到 (ES7 ECMAScript 2016)
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS ECMAScript 5 - JavaScript 5</h3></summary>
+
+* <https://www.w3schools.com/js/js_es5.asp>
+387. 2009 ES5 功能
+
+* "use strict"
+* String.trim()
+* Array.isArray()
+* Array.forEach()
+* Array.map()
+* Array.filter()
+* Array.reduce()
+* Array.reduceRight()
+* Array.every()
+* Array.some()
+* Array.indexOf()
+* Array.lastIndexOf()
+* JSON.parse()
+* JSON.stringify()
+* Date.now()
+* 屬性獲取器和設置器 Property Getters and Setter
+* 新對象屬性方法 New Object Property Methods
+
+388. ES5 語法更改
+
+* 字符串的屬性訪問[] Property access [ ] on strings
+* 數組和對象文字中的尾隨逗號 Trailing commas in array and object literals
+* 多行字符串文字 Multiline string literals
+* 保留字作為屬性名稱 Reserved words as property names
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS ECMAScript 6 - ECMAScript 2015</h3></summary>
+
+* <https://www.w3schools.com/js/js_es6.asp>
+389. 2015 ES6 功能
+
+* let
+* const
+* 箭頭函數 Arrow Functions
+* 類 Classes
+* 默認參數值 Default parameter values
+* Array.find()
+* Array.findIndex()
+* Exponentiation 指數（**）（EcmaScript 2016）
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS JSON</h3></summary>
+
+* <https://www.w3schools.com/js/js_json.asp>
+390. JavaScript Object Notation
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS Forms</h3></summary>
+
+391. HTML表單驗證可以通過JavaScript完成。如果表單字段（fname）為空，則此函數將警告消息並返回false，以防止提交表單
+
+```JavaScript
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
+```
+
+392. HTML表單驗證可以由瀏覽器自動執行：如果表單字段（fname）為空，則該 required 屬性將阻止提交此表單
+393. 典型的驗證任務是：用戶是否填寫了所有必填字段？用戶輸入了有效日期嗎？用戶是否在數字字段中輸入了文字？
+394. HTML5引入了新的HTML驗證概念，稱為約束驗證。約束驗證 HTML 輸入屬性。約束驗證 CSS 偽選擇器。約束驗證 DOM 屬性和方法
+
+約束驗證 HTML 輸入屬性
+
+| Attribute | Description                                        |
+| --------- | -------------------------------------------------- |
+| disabled  | 指定應禁用輸入元素                                 |
+| max       | Specifies the maximum value of an input element    |
+| min       | Specifies the minimum value of an input element    |
+| pattern   | 指定輸入元素的值模式                               |
+| required  | Specifies that the input field requires an element |
+| type      | 指定輸入元素的類型                                 |
+
+約束驗證 CSS 偽選擇器
+
+| Selector  | Description                                                    |
+| --------- | -------------------------------------------------------------- |
+| :disabled | 選擇指定了"禁用"屬性的輸入元素                                 |
+| :invalid  | 選擇具有無效值的輸入元素                                       |
+| :optional | 選擇未指定"必需"屬性的輸入元素                                 |
+| :required | Selects input elements with the "required" attribute specified |
+| :valid    | 選擇具有有效值的輸入元素                                       |
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS Validation API</h3></summary>
+
+* <https://www.w3schools.com/js/js_validation_api.asp>
+
+395. 約束驗證 DOM 方法
+
+| Property            | Description                            |
+| ------------------- | -------------------------------------- |
+| checkValidity()     | 如果輸入元素包含有效數據，則返回true。 |
+| setCustomValidity() | 設置輸入元素的validationMessage屬性。  |
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_check>
+
+396. 約束驗證 DOM 屬性
+
+| Property          | Description                             |
+| ----------------- | --------------------------------------- |
+| validity          | 包含與輸入元素的有效性有關的布爾屬性。  |
+| validationMessage | 包含有效性為false時瀏覽器將顯示的消息。 |
+| willValidate      | 指示是否將驗證輸入元素。                |
+
+397. 有效性屬性
+
+| Property        | Description                                      |
+| --------------- | ------------------------------------------------ |
+| customError     | 如果設置了自定義有效性消息，則設置為true。       |
+| patternMismatch | 如果元素的值與其模式屬性不匹配，則設置為true。   |
+| rangeOverflow   | 如果元素的值大於其max屬性，則設置為true。        |
+| rangeUnderflow  | 如果元素的值小於其min屬性，則為true。            |
+| stepMismatch    | 如果元素的值對於其step屬性無效，則設置為true。   |
+| tooLong         | 如果元素的值超過其maxLength屬性，則設置為true。  |
+| typeMismatch    | 如果每個元素的type屬性的值無效，則設置為true。   |
+| valueMissing    | 如果元素（具有必需的屬性）沒有值，則設置為true。 |
+| valid           | 如果元素的值有效，則設置為true。                 |
+
+> rangeOverflow
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_rangeOverflow>
+
+```JavaScript
+<input id="id1" type="number" max="100">
+<button onclick="myFunction()">OK</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt = "";
+  if (document.getElementById("id1").validity.rangeOverflow) {
+    txt = "Value too large";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+```
+
+> rangeUnderflow
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_rangeUnderflow>
+
+```JavaScript
+<input id="id1" type="number" min="100">
+<button onclick="myFunction()">OK</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt = "";
+  if (document.getElementById("id1").validity.rangeUnderflow) {
+    txt = "Value too small";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+```
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS Objects deeply</h3></summary>
+
+398. 在JavaScript中，幾乎"一切"都是對象。
+
+* 布爾值可以是對象（如果使用new關鍵字定義）
+* 數字可以是對象（如果使用new關鍵字定義）
+* 字符串可以是對象（如果使用new關鍵字定義）
+* 日期始終是對象
+* 數學永遠是對象
+* 正則表達式始終是對象
+* 數組始終是對象
+* 功能始終是對象
+* 對象永遠是對象
+* 除原語 primitives 外，所有 JavaScript 值都是對象。
+
+399. 原始值是不具有屬性或方法的值。原始數據類型為具有原始值的數據。JavaScript 定義了 5 種原始數據類型：
+
+* string
+* number
+* boolean
+* null
+* undefined
+
+> 基本值是不可變的（它們是硬編碼的，因此不能更改）。
+
+* <https://www.w3schools.com/js/js_object_definition.asp>
+
+400. 無需使用 new Object()。為了簡化，可讀性和執行速度，請使用第一個（對象文字方法）。
+
+---
+
+### Object Properties
+
+* <https://www.w3schools.com/js/js_object_properties.asp>
+
+401. for...in 循環內部的代碼塊將針對每個屬性執行一次。
+402. 以通過簡單地給它賦一個值來向現有對象添加新屬性。`person.nationality = "English";`
+403. delete 關鍵字刪除屬性的兩個值和屬性本身。刪除後，該屬性將無法使用，然後再重新添加。delete 不得在預定義的 JavaScript 對象屬性上使用該運算符。它可能會使您的應用程序崩潰。
+404. JavaScript 中，可以讀取所有屬性，但是只能更改 value 屬性（並且僅在該屬性為可寫狀態時）。ECMAScript 5 具有獲取和設置所有屬性屬性的方法
+405. JavaScript對象繼承其原型的屬性。
+
+---
+
+### Object Methods
+
+406. 向對象添加方法
+
+```JavaScript
+person.name = function () {
+  return this.firstName + " " + this.lastName;
+};
+```
+
+---
+
+### Display Objects
+
+* 按名稱顯示對象屬性
+* 循環顯示對象屬性
+* 使用Object.values（）顯示對象
+* 使用JSON.stringify（）顯示對象
+* console.log() f12 dev loop display
+
+406. 您必須在循環中使用person [x]。person.x將不起作用（因為x是變量）。
+407. JSON.stringify 不會對函數進行字符串化
+408. 如果在字符串化之前將函數轉換為字符串，則可以"修復"。
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_display_stringify_function_tostring>
+
+---
+
+### Object Accessors
+
+409. ECMAScript 5（2009）引入了 Getters and Setters
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_accessors_get>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_accessors_set>
+
+410. fullName作為函數訪問：person.fullName（）。 fullName作為屬性訪問：person.fullName。第二個 提供了更簡單的語法。
+411. 使用 getter 和 setter 時，JavaScript可以確保更好的數據質量。
+412. 為什麼要使用Getter和Setter？它提供了更簡單的語法、它允許屬性和方法的語法相同、它可以確保更好的數據質量、對於幕後處理很有用
+413. Object.defineProperty()方法還可以用於添加Getter和Setter
+
+```JavaScript
+// Define object
+var obj = {counter : 0};
+
+// Define setters
+Object.defineProperty(obj, "reset", {
+  get : function () {this.counter = 0;}
+});
+Object.defineProperty(obj, "increment", {
+  get : function () {this.counter++;}
+});
+Object.defineProperty(obj, "decrement", {
+  get : function () {this.counter--;}
+});
+Object.defineProperty(obj, "add", {
+  set : function (value) {this.counter += value;}
+});
+Object.defineProperty(obj, "subtract", {
+  set : function (value) {this.counter -= value;}
+});
+
+// Play with the counter:
+obj.reset;
+obj.add = 5;
+obj.subtract = 1;
+obj.increment;
+obj.decrement;
+```
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_accessors_set4>
+
+---
+
+### Object Constructors
+
+414. 用大寫首字母命名構造函數是一種好的做法。
+415. 有時我們需要一個"藍圖"來創建許多相同"類型"的對象。通過使用new關鍵字調用構造函數來創建相同類型的對象
+
+```JavaScript
+var myFather = new Person("John", "Doe", 50, "blue");
+var myMother = new Person("Sally", "Rally", 48, "green");
+```
+
+416. this不是變量。它是一個關鍵字。您無法更改的值this。
+417. 不能像向現有物件中添加新屬性一樣，向物件構造函數中添加新屬性。不能像向現有對像中添加新方法一樣，向對象構造函數中添加新方法。
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_constructor4>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_constructor5>
+
+> * <https://www.w3schools.com/js/js_object_constructors.asp>
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS Object Prototypes</h3></summary>
+
+418. 對象構造函數，不能將新屬性添加到現有的對象構造函數中，要將新屬性添加到構造函數，必須將其添加到構造函數
+419. 所有 JavaScript 物件都從原型繼承屬性和方法。
+
+* Object.prototype 是對原型繼承鏈的頂端。
+* Date 對象繼承自 Date.prototype
+* Array 對象繼承自 Array.prototype
+* Person 對象繼承自 Person.prototype
+
+420. prototype 屬性允許您向對象構造函數添加新屬性
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_prototype5>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_prototype6>
+
+```JavaScript
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+Person.prototype.nationality = "English";
+
+---
+
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+Person.prototype.name = function() {
+  return this.firstName + " " + this.lastName;
+};
+```
+
+421. 僅修改您自己的原型。切勿修改標準 JavaScript 對象的原型。
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS ES5 Object Methods</h3></summary>
+
+* <https://www.w3schools.com/js/js_object_es5.asp>
+
+422. ES5 增加了許多 Obj 方法可以直接針對 Prototypes 原形、Property 屬性做操作。
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS Function Definitions</h3></summary>
+
+* <https://www.w3schools.com/js/js_function_definition.asp>
+
+423. 分號用於分隔可執行的JavaScript語句。由於函數聲明不是可執行語句，因此以分號結尾並不常見。
+424. 匿名函數（一個沒有名稱的函數）存儲在變量中的函數不需要函數名。始終使用變量名來調用（調用）它們。以分號結尾，因為它是可執行語句的一部分。
+
+```JavaScript
+var x = function (a, b) {return a * b};
+var z = x(4, 3);
+```
+
+425. JavaScript函數是使用function關鍵字定義的。也可以使用稱為的內置JavaScript 函數構造函數來定義函數 Function()。實際上，您不必使用函數構造函數。大多數時候，您可以避免new在JavaScript中使用關鍵字。
+
+`var myFunction = new Function("a", "b", "return a * b");`
+
+426. 提升適用於變量聲明和函數聲明。因此，可以在聲明JavaScript函數之前對其進行調用。使用表達式定義的函數不會被提升。
+
+```JavaScript
+myFunction(5);
+
+function myFunction(y) {
+  return y * y;
+}
+```
+
+427. 立即函式 (匿名的自調用函數)
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_expression_self>
+
+```JavaScript
+(function () {
+  var x = "Hello!!";  // I will invoke myself
+})();
+```
+
+428. typeof JavaScript 中的運算符為函數返回"function"。但是，JavaScript 函數最好被描述為對象。JavaScript 函數同時具有 屬性 和 方法。
+429. 定義為物件屬性的函數稱為物件的方法。設計用來創建新物件的函數稱為物件構造函數。
+430. 箭頭函數 允許使用簡短的語法編寫函數表達式。不需要 function 關鍵字，return 關鍵字和 大括號。
+
+```JavaScript
+// ES5
+var x = function(x, y) {
+  return x * y;
+}
+
+// ES6
+const x = (x, y) => x * y;
+```
+
+431. 箭頭函數沒有自己的this。它們不適用於定義物件方法。
+432. 箭頭功能未提升。必須先定義它們，然後再使用它們。
+433. 使用const 比使用 var 更加安全，因為函數表達式始終為常數。
+434. return 如果函數是單個語句，則只能省略關鍵字和大括號。因此，始終保留它們可能是一個好習慣 `const x = (x, y) => { return x * y };`
+
+---
+
+### Function Parameters
+
+435. 函數參數是函數定義中列出的名稱。函數參數是 傳遞給函數（並由函數接收）的實際值
+436. JavaScript函數定義未指定參數的數據類型。
+437. JavaScript函數不對傳遞的參數執行類型檢查。
+438. JavaScript函數不檢查接收到的參數數量。
+439. 如果使用缺少的參數（小於聲明的值）調用函數，則將缺少的值設置為：undefined 有時這是可以接受的，但有時最好將默認值分配給參數
+440. ECMAScript 2015允許在函數聲明中使用默認參數值 `function (a=1, b=1) `
+441. JavaScript函數具有一個稱為arguments對象的內置對象。這樣，您可以簡單地使用一個函數來查找（例如）數字列表中的最大值
+
+```JavaScript
+x = findMax(1, 123, 500, 115, 44, 88);
+
+function findMax() {
+  var i;
+  var max = -Infinity;
+  for (i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
+    }
+  }
+  return max;
+}
+```
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_arguments>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_arguments_sum>
+
+442. JavaScript參數由值傳遞：該函數僅知道值，而不是參數的位置。如果函數更改了參數的值，則不會更改參數的原始值。對參數的更改在函數外部不可見（反映）。
+443. In JavaScript, object references are values.如果函數更改了物件屬性，它將更改原始值。對物件屬性的更改在函數外部可見（反映）。
+
+---
+
+### Function Invocation
+
+* <https://www.w3schools.com/js/js_function_invocation.asp>
+
+443. 定義函數時，不會執行函數內部的代碼。
+444. 函數內部的代碼在調用函數時執行。
+445. myFunction(); 或 window.myFunction(); 是調用JavaScript函數的常用方法，但不是很好的做法。全局變量，方法或函數可以輕鬆在全局對像中創建名稱衝突和錯誤。
+446. 調用函數作為物件方法會使值this 變成物件本身。
+447. 如果函數調用前面帶有new關鍵字，則它是構造函數調用。構造函數調用將創建一個新對象。新對像從其構造函數繼承屬性和方法。
+
+---
+
+### Function Call
+
+* <https://www.w3schools.com/js/js_function_call.asp>
+
+448. call() 方法，您可以編寫可在不同物件上況衝方法。
+
+```JavaScript
+var person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+var person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+var person2 = {
+  firstName:"Mary",
+  lastName: "Doe"
+}
+person.fullName.call(person2);  // Will return "Mary Doe"
+```
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_call_call2>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_call_arguments>
+
+449. [在JavaScript中，所有函數都是物件方法。如果函數不是JavaScript對象的方法，則它是全局物件的函數](#)。
+
+---
+
+### Function Apply
+
+* <https://www.w3schools.com/js/js_function_apply.asp>
+
+450. apply() 方法，您可以編寫可在不同對像上使用的方法。
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_apply>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_apply_arguments>
+
+```JavaScript
+var person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+var person1 = {
+  firstName: "Mary",
+  lastName: "Doe"
+}
+person.fullName.apply(person1);  // Will return "Mary Doe"
+```
+
+451. call（）和apply（）之間的區別
+
+* call() 方法採用參數列表。
+* apply() 方法將參數作為數組。
+
+```JavaScript
+person.fullName.apply(person1, ["Oslo", "Norway"]);
+
+person.fullName.call(person1, "Oslo", "Norway");
+```
+
+452. 由於JavaScript 數組沒有max（）方法，因此您可以應用該 Math.max()方法。
+
+```JavaScript
+Math.max(1,2,3);  // Will return 3
+
+---
+
+Math.max.apply(null, [1,2,3]); // Will also return 3
+Math.max.apply(Math, [1,2,3]); // Will also return 3
+Math.max.apply(" ", [1,2,3]); // Will also return 3
+Math.max.apply(0, [1,2,3]); // Will also return 3
+```
+
+</details>
+
+---
+
+<details>
+<summary><h3 style='display:inline'>JS Closures</h3></summary>
+
+* <https://www.w3schools.com/js/js_function_closures.asp>
+
+453. 可以使用 閉包 將全局變量設為局部（私有）。
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_closures1>
+
+```JavaScript
+// Initiate counter
+var counter = 0;
+
+// Function to increment counter
+function add() {
+  counter += 1;
+}
+
+// Call add() 3 times
+add();
+add();
+add();
+
+// The counter should now be 3
+```
+
+上面的解決方案存在一個問題：頁面上的任何代碼都可以更改計數器，而無需調用 add（）。
+
+計數器應在add()函數本地，以防止其他代碼對其進行更改
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_closures2>
+
+```JavaScript
+// Initiate counter
+var counter = 0;
+
+// Function to increment counter
+function add() {
+  var counter = 0;
+  counter += 1;
+}
+
+// Call add() 3 times
+add();
+add();
+add();
+
+//The counter should now be 3. But it is 0
+```
+
+它不起作用，因為我們顯示全局計數器而不是本地計數器。
+
+我們可以通過讓函數返回它來刪除全局計數器並訪問本地計數器：
+
+```JavaScript
+// Function to increment counter
+function add() {
+  var counter = 0;
+  counter += 1;
+  return counter;
+}
+
+// Call add() 3 times
+add(); // 完成調用後 js 會自動清除垃圾記憶體造成局部變數 counter 無法紀錄
+add();
+add();
+
+//The counter should now be 3. But it is 1.
+```
+
+它沒有用，因為每次調用函數時都會重置本地計數器。
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_closures3>
+
+454. JavaScript 內部函數。嵌套函數
+
+此種方法將計數功能移入內部，在 add() 內功能還沒結束前記憶體都會存在
+
+但此種方法出現了問題
+
+1. 原本設計是要呼叫 add() 一次就計數器+1
+2. 假如依照第一種設計方式思考則 var counter = 0; 只能執行一次
+
+```JavaScript
+function add() {
+  var counter = 0;
+  function plus() {counter += 1;}
+  // plus();
+  // plus();
+  plus();
+  return counter;
+}
+// outside
+add();
+```
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_closures4>
+
+455. 還記得自調用功能嗎？此功能有什麼作用？
+
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_closures5>
+
+```JavaScript
+var add = (function () {
+  var counter = 0;
+  return function () {counter += 1; return counter}
+})();
+
+add();
+add();
+add();
+
+// the counter is now 3
+```
+
+為變量 add 分配了 自調用函數(會在讀到時自動執行一次) 的 返回值(function () {counter += 1; return counter})。
+
+* <https://www.w3schools.com/js/js_function_definition.asp>
+
+自調用功能僅運行一次。它將計數器設置為零（0），並返回函數表達式。
+
+這樣添加就成為一個功能。"很棒"的部分是
+
+1. 它可以訪問父作用域中的計數器。
+
+這稱為JavaScript 閉包。它使函數具有" 私有 "變量成為可能。
+
+2. 計數器受匿名函數作用域的保護，只能使用add函數進行更改。
+
+閉包是即使父函數已關閉，也可以訪問父作用域的函數。
 
 </details>
 
