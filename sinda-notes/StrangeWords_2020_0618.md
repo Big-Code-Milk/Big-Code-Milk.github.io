@@ -69,3 +69,44 @@ Property 屬性
 Attribute 特性
 
 Agile 敏捷
+
+funnel 漏斗
+
+statement 聲明
+
+Snippet 片段
+
+directive 指令
+
+initialize 初始化
+
+summary 摘要
+
+variables 變數
+
+Decimal 小數
+
+currency 貨幣
+
+percent 百分比
+
+navigation 導航
+
+undefined 未定義
+
+Introduction 簡介
+
+article 文章
+
+declaration 宣告
+
+Destroy 銷毀
+
+implement 實作
+
+Motion 提案
+
+
+
+
+
