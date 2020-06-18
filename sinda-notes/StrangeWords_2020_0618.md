@@ -4,7 +4,7 @@ Strange 陌生
 
 Initializing 初始化
 
-Assignment 分配
+Assign ment 分配
 
 Operators 運算符號
 
@@ -108,5 +108,12 @@ Motion 提案
 
 Emitter 發射器
 
+providers 提供者
 
+private 私人的
 
+resolve 解析
+
+Observable 觀察
+
+subscribe 訂閱
