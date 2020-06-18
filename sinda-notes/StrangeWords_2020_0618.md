@@ -68,3 +68,4 @@ Property 屬性
 
 Attribute 特性
 
+Agile 敏捷
