@@ -90,7 +90,7 @@ currency 貨幣
 
 percent 百分比
 
-navigation 導航
+navigation 導航 nav
 
 undefined 未定義
 
@@ -119,3 +119,11 @@ Observable 觀察
 subscribe 訂閱
 
 portal 門台門戶網站
+
+Feature 特徵
+
+current 當前
+
+Subject 主題
+
+Behavior 行為
