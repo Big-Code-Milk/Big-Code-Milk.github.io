@@ -117,3 +117,5 @@ resolve 解析
 Observable 觀察
 
 subscribe 訂閱
+
+portal 門台門戶網站
