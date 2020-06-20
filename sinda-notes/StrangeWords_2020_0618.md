@@ -127,3 +127,106 @@ current 當前
 Subject 主題
 
 Behavior 行為
+
+Maintainer 維護員
+
+Require 要求
+
+undertaken 承擔
+
+Status 狀態
+
+Announcement 公告
+
+Role 腳色
+
+approve 批准
+
+reject 拒絕
+
+Approver 批准人
+
+Invalid 無效
+
+Dept 部門
+
+Disable 停用
+
+Apply 應用
+
+Deploy 部屬
+
+Applicant 申請人
+
+demand 需求
+
+compliance 合規
+
+inspect 檢查
+
+confirmation 確認
+
+pre-review 預審
+
+Custodian 保管人
+
+Filler 填料
+
+Responsible 負責任的
+
+Exclude 排除
+
+Staff 員工
+
+approval 認可
+
+rad 工作
+
+Modify 修改
+
+Complex 綜合
+
+Description 描述
+
+Organizer 組織者
+
+deactivae 停用
+
+Standard 標準
+
+Risk 風險
+
+permission 權限
+
+Unregulated 不管制
+
+Account 帳號
+
+authorization 授權
+
+designate 指定
+
+reserve 保留
+
+Specify 指明
+
+quantity 數量
+
+inventory 庫存
+
+separately 分別
+
+Configuration 組態
+
+relate 涉及
+
+authority 權威
+
+classification 分類
+
+Trial 考驗
+
+Unlimited 無限的
+
+External 外部
+
