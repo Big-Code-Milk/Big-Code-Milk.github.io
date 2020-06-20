@@ -231,3 +231,21 @@ Unlimited 無限的
 External 外部
 
 category 類別
+
+enum 列舉
+
+Software Requirements Specification 軟體需求說明
+
+Spec 規格
+
+process 處理
+
+functor 函子
+
+generator 發電機
+
+fortune 幸運
+
+empty 空的
+
+blank 空白
