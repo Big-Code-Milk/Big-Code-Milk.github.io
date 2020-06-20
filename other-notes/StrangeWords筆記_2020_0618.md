@@ -249,3 +249,17 @@ fortune 幸運
 empty 空的
 
 blank 空白
+
+Syntax 語法
+
+Statement 聲明
+
+Literal 文字
+
+Interpreter 翻譯員
+
+Compiler 編輯員
+
+sufficient 足夠的
+
+independent 獨立
