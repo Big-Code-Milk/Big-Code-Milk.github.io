@@ -99,183 +99,183 @@
 
 "declaration": "宣告",
 
-Destroy: 銷毀,
+"Destroy": "銷毀",
 
-implement: 實作,
+"implement": "實作",
 
-Motion: 提案,
+"Motion": "提案",
 
-Emitter: 發射器,
+"Emitter": "發射器",
 
-providers: 提供者,
+"providers": "提供者",
 
-private: 私人的,
+"private": "私人的",
 
-resolve: 解析,
+"resolve": "解析",
 
-Observable: 觀察,
+"Observable": "觀察",
 
-subscribe: 訂閱,
+"subscribe": "訂閱",
 
-portal: 門台門戶網站,
+"portal": "門台門戶網站",
 
-Feature: 特徵,
+"Feature": "特徵",
 
-current: 當前,
+"current": "當前",
 
-Subject: 主題,
+"Subject": "主題",
 
-Behavior: 行為,
+"Behavior": "行為",
 
-Maintainer: 維護員,
+"Maintainer": "維護員",
 
-Require: 要求,
+"Require": "要求",
 
-undertaken: 承擔,
+"undertaken": "承擔",
 
-Status: 狀態,
+"Status": "狀態",
 
-Announcement: 公告,
+"Announcement": "公告",
 
-Role: 腳色,
+"Role": "腳色",
 
-approve: 批准,
+"approve": "批准",
 
-reject: 拒絕,
+"reject": "拒絕",
 
-Approver: 批准人,
+"Approver": "批准人",
 
-Invalid: 無效,
+"Invalid": "無效",
 
-Dept: 部門,
+"Dept": "部門",
 
-Disable: 停用,
+"Disable": "停用",
 
-Apply: 應用,
+"Apply": "應用 申請",
 
-Deploy: 部屬,
+"Deploy": "部屬",
 
-Applicant: 申請人,
+"Applicant": "申請人",
 
-demand: 需求,
+"demand": "需求",
 
-compliance: 合規,
+"compliance": "合規",
 
-inspect: 檢查,
+"inspect": "檢查",
 
-confirmation: 確認,
+"confirmation": "確認",
 
-pre-review: 預審,
+"pre-review": "預審",
 
-Custodian: 保管人,
+"Custodian": "保管人",
 
-Filler: 填料,
+"Filler": "填料",
 
-Responsible: 負責任的,
+"Responsible": "負責任的",
 
-Exclude: 排除,
+"Exclude": "排除",
 
-Staff: 員工,
+"Staff": "員工",
 
-approval: 認可,
+"approval": "認可",
 
-rad: 工作,
+"rad": "工作",
 
-Modify: 修改,
+"Modify": "修改",
 
-Complex: 綜合,
+"Complex": "綜合",
 
-Description: 描述,
+"Description": "描述",
 
-Organizer: 組織者,
+"Organizer": "組織者",
 
-deactivate: 停用,
+"deactivate": "停用",
 
-Standard: 標準,
+"Standard": "標準",
 
-Risk: 風險,
+"Risk": "風險",
 
-permission: 權限,
+"permission": "權限",
 
-Unregulated: 不管制,
+"Unregulated": "不管制",
 
-Account: 帳號,
+"Account": "帳號",
 
-authorization: 授權,
+"authorization": "授權",
 
-designate: 指定,
+"designate": "指定",
 
-reserve: 保留,
+"reserve": "保留",
 
-Specify: 指明,
+"Specify": "指明",
 
-quantity: 數量,
+"quantity": "數量",
 
-inventory: 庫存,
+"inventory": "庫存",
 
-separately: 分別,
+"separately": "分別",
 
-Configuration: 組態,
+"Configuration": "組態",
 
-relate: 涉及,
+"relate": "涉及",
 
-authority: 權威,
+"authority": "權威",
 
-classification: 分類,
+"classification": "分類",
 
-Trial: 考驗,
+"Trial": "考驗",
 
-Unlimited: 無限的,
+"Unlimited": "無限的",
 
-External: 外部,
+"External": "外部",
 
-category: 類別,
+"category": "類別",
 
-enum: 列舉,
+"enum": "列舉",
 
-Software Requirements Specification: 軟體需求說明,
+"Software Requirements Specification": "軟體需求說明",
 
-Spec: 規格,
+"Spec": "規格",
 
-process: 處理,
+"process": "處理",
 
-functor: 函子,
+"functor": "函子",
 
-generator: 發電機,
+"generator": "發電機",
 
-fortune: 幸運,
+"fortune": "幸運",
 
-empty: 空的,
+"empty": "空的",
 
-blank: 空白,
+"blank": "空白",
 
-Syntax: 語法,
+"Syntax": "語法",
 
-Statement: 聲明,
+"Statement": "聲明",
 
-Literal: 文字,
+"Literal": "文字",
 
-Interpreter: 翻譯員,
+"Interpreter": "翻譯員",
 
-Compiler: 編輯員,
+"Compiler": "編輯員",
 
-sufficient: 足夠的,
+"sufficient": "足夠的",
 
-independent: 獨立,
+"independent": "獨立",
 
-assignment: 分配,
+"assignment": "分配",
 
-compound: 複合,
+"compound": "複合",
 
-increment: 遞增,
+"increment": "遞增",
 
-decrement: 遞減,
+"decrement": "遞減",
 
-access: 訪問,
+"access": "訪問",
 
-bracket: 托架,
+"bracket": "托架",
 
-notation: 符號,
+"notation": "符號",
 
 "equality": "平等",
 
@@ -283,6 +283,10 @@ notation: 符號,
 
 "wise":"明智",
 
-"":"",
+"Region":"地區",
+
+"Implement":"實作",
+
+"Decorator":"裝飾器"
 
 }
