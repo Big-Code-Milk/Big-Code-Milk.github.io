@@ -34,13 +34,11 @@ video icon
 (3:55)
 開始
 
-<<<<<<< HEAD
-## HTML、CSS 除錯教學 12312
-=======
 mark 11111111
 
+## HTML、CSS 除錯教學 12312
+
 ## HTML、CSS 除錯教學
->>>>>>> df8de7d9a356c8e01913e70bea624dd8fff98e03
 
 video icon
 如何搜尋想要 debug 的 HTML、CSS 位置
