@@ -34,11 +34,7 @@ video icon
 (3:55)
 開始
 
-asdapda ####
-
-asadsadasdsasssaaaaa
-
-## HTML、CSS 除錯教學122112
+## HTML、CSS 除錯教學
 
 video icon
 如何搜尋想要 debug 的 HTML、CSS 位置
