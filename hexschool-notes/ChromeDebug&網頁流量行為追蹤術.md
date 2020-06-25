@@ -34,10 +34,6 @@ video icon
 (3:55)
 開始
 
-mark 11111111
-
-## HTML、CSS 除錯教學 12312
-
 ## HTML、CSS 除錯教學
 
 video icon
