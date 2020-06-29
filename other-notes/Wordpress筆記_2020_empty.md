@@ -23,3 +23,15 @@
 <https://medium.com/@eddiechan/%E5%AF%AB-blog-%E5%93%AA%E5%80%8B%E9%81%B8%E6%93%87%E6%AF%94%E8%BC%83%E5%A5%BD-%E6%B7%BA%E8%AB%87-django-wordpress-%E5%8F%8A-medium-fd5a43c4e10>
 
 <https://hahow.in/courses/5a2a6b3fa6501f001e2e9e86/assignments>
+
+---
+
+## the big boy can code
+
+<https://www.notion.so/Big-Boy-Wordpress-caa7385c5bb04dcbbc87b88ad2f73a30>
+
+<https://docs.google.com/forms/d/e/1FAIpQLSdjn45uXD1cnDMbvBlsdNPG4d1PyPTPr-dipMe7udmjMe2LfQ/viewform>
+
+<https://docs.google.com/presentation/d/1a4SJRgdO0AXMV43cPL5S59-dgUbQuruDTWi9y6h-zXY/edit#slide=id.g8aa6b661d0_0_13>
+
+<https://hiskio-bbcc-wp.netlify.app/>
