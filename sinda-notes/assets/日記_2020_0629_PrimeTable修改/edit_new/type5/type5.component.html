@@ -35,19 +35,19 @@
                     <th></th>
                     <th>
                         <input pInputText type="text"
-                            (input)="table.filter($event.target.value, 'softwarename', 'contains')">
+                            (input)="table.filter($event.target.value, 'SwName', 'contains')">
                     </th>
                     <th>
                         <input pInputText type="text"
-                            (input)="table.filter($event.target.value, 'department', 'contains')">
+                            (input)="table.filter($event.target.value, 'ReservedDepartment', 'contains')">
                     </th>
                     <th>
                         <input pInputText type="text"
-                            (input)="table.filter($event.target.value, 'Qty', 'contains')">
+                            (input)="table.filter($event.target.value, 'ReservedQuantity', 'contains')">
                     </th>
                     <th>
                         <input pInputText type="text"
-                            (input)="table.filter($event.target.value, 'bookkeeper', 'contains')">
+                            (input)="table.filter($event.target.value, 'AuthBookkeeper', 'contains')">
                     </th>
                 </tr>
             </ng-template>
