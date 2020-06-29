@@ -1,198 +1,3 @@
-# 0830
-
-還是不習慣上班被綁住的感覺，端午連假這幾天感覺也沒有放鬆到，最後兩天陪弟弟寫完了他的 OnePage 專案，
-
-<L1uXO330B7.github.io> 玩了小函式庫，但實際上感覺對於技術來說沒啥進度，
-
-最後利用幾小時了解了一下 Prime ，看來還是先不要想太多，目前目標是將工作穩定，
-
-似乎也不用等穩定只要上手即可，或許明天或下個月或下禮拜就能先買 Thebigbiycancode 的接案課程來看看，一邊慢慢實作...
-
----
-
-首先接續 0624 修改 table
-
-需求 Prime 元件/功能
-
-* table
-* input
-* filter
-* sort
-* resize
-
-需修改的部分
-
-* type1.component.html
-
-參考如下
-
-* information-service-query.component.html
-* service-setting.component.html
-* <https://www.primefaces.org/primeng/showcase/#/table/colresize>
-
-前日看官方文件，內容似乎是給使用 ng 有經驗的人看得，直接就程式碼也沒任何講解...
-
-所以只好先依樣畫葫蘆並自己解註解。
-
----
-
-* `import { forkJoin } from "rxjs";`
-
-<https://segmentfault.com/a/1190000012369871>
-
-用forkJoin合并的流，会在每个被合并的流都发出结束信号时发射一次也是唯一一次数据。
-
-<https://rxjs-cn.github.io/learn-rxjs-operators/operators/combination/forkjoin.html>
-
-<https://ithelp.ithome.com.tw/articles/10227040>
-
-* `import { TranslateService } from "@ngx-translate/core";`
-
-i18n 綁定的原件，原本是在嵌入語法時用 pipe 處理，這裡不知道為啥放到 ts 處理。
-
-* `(method) Table.filter: (value: any, field: any, matchMode: any) => void`
-
-此處的 filter 似乎不是純 js 的 Array.prototype.filter() ...
-
-<https://www.primefaces.org/primeng/showcase/#/table/filter>
-
-官方文檔上就直接使用，也不知道哪來的進階使用方法...
-
-[Google 後似乎是 Prime 自己的方法... 乾 也沒寫怎用](https://www.google.com/search?q=(method)+Table.filter%3A+(value%3A+any%2C+field%3A+any%2C+matchMode%3A+any)+%3D%3E+void&rlz=1C1CHBF_zh-TWTW905TW905&oq=(method)+Table.filter%3A+(value%3A+any%2C+field%3A+any%2C+matchMode%3A+any)+%3D%3E+void&aqs=chrome.0.69i59.665j0j4&sourceid=chrome&ie=UTF-8)
-
-似乎是元件封裝了，網路上看半天也沒啥文件... 媽蛋，為啥還一堆人會用 ??!
-
-看半天終於找到文件了... 還以為沒文件
-
-<https://www.primefaces.org/primeng/showcase/#/table> #Filtering - modes 
-
-大概了解了 filter
-
----
-
-接續 排序 #sorting
-
-接續 調整大小 #Column Resize
-
----
-
-`let-`
-
-<https://ithelp.ithome.com.tw/articles/10205829>
-
-<https://stackoverflow.com/questions/42978082/what-is-let-in-angular-2-templates>
-
-被傳入的參數
-
----
-
-`ng-template` vs `ng-container`
-
-<https://semlinker.com/ng-template-vs-ng-container/>
-
-`<ng-template [ngIf]="show">` 标准语法不再使用 `*` 语法糖语法，这样会导致我们代码的不统一
-
-`<ng-template>` ：使用 * 语法糖的结构指令，最终都会转换为 `<ng-template>` 或 `<template>` 模板指令，模板内的内容如果不进行处理，是不会在页面中显示的。
-
-`<ng-container>`：是一个逻辑容器，可用于对节点进行分组，它将被渲染为 HTML中的 comment 元素，它可用于避免添加额外的元素来使用结构指令。
-
-``` HTML
-<p-table
-#table
-[columns]="cols"
-[value]="items"
-[resizableColumns]="true"
-[style]="{'margin-right':'-50px','width':'100%','text-align': 'center'}"
-[scrollable]="true"
-scrollHeight="300px">
-
-<ng-template
-pTemplate="colgroup"
-let-columns>
-
-<colgroup>
-<col style="width:30px" *ngIf="IsEanble">
-<col style="width:75px">
-<col style="width:75px">
-<col style="width:75px">
-<col style="width:75px">
-</colgroup>
-
-</ng-template>
-
-<ng-template pTemplate="header" let-columns>
-<tr>
-
-<th style="width: 30px;" *ngIf="IsEanble">
-<p-checkbox name="group_all" value="all" (onChange)="All(1)" [(ngModel)]="selectedValues_All">
-</p-checkbox>
-</th>
-
-<ng-container *ngFor="let col of columns; let i = index">
-
-<th
-*ngIf="i >= 0"
-style="width: 100px;"
-[pSortableColumn]="col.field"
-pResizableColumn>
-{{ col.header }}
-<p-sortIcon
-[field]=" col.field">
-</p-sortIcon>
-</th>
-
-</ng-container>
-
-</tr>
-<tr>
-
-<th></th>
-
-<th>
-<input pInputText type="text"
-(input)="table.filter($event.target.value, 'softwarename', 'contains')">
-</th>
-
-<th>
-<input pInputText type="text"
-(input)="table.filter($event.target.value, 'assetnumber', 'contains')">
-</th>
-
-<th>
-<input pInputText type="text"
-(input)="table.filter($event.target.value, 'computername', 'contains')">
-</th>
-
-<th>
-<input pInputText type="text"
-(input)="table.filter($event.target.value, 'custodian', 'contains')">
-</th>
-
-</tr>
-</ng-template>
-
-<ng-template pTemplate="body" let-item>
-<tr class='breakall'>
-
-<td style="text-align: center;" *ngIf="IsEanble">
-<p-checkbox
-name="group_delete"
-value="{{ item.Id }}"
-[(ngModel)]="selectedValues_Delete">
-</p-checkbox>
-</td>
-<td>{{item.SwName}}</td>
-<td>{{item.HsamMainaccessNo}}</td>
-<td>{{item.HsamComputerName}}</td>
-<td>{{item.custodian}}</td>
-
-</tr>
-</ng-template>
-
-</p-table>
-```
-
-```JavaScript
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import AsseetList from 'src/app/models/AsseetList';
 import { GLEmployee } from 'src/app/models/GLEmployee';
@@ -212,6 +17,7 @@ import { TranslateService } from "@ngx-translate/core";
 export class Type1Component implements OnInit {
 
     cols: any[];
+    cols2: any[];
 
     @Input() IsEanble: boolean = true;
     @Input() StrEmpNo: string;
@@ -236,7 +42,8 @@ export class Type1Component implements OnInit {
     constructor(
         private sWChangeFormService: SWChangeFormService,
         public baseHelper: BaseHelper,
-        private translate: TranslateService,
+
+        private translate: TranslateService
         ) { }
 
     ngOnInit() {
@@ -254,7 +61,21 @@ export class Type1Component implements OnInit {
                 element.header = res;
             });
         });
-
+        this.cols2 = [
+            { field: "FormatId" },
+            { field: "softwarename" },
+            { field: "Oriassetnumber" },
+            { field: "assetnumber" },
+            { field: "computername" },
+            { field: "location" }
+        ];
+        this.cols2.forEach(element => {
+            forkJoin([
+                this.translate.get(`Change.${element.field}`)
+            ]).subscribe(res => {
+                element.header = res;
+            });
+        });
 
 
 
@@ -365,14 +186,13 @@ export class Type1Component implements OnInit {
     reomveItems() {
         this.selectedValues_Delete.forEach(element => {
             var tempItem = this.items_Selected.find(x => x.Id == element);
-            if (tempItem != null) {
-                this.items.push(tempItem);
+            this.items.push(tempItem);
 
-                const index = this.items_Selected.findIndex(x => x.Id == element);
-                if (index > -1) {
-                    this.items_Selected.splice(index, 1);
-                }
+            const index = this.items_Selected.findIndex(x => x.Id == element);
+            if (index > -1) {
+                this.items_Selected.splice(index, 1);
             }
+
         });
         this.selectedValues_Delete = [];
         this.selectedValues_RemoveAll = '';
@@ -431,40 +251,3 @@ export class Type1Component implements OnInit {
     }
 
 }
-```
-
----
-
-## 10:15
-
-主管關心進度並告訴後續工作與教學 git 儲藏 Storage 應用
-
-可以將變更暫存至 storage 在開新分支做轉移
-
-![alt](/sinda-notes/img/Storage.png)
-
-SAM / PAM 後端要開起來 前端 Portal 才會有資料
-
-後續 PAM 規格 ， 有 Bug 好改直接改
-
-* 題外 複製時複製版權 <https://blog.csdn.net/yanglr2010/article/details/88197591>
-
-## 04:18
-
-目前複製了八頁重複動作... 
-
-PrimeTable ...
-
-SoftwareChange 1-8 table add filter and sort and resize ( 1,2,3,6,7,8 無資料 / 4 左右異動無反應 / 5 正常 )
-
----
-
-未改
-
-資訊服務申請/異動 =>
-
-帳號權限異動 / ChangeComputerAccountComponent / 5 頁 ?
-
-異動-Citrix 夜間不管制 / AccountCitrixComponent
-
-停用 / AccountDisabledComponent
