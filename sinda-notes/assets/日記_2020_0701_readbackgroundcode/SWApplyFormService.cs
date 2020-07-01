@@ -104,17 +104,21 @@ namespace Mxic.ITC.Portal.Service
             return result;
         }
 
-        [ExposeWebAPI(true)]
+        [ExposeWebAPI(true)] // 允許 API 被訪問 <https://softwareengineering.stackexchange.com/questions/203844/what-does-it-mean-to-expose-something>
         public PageQueryResult<string> Create(SignData<SwapplyForm> Data)
+        // 反傳值為 PageQueryResult 物件 string 型別
+        // SignData 型別 SwapplyForm 參考型別 <https://stackoverflow.com/questions/4737970/what-does-where-t-class-new-mean>
         {
-            BPMService = new BpmService(MembershipStore);
-            Data.Sign.BpmFormType = BpmFormType.SAMSwapplyForm;
-            using (var repository = new SAMRepository())
+            BPMService = new BpmService(MembershipStore); // Business Process Management ??? 似乎是注入的它處資料 (業務流程管理?) 不太確定需不需要細看
+            Data.Sign.BpmFormType = BpmFormType.SAMSwapplyForm; // 塞入 Enum 值為 1 目前不知道幹嘛用的
+            using (var repository = new SAMRepository()) // SAMRepository : RepositoryBase 繼承資料庫型別的類別，目前看都是一些取資料的方法。
             {
                 List<SoftwareList> softList = repository.GetSoftwareList(new PageQuery<int> { PageSize = 9999, PageNum = 1 }).Entries;
-                var checkSoftwareList = (from t1 in softList
+                // List 物件 SoftwareList 型別
+                var checkSoftwareList = (from t1 in softList 
                                          join t2 in Data.FormData.SoftwareForm on t1.Id equals t2.SoftwareId
-                                         select new SoftwareList
+                                         // equals 等於 <https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/equals>
+                                         select new SoftwareList // System.Linq 方法
                                          {
                                              Type = t1.Type,
                                              PaymentSAMNo = t1.PaymentSAMNo,
@@ -122,7 +126,7 @@ namespace Mxic.ITC.Portal.Service
                                              FreeSAMNo = t1.FreeSAMNo,
                                              FreeSAMNoBack = t1.FreeSAMNoBack,
                                          }
-                                         ).ToList();
+                                         ).ToList(); // 將查詢轉為列表
                 var checkType = "";
                 var samNo = "";
                 var samNoBack = "";
