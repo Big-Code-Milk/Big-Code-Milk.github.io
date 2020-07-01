@@ -35,3 +35,5 @@
 <https://docs.google.com/presentation/d/1a4SJRgdO0AXMV43cPL5S59-dgUbQuruDTWi9y6h-zXY/edit#slide=id.g8aa6b661d0_0_13>
 
 <https://hiskio-bbcc-wp.netlify.app/>
+
+<https://ithelp.ithome.com.tw/articles/10198775>

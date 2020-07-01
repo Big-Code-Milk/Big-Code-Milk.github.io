@@ -1,5 +1,10 @@
 {
     "firstTask": {
+        "fileNamec": "Mxic.ITC.Portal.Service",
+        "className": "SWApplyFormService",
+        "nameSpaceName": "Mxic.ITC.Portal.Service",
+        "methodName": "Create",
+        "dllPath": "bin/Mxic.ITC.Portal.Service.dll",
         "<Assembly> ass": "{Mxic.ITC.Portal.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null}",
         "<Type> magicType": "{Name = 'SWApplyFormService' FullName = 'Mxic.ITC.Portal.Service.SWApplyFormService'}",
         "<ParameterInfo> ParamInfo": "{Mxic.ITC.Portal.Model.Sign.SignData`1[Mxic.ITC.Portal.Model.Sign.SwapplyForm] Data}",
@@ -16,6 +21,11 @@
     },
     "secondTask": {
         "callback???": "public override Task<HttpResponseMessage> ExecuteAsync(HttpControllerContext controllerContext, CancellationToken cancellationToken)",
+        "fileNamec": "Mxic.ITC.Portal.Service",
+        "className": "MemberShipService",
+        "nameSpaceName": "Mxic.ITC.Portal.Service",
+        "methodName": "GetAllMeunItems",
+        "dllPath": "bin/Mxic.ITC.Portal.Service.dll",
         "ServerComponentBase": "BaseService.cs",
         "FakeHrMasterService()": "config.CreateMapper()",
         "": "",
@@ -26,12 +36,19 @@
         "Task.Run(()": "=>{var batchService = new BatchService();batchService.FlowNotification();});"
     },
     "backtoController": {
-        "public override Task<HttpResponseMessage> ExecuteAsync(HttpControllerContext controllerContext, CancellationToken cancellationToken)": "controllerContext:{System.Web.Http.Controllers.HttpControllerContext};cancellationToken:IsCancellationRequested = false;","fileNamec":"Mxic.ITC.Portal.Service","lassName":"SWApplyFormService","nameSpaceName":"Mxic.ITC.Portal.Service","methodName":"GetServiceList","dllPath":"bin/Mxic.ITC.Portal.Service.dll","ParamInfo":"null","<MethodInfo> magicMethod": "{System.Collections.Generic.List`1[Mxic.Framework.Membership.MenuItem] GetAllMeunItems()}"
+        "public override Task<HttpResponseMessage> ExecuteAsync(HttpControllerContext controllerContext, CancellationToken cancellationToken)": "controllerContext:{System.Web.Http.Controllers.HttpControllerContext};cancellationToken:IsCancellationRequested = false;",
+        "fileNamec": "Mxic.ITC.Portal.Service",
+        "className": "SWApplyFormService",
+        "nameSpaceName": "Mxic.ITC.Portal.Service",
+        "methodName": "GetServiceList",
+        "dllPath": "bin/Mxic.ITC.Portal.Service.dll",
+        "ParamInfo": "null",
+        "<MethodInfo> magicMethod": "{System.Collections.Generic.List`1[Mxic.Framework.Membership.MenuItem] GetAllMeunItems()}"
     },
-    "callbackTaskAgain...":{
-        "SWApplyFormService : BaseService":"public PageQueryResult<ServiceQuery> GetServiceList(PageQuery<int> query)",
-        "return":"objSF.GetServiceListD(query, 0, UserInfo.Account, IsPortalAdm(UserInfo.Account), HrMasterService);",
-        "SWApplyFormRepository : RepositoryBase, ISignRepository<SwapplyForm>":"do some Repository things",
-        "backtoController":"return base.ExecuteAsync(controllerContext, cancellationToken);"
+    "callbackTaskAgain...": {
+        "SWApplyFormService : BaseService": "public PageQueryResult<ServiceQuery> GetServiceList(PageQuery<int> query)",
+        "return": "objSF.GetServiceListD(query, 0, UserInfo.Account, IsPortalAdm(UserInfo.Account), HrMasterService);",
+        "SWApplyFormRepository : RepositoryBase, ISignRepository<SwapplyForm>": "do some Repository things",
+        "backtoController": "return base.ExecuteAsync(controllerContext, cancellationToken);"
     }
 }
