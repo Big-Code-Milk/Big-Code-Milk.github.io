@@ -109,7 +109,7 @@ namespace Mxic.ITC.Portal.Service
         // 反傳值為 PageQueryResult 物件 string 型別
         // SignData 型別 SwapplyForm 參考型別 <https://stackoverflow.com/questions/4737970/what-does-where-t-class-new-mean>
         {
-            BPMService = new BpmService(MembershipStore); // Business Process Management ? 審核檢閱關卡配置類別 ???...
+            BPMService = new BpmService(MembershipStore); // Business Process Management ? 審核檢閱關卡配置 Service ???...
             Data.Sign.BpmFormType = BpmFormType.SAMSwapplyForm; // SAM SW 申請表格
             using (var repository = new SAMRepository()) // SAMRepository : RepositoryBase 繼承資料庫型別的類別，目前看都是一些取資料的方法。
             {
