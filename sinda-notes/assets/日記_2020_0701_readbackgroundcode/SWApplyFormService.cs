@@ -109,8 +109,8 @@ namespace Mxic.ITC.Portal.Service
         // 反傳值為 PageQueryResult 物件 string 型別
         // SignData 型別 SwapplyForm 參考型別 <https://stackoverflow.com/questions/4737970/what-does-where-t-class-new-mean>
         {
-            BPMService = new BpmService(MembershipStore); // Business Process Management ??? 似乎是注入的它處資料 (業務流程管理?) 不太確定需不需要細看
-            Data.Sign.BpmFormType = BpmFormType.SAMSwapplyForm; // 塞入 Enum 值為 1 目前不知道幹嘛用的
+            BPMService = new BpmService(MembershipStore); // Business Process Management ? 審核檢閱關卡配置 Service
+            Data.Sign.BpmFormType = BpmFormType.SAMSwapplyForm; // SAM SW 申請表格
             using (var repository = new SAMRepository()) // SAMRepository : RepositoryBase 繼承資料庫型別的類別，目前看都是一些取資料的方法。
             {
                 List<SoftwareList> softList = repository.GetSoftwareList(new PageQuery<int> { PageSize = 9999, PageNum = 1 }).Entries;
@@ -137,12 +137,11 @@ namespace Mxic.ITC.Portal.Service
                     return new PageQueryResult<string>
                     {
                         Message = "[tw]請確認試用起迄日期[/tw][en]Please confirm the trial date[/en]",
-                        StatusCode = (long)Enum.EnumStatusCode.Fail
+                        StatusCode = (long)Enum.EnumStatusCode.Fail // 錯誤狀態碼
                     };
-                }
+                }// 目前不確定為何能轉換中英，斷點查看是在 new PageQueryResult 類別環節轉換...
                 foreach (var item in checkSoftwareList)
                 {
-
                     
                         checkType = item.Type;
                         samNo = item.Type == "付費" ? item.PaymentSAMNo : item.FreeSAMNo;
@@ -150,15 +149,15 @@ namespace Mxic.ITC.Portal.Service
                         signer.Add(samNo);
                         signerBack.Add(samNoBack);
                     
-                }
+                }// 利用列表特性 foreach 做某些判斷
                 signer = signer.Distinct().ToList();
-                signerBack = signerBack.Distinct().ToList();
+                signerBack = signerBack.Distinct().ToList();// Distinct() linq 方法，剔除重複資料
                 if (signer.Count == 0 || signer.Count >1)
                 {
                     return new PageQueryResult<string>
                     {
                         Message = "",
-                        StatusCode = (long)Enum.EnumStatusCode.FormSamCheck
+                        StatusCode = (long)Enum.EnumStatusCode.FormSamCheck // 表格檢查
                     };
                 }
                 if (signerBack.Count > 1)
@@ -166,7 +165,7 @@ namespace Mxic.ITC.Portal.Service
                     return new PageQueryResult<string>
                     {
                         Message = "",
-                        StatusCode = (long)Enum.EnumStatusCode.FormSamCheck
+                        StatusCode = (long)Enum.EnumStatusCode.FormSamCheck // 表格檢查
                     };
                 }
 
@@ -175,11 +174,18 @@ namespace Mxic.ITC.Portal.Service
                     CaseOfficerCosign = signer,
                     CaseOfficerCosignBack = signerBack,
                 });
+
+                // 以上操作 SignRepository<SwapplyForm> Repository; 資料庫類別物件的方法 Create
+                // 詳細內容補於 Repository.UnitOfWork.SignRepository.cs Creat 實作
+
                 Task.Run(() =>
                 {
                     var batchService = new BatchService();
-                    batchService.FlowNotification();
+                    batchService.FlowNotification(); // 流程通知
                 });
+
+                // 調用非同步方法 Task 執行批次 batchService
+
                 return result;
             }
 
