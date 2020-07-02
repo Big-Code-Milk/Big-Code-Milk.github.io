@@ -109,13 +109,13 @@ namespace Mxic.ITC.Portal.Service
         // 反傳值為 PageQueryResult 物件 string 型別
         // SignData 型別 SwapplyForm 參考型別 <https://stackoverflow.com/questions/4737970/what-does-where-t-class-new-mean>
         {
-            BPMService = new BpmService(MembershipStore); // Business Process Management ? 審核檢閱關卡配置 Service
+            BPMService = new BpmService(MembershipStore); // Business Process Management ? 審核檢閱關卡配置類別 ???...
             Data.Sign.BpmFormType = BpmFormType.SAMSwapplyForm; // SAM SW 申請表格
             using (var repository = new SAMRepository()) // SAMRepository : RepositoryBase 繼承資料庫型別的類別，目前看都是一些取資料的方法。
             {
                 List<SoftwareList> softList = repository.GetSoftwareList(new PageQuery<int> { PageSize = 9999, PageNum = 1 }).Entries;
                 // List 物件 SoftwareList 型別
-                var checkSoftwareList = (from t1 in softList 
+                var checkSoftwareList = (from t1 in softList
                                          join t2 in Data.FormData.SoftwareForm on t1.Id equals t2.SoftwareId
                                          // equals 等於 <https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/equals>
                                          select new SoftwareList // System.Linq 方法
@@ -142,13 +142,13 @@ namespace Mxic.ITC.Portal.Service
                 }// 目前不確定為何能轉換中英，斷點查看是在 new PageQueryResult 類別環節轉換...
                 foreach (var item in checkSoftwareList)
                 {
-                    
+
                         checkType = item.Type;
                         samNo = item.Type == "付費" ? item.PaymentSAMNo : item.FreeSAMNo;
                         samNoBack = item.Type == "付費" ? item.PaymentSAMNoBack : item.FreeSAMNoBack;
                         signer.Add(samNo);
                         signerBack.Add(samNoBack);
-                    
+
                 }// 利用列表特性 foreach 做某些判斷
                 signer = signer.Distinct().ToList();
                 signerBack = signerBack.Distinct().ToList();// Distinct() linq 方法，剔除重複資料

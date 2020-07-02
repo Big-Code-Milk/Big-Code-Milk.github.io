@@ -165,7 +165,7 @@ namespace Mxic.ITC.Portal.Repository.UnitOfWork
         }
         public PageQueryResult<string> Create(SignData<T> Data, string filler, IHrMasterService hrMaster, IBPMService bpm, [Optional] Signer signer)
         // 反傳 PageQueryResult 類別 string 型別
-        // 需傳入 
+        // 需傳入
         // Sign 簽核資料
         // filler > HrMasterService 撈員工資料的
         // hrMaster > UserInfo.Account
@@ -174,7 +174,7 @@ namespace Mxic.ITC.Portal.Repository.UnitOfWork
         {
             var response = new PageQueryResult<string>();
             response.StatusCode = (int)EnumStatusCode.Fail;
-            using (var tran = Entities.Database.BeginTransaction()) 
+            using (var tran = Entities.Database.BeginTransaction())
             // RepositoryBase 本身就提供操作 Entities 類別 = new Entities(ConnectionString.DefaultConnectionName);
             // <https://dotblogs.com.tw/mickey/2017/01/07/225349>
             // SqlConnection：資料庫的連線字串，告訴程式你要針對哪一個資料庫做動作
@@ -188,7 +188,7 @@ namespace Mxic.ITC.Portal.Repository.UnitOfWork
                 try // 資料操作都比較容易出後續問題所以最好包 try
                 {
 
-                    #region 表單基本資訊 
+                    #region 表單基本資訊
                     // C# 前置處理器指示詞 以下到 endregion 都為表單基本資訊
                     var BPM_DIAGRAM_ID = "";
                     var BPM_IDENTIFY = "";
@@ -257,6 +257,8 @@ namespace Mxic.ITC.Portal.Repository.UnitOfWork
                         SIGN.SERVICE_CODE = Data.Sign.ServiceCode;
                     }
                     #endregion
+
+                    // 以上就是一堆商業邏輯的資料操作
 
                     List<SIGN_STAGE> stages = new List<SIGN_STAGE>();
                     SIGN.FORM_TYPE = Data.Sign.BpmFormType.ToString();
@@ -327,7 +329,7 @@ namespace Mxic.ITC.Portal.Repository.UnitOfWork
                         //建立關卡
                         foreach (var Flow in FlowSetting)
                         {
-                            //判斷關卡是否建立過                            
+                            //判斷關卡是否建立過
                             if (isSignState)
                                 continue;
 
@@ -588,7 +590,7 @@ namespace Mxic.ITC.Portal.Repository.UnitOfWork
                                 case (int)EnumFlowRoles.GeneralManager:
                                     //總部總經理
                                     var GM = Entities.PORTAL_SYSTEM_VIP_APPLICANT.Where(x => x.STATUS == 1 && x.ROLE_TYPE == (int)EnumVipMaintainerRoleType.Gmanger).ToList();
-                                    //ROLE_TYPE == 1:總經理 2:董事長 
+                                    //ROLE_TYPE == 1:總經理 2:董事長
                                     foreach (var sign in GM.Select(x => x.EMPNO).ToList())
                                     {
                                         GLEmployee signEmp = hrMaster.GetEmployee(sign);
@@ -1125,7 +1127,7 @@ namespace Mxic.ITC.Portal.Repository.UnitOfWork
                         //    SIGN.NOW_STAGE_ORDER = nextOrder[0].STAGE_ORDER;
 
                         //}
-                        //else 
+                        //else
                         if (nextOrder.Count == 0)//沒有下一關了 應走核定
                         {
                             response = Approved(Data, hrMaster);
@@ -1211,7 +1213,7 @@ namespace Mxic.ITC.Portal.Repository.UnitOfWork
                 Sign.FINAL_SIGN_DATE = DateTime.Now;
 
 
-                Repository.SetEntities(Entities);                
+                Repository.SetEntities(Entities);
                 Repository.Approved(Data.FormData, _mapper.Map<SIGN_FORM_MAIN, SignFormMain>(Sign));
                 Entities.SaveChanges();
 
@@ -1363,7 +1365,7 @@ namespace Mxic.ITC.Portal.Repository.UnitOfWork
                     Entities.SIGN_STAGE.Add(stage);
 
                     SIGN_LOG log = new SIGN_LOG();
-                    
+
                     log.SIGNATORY_EMP_NO = empno;
                     log.SIGNATORY_DEPT_NO = emp.deptNo;
                     log.SIGNATORY_NAME = emp.empName;
@@ -1825,7 +1827,7 @@ namespace Mxic.ITC.Portal.Repository.UnitOfWork
                 {
                     case "Reject":
                         return -1;
-                    default://送件 Approve 
+                    default://送件 Approve
                         int temp = Stages.FindIndex(x => x.SIGN_STAGE_NUMBER == Log.SIGN_STAGE_NUMBER);
                         if (temp > -1)
                             Stages.RemoveAt(temp);
