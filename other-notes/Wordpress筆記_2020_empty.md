@@ -1,5 +1,7 @@
 # Wordpress筆記_2020_empty
 
+![alt](../other-notes/img/amp-course-content-e1573797614565.png)
+
 <https://www.youtube.com/watch?v=_ibSYYXyfyY>
 
 <https://www.design-hu.com/web-news/wordpress-comparison.html>
