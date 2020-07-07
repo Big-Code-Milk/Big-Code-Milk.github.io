@@ -10,7 +10,7 @@
 </head>
 <style>
     body {
-        font-family: sans-serif;
+        font-family: SF Pro Text, 蘋方-繁, sans-serif;
     }
     /* 聯絡資料外的容器 */
     
@@ -23,8 +23,9 @@
     h1 {
         line-height: 95px;
         font-size: 80px;
-        padding: 24px;
+        padding: 24px 0;
         border-bottom: 2px solid #000000;
+        margin-top: 16px;
         margin-bottom: 48px;
     }
     /* 大頭貼 */
@@ -35,6 +36,7 @@
     /* 個人資料，學歷，工作經驗與底線 */
     
     h2 {
+        display: flex;
         font-family: 'Noto Sans TC', sans-serif;
         font-size: 32px;
         font-weight: 500;
@@ -42,9 +44,20 @@
         padding-bottom: 8px;
         border-bottom: 1px solid #000000;
         margin-bottom: 16px;
+        text-align: center;
+    }
+    
+    .smbox span {
+        color: #A00404;
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 16px;
     }
     
     span {
+        display: inline-block;
         color: #A00404;
         font-size: 24px;
         line-height: 29px;
@@ -119,7 +132,7 @@
     
     h4 {
         font-family: 'Noto Sans TC', sans-serif;
-        font-weight: 400;
+        font-weight: 700;
         font-size: 24px;
         line-height: 36px;
     }
@@ -144,6 +157,10 @@
         background-color: #415165;
         padding-top: 24px;
         margin-top: 76px;
+    }
+    
+    .footer h3 {
+        width: 1200px;
     }
     
     .footer ul {
@@ -180,7 +197,11 @@
         <!-- 大頭貼 -->
         <img class="headshot" src="https://hexschool.github.io/webLayoutTraining1st/week1/photo.png" alt="個人照片">
         <!-- 個人資料與底線 -->
-        <h2>個人資料 <span>PROFILE</span></h2>
+        <div class="smbox">
+            <h2>個人資料
+                <span>PROFILE</span>
+            </h2>
+        </div>
         <!-- 兩個無序列表包住自介 -->
         <ul>
             <li>
@@ -192,7 +213,11 @@
             </li>
         </ul>
         <!-- 學歷與底線 -->
-        <h2>學歷 <span>EDUCATION</span></h2>
+        <div class="smbox">
+            <h2>學歷
+                <span>EDUCATION</span>
+            </h2>
+        </div>
         <!-- 兩個無序列表包住學歷資料 -->
         <ul>
             <li>
@@ -216,7 +241,11 @@
             </ul>
         </div>
         <!-- 工作經驗欄位 -->
-        <h2>工作經驗 <span>WORK EXPERIENCE</span></h2>
+        <div class="smbox">
+            <h2>工作經驗
+                <span>WORK EXPERIENCE</span>
+            </h2>
+        </div>
         <ul class="hexschool">
             <li>
                 <h4>六角學院 視覺設計實習生 | 2019/07－2020/06</h4>
@@ -245,7 +274,7 @@ Adobe XD，設計給學員使用的名片設計教材，並參與六角週年活
     </div>
     <!-- 聯絡資料 -->
     <div class="footer">
-        <h3>聯絡方式<span>CONTACT METHOD</span></h3>
+        <h3>聯絡方式&nbsp;&nbsp;<span>CONTACT METHOD</span></h3>
         <ul>
             <li>Mail：xxxd@hexschool.com</li>
             <li>Phone：0910123456</li>
