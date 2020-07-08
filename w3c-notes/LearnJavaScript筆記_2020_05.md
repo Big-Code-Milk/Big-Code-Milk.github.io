@@ -58,7 +58,7 @@
 innerHTML //使用寫入HTML元素
 document.write() //使用寫入HTML輸出
 window.alert() //使用寫入警報框
-console.log() //使用寫入瀏覽器控制台
+console.log() //使用寫入瀏覽器控制台,打開開發著工具時可以抓到裡面的值(value)
 ```
 
 2. 更改 HTML 元素的 innerHTML 屬性是在 HTML 中顯示數據的常用方法。
