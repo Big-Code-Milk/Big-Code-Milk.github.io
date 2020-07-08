@@ -12,11 +12,11 @@
 3. JavaScript 接受雙引號和單引號
 4. 直接對 document 屬性操作：
 
-* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html_quotes>
-* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb>
-* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style>
-* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_hide>
-* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_show>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html_quotes>改動html文本
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb> 改動img的來源位置
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style>改動css文字大小
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_hide>改動css display屬性
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_show>改動css display屬性
 
 5. JavaScript 已 [預設](#) 在計算機，平板電腦和智能手機上的 [瀏覽器](#) 中運行。免費供所有人使用。
 6. 舊的 JavaScript 示例可能使用 [type 屬性](#)：`<script type =" text / javascript">`。
