@@ -12,11 +12,11 @@
 3. JavaScript 接受雙引號和單引號
 4. 直接對 document 屬性操作：
 
-* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html_quotes>
-* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb>
-* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style>
-* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_hide>
-* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_show>
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html_quotes>改動html文本
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb> 改動img的來源位置
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style>改動css文字大小
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_hide>改動css display屬性
+* <https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_show>改動css display屬性
 
 5. JavaScript 已 [預設](#) 在計算機，平板電腦和智能手機上的 [瀏覽器](#) 中運行。免費供所有人使用。
 6. 舊的 JavaScript 示例可能使用 [type 屬性](#)：`<script type =" text / javascript">`。
@@ -31,13 +31,14 @@
 11. 要使用外部腳本，可以將腳本文件的名稱放在標籤的src（源）屬性中`<script src="myScript.js"></script>`。
 12. 外部腳本不能包含`<script>`標籤。
 13. 要將多個腳本文件添加到一頁中，請使用多個腳本標籤。
-
+14. 外部腳本的引入放式分別有:
 ```JavaScript
-<script src="myScript1.js"></script>
-<script src="myScript2.js"></script>
-<script src="https://www.w3schools.com/js/myScript1.js"></script>
-<script src="/js/myScript1.js"></script>
+<script src="myScript1.js"></script> 當文本與腳本在本地端的同資料夾時的引入方式
+<script src="myScript2.js"></script> 當文本與腳本在本地端的同資料夾時的引入方式
+<script src="https://www.w3schools.com/js/myScript1.js"></script> 當腳本在網址上時用超連結引入方式
+<script src="/js/myScript1.js"></script>當文本與腳本在本地端的特定資料夾時的引入方式
 ```
+15. 引入外部腳本的優勢:分開html文本和程式碼, 讓html文本和程式碼更好閱讀與維護, 網頁載入更快當腳本檔案被緩存。
 
 </details> <!-- JS Introduction 結束 -->
 
@@ -69,7 +70,7 @@ console.log() //使用寫入瀏覽器控制台
 
 * <https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_write_over>
 
-5. 您可以跳過window關鍵字。在 JavaScript 中，窗口對像是全局範圍對象，這意味著[默認情況下變量，屬性和方法屬於窗口對象](#)。這也意味著指定 window 關鍵字是可選的。
+5. 您可以忽略加上視窗(window)關鍵字。在 JavaScript 中，視窗(window)物件是全域物件，這意味著[變量，屬性和方法都默屬於視窗物件](#)。這也意味著沒有一定 要加上(window)關鍵字在指令中。
 
 * <https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_alert>
 
