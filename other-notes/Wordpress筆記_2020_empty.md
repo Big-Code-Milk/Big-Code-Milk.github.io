@@ -39,3 +39,49 @@
 <https://hiskio-bbcc-wp.netlify.app/>
 
 <https://ithelp.ithome.com.tw/articles/10198775>
+
+---
+
+## Wordpress
+
+<https://www.facebook.com/hilivecode/videos/vb.141247613278573/1205892039752550/?type=2&theater>
+
+### PHP 痛點 版本語法不太相同
+
+PHP 4 即可 不需物件導向、只要學好 WS API
+
+### Wordpress 主題開發重點
+
+Standard Loop、 Custom Loop、 Custom Field
+
+### WS Development KeyWords
+
+Modern F2E(Template Language)
+
+example. laravel blade, react jsx ...
+
+Server Setting - VPS、Share hosting
+
+Domain Setting - GoDaddy...
+
+WS Plugins ( 熱門的 )
+
+SEO
+
+Security
+
+以上都不用深入，要用知道操作過即可
+
+### 會程式?
+
+PHP 直接寫、
+輕量(2-3mb)、
+好抓 BUG、
+Plugins 容易互相打架、
+自己開發的比較知道問題、
+
+Unicgroup Better Living
+
+example
+
+<https://www.betterliving.com.tw/>
