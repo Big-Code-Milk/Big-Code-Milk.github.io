@@ -42,6 +42,16 @@
 
 ---
 
+## big boy can code
+
+2018 3 開始學程式 前端
+
+2018 6 找到工作
+
+2018 9 朋友外包
+
+2018- end 接了兩個 ws 網站
+
 ## Wordpress
 
 <https://www.facebook.com/hilivecode/videos/vb.141247613278573/1205892039752550/?type=2&theater>
@@ -60,7 +70,7 @@ Modern F2E(Template Language)
 
 example. laravel blade, react jsx ...
 
-Server Setting - VPS、Share hosting
+Server Setting - VPS、Share hosting / SiteGround... ( 一年收 3000  )
 
 Domain Setting - GoDaddy...
 
@@ -72,7 +82,7 @@ Security
 
 以上都不用深入，要用知道操作過即可
 
-### 會程式?
+### 會程式 ?
 
 PHP 直接寫、
 輕量(2-3mb)、
@@ -85,3 +95,71 @@ Unicgroup Better Living
 example
 
 <https://www.betterliving.com.tw/>
+
+<https://www.bigboycancode.com/>
+
+<https://www.unicgroup.com/>
+
+### 不會程式 ?
+
+拖拉式開發 ex wix
+
+超級肥 30mb
+
+通常 update 就會壞
+
+不好 debug
+
+只能做簡單的網頁
+
+page builder / Elementor 、 Divi Theme ( 可以去模仿看看他們怎麼寫的 )
+
+進階 - plugin 開發要懂資料庫 php 很熟
+
+### WS 好處 ?
+
+門檻低 1-2 個月熟
+
+接案 開發快/簡單 套件可以解決大部分問題 ( 防毒 表單套件 ... )
+
+結案可收維護費
+
+額外服務 - SEO 搬家 掃毒
+
+<https://www.bigboycancode.com/other-services/>
+
+避免從 0 開始 會賠工錢的
+
+### 哪間大公司再用 WS ?
+
+tenten
+
+wpw.design
+
+eg-creative
+
+### org com ?
+
+com 產品 給不會寫程式 不會架站 的人使用的 ( 後臺使用 wordpress )
+
+原本是某公司內的工具，後來 open source org 版本
+
+### 雙官方文件? 撇步
+
+developer 工具書
+
+Codex 專門給開發人員測試『新功能』用的發布頁面
+
+### 套件分享
+
+1. 搬家 all in one migration / 排程備份 updraft plus
+2. SEO / Yoast SEO / Rank Math - 描述標題參數快速產生出來、優化 ( 無痕才能測試 )
+3. Smart Slider ( 圖片優化 lazy loading ) 收費
+4. Monster Insight GA 設定 / Facebook Chat
+5. Malcare 掃毒 免費 可疑檔案是否是病毒就是要看經驗
+6. WPML 多國語言 ( 多收 2 萬 )
+7. ACF 頁面增加自訂欄位，自己上傳圖 ? Repeater Field
+
+### end
+
+課程問卷 / 優化課程
