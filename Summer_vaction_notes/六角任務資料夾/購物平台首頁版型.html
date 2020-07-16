@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sweetaste_hexo</title>
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
@@ -94,7 +94,85 @@
             width: 620px;
         }
         
-        .card {}
+        .card {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .card h4 {
+            color: #3F5D45;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-left: 33px;
+            padding-right: 20px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        
+        .card span {
+            font-weight: 900;
+        }
+        
+        .putincart {
+            background-color: #EAF0ED;
+            border: none;
+            color: #3F5D45;
+            font-size: 24px;
+            font-weight: 900;
+            width: 100%;
+            padding: 15.5px;
+            cursor: pointer;
+        }
+        
+        .putincart:hover {
+            color: #EAF0ED;
+            background-color: #3F5D45;
+        }
+        
+        .card p {
+            color: #EAF0ED;
+            writing-mode: vertical-rl;
+            position: absolute;
+            left: 20px;
+            top: 0;
+            font-size: 16px;
+            padding: 10px;
+            background-color: #3F5D45;
+            letter-spacing: 5.5px;
+            font-weight: 700;
+        }
+        
+        .pagemark {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+            margin-bottom: 60px;
+        }
+        
+        .pagemark a {
+            display: flex;
+            border: 1px solid#EAF0ED;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            width: 60px;
+            height: 60px;
+            font-display: block;
+            color: #3F5D45;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        
+        .pagemark a:hover {
+            color: #EAF0ED;
+            background-color: #3F5D45;
+        }
     </style>
 </head>
 
@@ -131,11 +209,58 @@
                         <a href="#">新品上市（12）</a>
                     </li>
                 </ul>
-                <div class="product">
-                    <div class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true" alt="p-1.png"></div>
-                    <div class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true" alt="p-1.png"> </div>
-                </div>
+                <ul class="product">
+                    <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true" alt="p-1.png">
+                        <h4>焦糖瑪卡龍<span>NT$ 450</span></h4>
+                        <button type="button" class="putincart" onclick="alert('已加入購物車!')">加入購物車</button>
+                        <p>本日精選</p>
+                    </li>
+                    <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-2.png?raw=true" alt="p-2.png">
+
+                        <h4>焦糖瑪卡龍<span>NT$ 450</span></h4>
+                        <button type="button" class="putincart" onclick="alert('已加入購物車!')">加入購物車</button>
+                        <p>本日精選</p>
+                    </li>
+                    <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-3.png?raw=true" alt="p-3.png">
+                        <h4>焦糖瑪卡龍<span>NT$ 450</span></h4>
+                        <button type="button" class="putincart" onclick="alert('已加入購物車!')">加入購物車</button>
+                        <p>本日精選</p>
+                    </li>
+                    <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-4.png?raw=true" alt="p-4.png">
+                        <h4>焦糖瑪卡龍<span>NT$ 450</span></h4>
+                        <button type="button" class="putincart" onclick="alert('已加入購物車!')">加入購物車</button>
+                        <p>本日精選</p>
+                    </li>
+                    <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-5.png?raw=true" alt="p-5.png">
+                        <h4>焦糖瑪卡龍<span>NT$ 450</span></h4>
+                        <button type="button" class="putincart" onclick="alert('已加入購物車!')">加入購物車</button>
+                        <p>本日精選</p>
+                    </li>
+                    <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-6.png?raw=true" alt="p-6.png">
+                        <h4>焦糖瑪卡龍<span>NT$ 450</span></h4>
+                        <button type="button" class="putincart" onclick="alert('已加入購物車!')">加入購物車</button>
+                        <p>本日精選</p>
+                    </li>
+                </ul>
             </div>
+            <ul class="pagemark">
+                <li>
+                    <a href="#">◂</a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">4</a>
+                </li>
+                <li>
+                    <a href="#">▸</a>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
