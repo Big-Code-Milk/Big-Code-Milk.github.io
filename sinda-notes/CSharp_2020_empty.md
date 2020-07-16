@@ -33,9 +33,19 @@
 * 為變量取名
 * 初始化變量 - 給變數一個初始值，每個變數都該初始化，若沒有給定初始值，則變數的值為產生此變數前，殘留在記憶體中的資料。
 * 赋值符號
-* 基本運算符
+* 基本運算符 operators
 * 更多赋值運算符
 * C# 類型轉換
+
+### 轉型 Casting
+
+<https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/types/casting-and-type-conversions>
+
+1. 隱含轉換
+2. 明確轉換
+3. 使用者定義的轉換
+4. 使用協助程是類別轉換
+
 * 匿名類型 ( var a = new { n="N" };
 
 <https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types>
@@ -157,7 +167,25 @@ Console.WriteLine($"Hello, {name}! Today is {date.DayOfWeek}, it's {date:HH:mm} 
 * 數組
 * 數組屬性與方法
 * 字符串
+* StringBuilder 比 string 還要更有可變動性。
+
+<https://medium.com/@MyCollegeNotebook/stringbuilder-%E7%9A%84%E4%BD%BF%E7%94%A8-b75300871c6f>
+
 * 字符串屬性與与方法I
+* string.formats
+
+<https://docs.microsoft.com/zh-tw/dotnet/api/system.string.format?view=netcore-3.1>
+
+* number.formats
+
+<https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/standard-numeric-format-strings>
+
+有各種類別的 format 方法，與標準格式字串，感覺是需要用到時才去查
+
+* 正規、正則或常規 表示式 Regular Expressions
+
+<https://www.cyut.edu.tw/~ckhung/b/re/index.php>
+
 * 字符串屬性與与方法II
 * 字符串屬性與与方法III
 * 鏈表
@@ -226,6 +254,10 @@ DivideByZeroException 特定異常後才接
 exception 普通例外
 
 ## 7.物件導向編程I
+
+* boxing 與 unboxing
+
+<https://nwpie.blogspot.com/2017/04/5-boxing-unboxing.html>
 
 * 什麼是面向對象編程
 * class
@@ -361,6 +393,17 @@ Console.Read();
 ## 9.列舉與結構體
 
 * Enum 枚舉 <https://www.runoob.com/cprogramming/c-enum.html>
+
+### IEnumerator, IEnumerable, and Yield
+
+迭代器 類似 foreach
+
+* Yield 自定義迭代器語法時的[語法糖](https://www.google.com/search?q=%E8%AA%9E%E6%B3%95%E7%B3%96&rlz=1C1CHBF_zh-TWTW905TW905&oq=%E8%AA%9E%E6%B3%95%E7%B3%96&aqs=chrome..69i57j0l7.2633j0j4&sourceid=chrome&ie=UTF-8)
+
+<https://dev.twsiyuan.com/2016/03/csharp-ienumerable-ienumerator-and-yield-return.html>
+
+<https://hant-kb.kutu66.com/python/post_1497973>
+
 * Struct 自訂資料型別, 所以定義結 構體後, 就能把它當成一種新的資料型別。
 
 <https://kopu.chat/2017/05/30/c-%E8%AA%9E%E8%A8%80%EF%BC%9A%E7%B5%90%E6%A7%8B%EF%BC%88struct%EF%BC%89%E8%87%AA%E8%A8%82%E4%B8%8D%E5%90%8C%E8%B3%87%E6%96%99%E5%9E%8B%E6%85%8B%E7%B6%81%E4%B8%80%E8%B5%B7/>
