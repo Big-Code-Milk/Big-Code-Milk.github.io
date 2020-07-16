@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
+        body {
+            font-family: 'Noto Serif TC', serif;
+        }
+        
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+        }
+        
         .wrap {
             width: 940px;
             margin: 0 auto;
@@ -36,7 +45,7 @@
         .menu a {
             padding: 4px;
             display: block;
-            font-weight: 600;
+            font-weight: 700;
             text-decoration: none;
             color: #3F5D45;
         }
@@ -48,24 +57,74 @@
         .banner {
             margin-top: 30px;
         }
+        
+        .main {
+            margin-top: 60px;
+            display: flex;
+        }
+        
+        .category h3 {
+            color: #EAF0ED;
+            background-color: #3F5D45
+        }
+        
+        .category li {
+            font-size: 24px;
+            font-weight: 700;
+            width: 300px;
+            text-align: center;
+            line-height: 65px;
+        }
+        
+        .category a {
+            display: block;
+            color: #3F5D45;
+            text-decoration: none;
+        }
+        
+        .category a:hover {
+            background-color: #EAF0ED;
+        }
     </style>
 </head>
 
 <body>
-    <div class="wrap">
-        <div class="header">
-            <a href="#"><img class="logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg" alt="sweetaste.icon"></a>
-            <ul class="menu">
-                <li><a href="#">首頁</a></li>
-                <li><a href="#">甜點</a></li>
-                <li><a href="#">登入</a></li>
-                <li>
-                    <a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true" alt="購物車"></a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="wrap">
+            <div class="header">
+                <a href="#"><img class="logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg" alt="sweetaste.icon"></a>
+                <ul class="menu">
+                    <li><a href="#">首頁</a></li>
+                    <li><a href="#">甜點</a></li>
+                    <li><a href="#">登入</a></li>
+                    <li>
+                        <a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true" alt="購物車"></a>
+                    </li>
+                </ul>
+            </div>
+            <img class="banner" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/banner.png?raw=true" alt="banner.png ">
+            <div class="main">
+                <ul class="category">
+                    <li>
+                        <h3>甜點類別</h3>
+                    </li>
+                    <li>
+                        <a href="#">所有甜點（48）</a>
+                    </li>
+                    <li>
+                        <a href="#">本日精選（10）</a>
+                    </li>
+                    <li>
+                        <a href="#">人氣推薦（26）</a>
+                    </li>
+                    <li>
+                        <a href="#">新品上市（12）</a>
+                    </li>
+                </ul>
+                <div class="product"></div>
+            </div>
         </div>
-        <img class="banner" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/banner.png?raw=true" alt="banner.png ">
-        </>
+    </div>
 </body>
 
 </html>
