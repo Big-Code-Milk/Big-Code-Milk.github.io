@@ -190,7 +190,9 @@ Console.WriteLine($"Hello, {name}! Today is {date.DayOfWeek}, it's {date:HH:mm} 
 * 字符串屬性與与方法III
 * 鏈表
 
-list 擁有更好的伸縮性，必須先引用 system.collections.generic
+list 擁有更好的伸縮性 arrays vs list Like string vs stringbuilder，必須先引用 system.collections.generic
+
+<https://csharp-station.com/c-arrays-vs-lists/>
 
 * 值類型vs引用類型  Value Types and Reference Types
 
@@ -227,6 +229,10 @@ C# 中有兩種類型：參考類型和實值類型。 參考類型的變數會�
 * readonly
 
 <https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/readonly>
+
+### Queue & Stack
+
+<https://dotblogs.com.tw/h091237557/2014/05/23/145236>
 
 ## 5.開發交互式程序
 
