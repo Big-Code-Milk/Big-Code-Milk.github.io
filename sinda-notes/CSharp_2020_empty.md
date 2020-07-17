@@ -230,9 +230,17 @@ C# 中有兩種類型：參考類型和實值類型。 參考類型的變數會�
 
 <https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/readonly>
 
-### Queue & Stack
+* Queue & Stack
+
+Queue 先進先出隊列
+
+Stack 後進先出隊列
 
 <https://dotblogs.com.tw/h091237557/2014/05/23/145236>
+
+* Dictionary ( Key / Value )
+
+<http://code2study.blogspot.com/2012/01/c-dictionary.html>
 
 ## 5.開發交互式程序
 

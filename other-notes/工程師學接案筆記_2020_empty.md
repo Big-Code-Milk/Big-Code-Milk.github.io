@@ -7,3 +7,25 @@
 <https://murmuring.idv.tw/2019/08/08/soho%E5%85%A9%E5%80%8B%E6%9C%88%E7%9A%84%E6%8E%A5%E6%A1%88%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%EF%BC%88%E6%96%87%E5%AD%97%E5%B7%A5%E4%BD%9C%E7%82%BA%E4%BE%8B%EF%BC%89/>
 
 <https://woowohsu.pixnet.net/blog/post/349440598-%5B%E7%94%A8%E7%97%9E%E5%AE%A2%E9%82%A6%E7%8E%A9seo%5D-%E6%89%BE%E6%AF%94%E8%BC%83%E7%86%B1%E9%96%80%E7%9A%84%E6%96%87%E7%AB%A0%E4%BE%86%E5%B0%8E%E6%B5%81%E7%9A%84%E7%B5%90>
+
+## 簽核系統可以用在接案上，省去不必要的麻煩
+
+可參考 freelancer.com 業主與接案方的簽核方式 ( 之前有看過文章但忘記在哪了可能要找找 )
+
+類似 test.com 接案方 <= 簽核系統 ( 一些判斷如時程次數議題參考價格等等...，修改只能兩次，或提案時參考上傳等等... ) 可能有 SaaS 方案可達到不用自己做=> issue 客戶端
+
+---
+
+## 必須被動接案，主動接案 給人的印象就是廉價
+
+<https://www.youtube.com/watch?v=nDkend5qjLY>
+
+<https://webbiz.tw/about-micro-entrepreneurs.html>
+
+---
+
+## 自動化教育訓練前端框架 Intro.js
+
+<https://introjs.com/>
+
+<https://dotblogs.com.tw/wellwind/2016/12/15/front-end-intro-js>
