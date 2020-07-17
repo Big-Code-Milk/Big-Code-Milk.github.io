@@ -296,6 +296,14 @@ Properties (get;set;)
 
 <https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/properties>
 
+* set
+
+<https://pydoing.blogspot.com/2012/11/csharp-set-and-get.html>
+
+<https://dotblogs.com.tw/mvp/2018/04/27/171143>
+
+<https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/set>
+
 ---
 
 * 方法 可以是 void
