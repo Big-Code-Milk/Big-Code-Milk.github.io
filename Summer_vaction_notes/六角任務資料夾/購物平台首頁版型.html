@@ -48,10 +48,12 @@
             font-weight: 700;
             text-decoration: none;
             color: #3F5D45;
+            transition: all .5s;
         }
         
         .menu a:hover {
             background-color: #EAF0ED;
+            border-bottom: 1px solid green;
         }
         
         .banner {
@@ -78,13 +80,17 @@
         }
         
         .category a {
+            height: 63px;
+            border: 1px solid #EAF0ED;
             display: block;
             color: #3F5D45;
             text-decoration: none;
+            transition: all .5s;
         }
         
         .category a:hover {
             background-color: #EAF0ED;
+            border: 1px solid #3F5D45;
         }
         
         .product {
@@ -99,21 +105,32 @@
             position: relative;
         }
         
-        .card h4 {
+        .namePrice {
             color: #3F5D45;
             display: flex;
             justify-content: space-between;
-            padding-top: 14px;
-            padding-bottom: 14px;
+            border: 1px solid #EAF0ED;
+        }
+        
+        .namePrice h4 {
+            font-weight: 400;
+            padding-top: 13px;
+            padding-bottom: 13px;
             padding-left: 33px;
             padding-right: 20px;
-            font-weight: 400;
             font-size: 20px;
             line-height: 28px;
         }
         
-        .card span {
+        .namePrice span {
+            border-left: 1px solid #EAF0ED;
             font-weight: 900;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            padding-left: 20px;
+            padding-right: 24px;
+            font-size: 20px;
+            line-height: 28px;
         }
         
         .putincart {
@@ -125,11 +142,19 @@
             width: 100%;
             padding: 15.5px;
             cursor: pointer;
+            transition: all 1s;
         }
         
         .putincart:hover {
             color: #EAF0ED;
             background-color: #3F5D45;
+            transition: all 3s;
+        }
+        
+        .card:hover {
+            box-shadow: 6px 6px 10px gray;
+            cursor: pointer;
+            transition: all 1s;
         }
         
         .card p {
@@ -143,6 +168,18 @@
             background-color: #3F5D45;
             letter-spacing: 5.5px;
             font-weight: 700;
+        }
+        
+        .favorite {
+            position: absolute;
+            top: 19px;
+            right: 22px;
+            transition: all .5s;
+        }
+        
+        .favorite:hover {
+            background-color: pink;
+            border: 1px solid #3F5D45;
         }
         
         .pagemark {
@@ -172,6 +209,7 @@
         .pagemark a:hover {
             color: #EAF0ED;
             background-color: #3F5D45;
+            transition: all 1s;
         }
     </style>
 </head>
@@ -211,35 +249,59 @@
                 </ul>
                 <ul class="product">
                     <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true" alt="p-1.png">
-                        <h4>焦糖瑪卡龍<span>NT$ 450</span></h4>
+                        <div class="namePrice">
+                            <h4>焦糖瑪卡龍</h4>
+                            <span>NT$ 450</span>
+                        </div>
                         <button type="button" class="putincart" onclick="alert('已加入購物車!')">加入購物車</button>
                         <p>本日精選</p>
+                        <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                     </li>
                     <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-2.png?raw=true" alt="p-2.png">
 
-                        <h4>焦糖瑪卡龍<span>NT$ 450</span></h4>
+                        <div class="namePrice">
+                            <h4>焦糖瑪卡龍</h4>
+                            <span>NT$ 450</span>
+                        </div>
                         <button type="button" class="putincart" onclick="alert('已加入購物車!')">加入購物車</button>
                         <p>本日精選</p>
+                        <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                     </li>
                     <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-3.png?raw=true" alt="p-3.png">
-                        <h4>焦糖瑪卡龍<span>NT$ 450</span></h4>
+                        <div class="namePrice">
+                            <h4>焦糖瑪卡龍</h4>
+                            <span>NT$ 450</span>
+                        </div>
                         <button type="button" class="putincart" onclick="alert('已加入購物車!')">加入購物車</button>
                         <p>本日精選</p>
+                        <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                     </li>
                     <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-4.png?raw=true" alt="p-4.png">
-                        <h4>焦糖瑪卡龍<span>NT$ 450</span></h4>
+                        <div class="namePrice">
+                            <h4>焦糖瑪卡龍</h4>
+                            <span>NT$ 450</span>
+                        </div>
                         <button type="button" class="putincart" onclick="alert('已加入購物車!')">加入購物車</button>
                         <p>本日精選</p>
+                        <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                     </li>
                     <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-5.png?raw=true" alt="p-5.png">
-                        <h4>焦糖瑪卡龍<span>NT$ 450</span></h4>
+                        <div class="namePrice">
+                            <h4>焦糖瑪卡龍</h4>
+                            <span>NT$ 450</span>
+                        </div>
                         <button type="button" class="putincart" onclick="alert('已加入購物車!')">加入購物車</button>
                         <p>本日精選</p>
+                        <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                     </li>
                     <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-6.png?raw=true" alt="p-6.png">
-                        <h4>焦糖瑪卡龍<span>NT$ 450</span></h4>
+                        <div class="namePrice">
+                            <h4>焦糖瑪卡龍</h4>
+                            <span>NT$ 450</span>
+                        </div>
                         <button type="button" class="putincart" onclick="alert('已加入購物車!')">加入購物車</button>
                         <p>本日精選</p>
+                        <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                     </li>
                 </ul>
             </div>
@@ -258,7 +320,7 @@
                     <a href="#">4</a>
                 </li>
                 <li>
-                    <a href="#">▸</a>
+                    <a class="nextpage" href="#">▸</a>
                 </li>
             </ul>
         </div>
