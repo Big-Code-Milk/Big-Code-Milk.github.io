@@ -29,3 +29,11 @@
 <https://introjs.com/>
 
 <https://dotblogs.com.tw/wellwind/2016/12/15/front-end-intro-js>
+
+## 利他姓
+
+b2p 就是我們的工作室
+
+p2b就是利他性
+
+在同個平台執行同套邏輯
