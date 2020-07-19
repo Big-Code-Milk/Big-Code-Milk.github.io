@@ -242,6 +242,16 @@ Stack 後進先出隊列
 
 <http://code2study.blogspot.com/2012/01/c-dictionary.html>
 
+* BitArray 点阵列
+
+<https://www.runoob.com/csharp/csharp-collection.html>
+
+<https://www.runoob.com/csharp/csharp-bitarray.html>
+
+* BitVector32 結構是用一個 32-bit 的整數值來儲存 32 個 boolean 值的結構，相較於 BitArray ，它只能固定在 32 個位元的大小。
+
+<http://vito-note.blogspot.com/2012/01/specialized-collections.html>
+
 ## 5.開發交互式程序
 
 * 向用戶顯示消息
