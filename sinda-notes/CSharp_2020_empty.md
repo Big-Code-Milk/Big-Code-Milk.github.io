@@ -252,6 +252,33 @@ Stack 後進先出隊列
 
 <http://vito-note.blogspot.com/2012/01/specialized-collections.html>
 
+* ObservableCollection 類似像 list 但是可以監聽事件
+
+<https://dotblogs.com.tw/wadehuang36/2010/11/03/observablecollection>
+
+<https://www.itread01.com/content/1513748426.html>
+
+### thread 多線程(多執行緒)
+
+<https://dotblogs.com.tw/kinanson/2017/04/25/083020>
+
+### Concurrent - thread safe
+
+collection的操作通常都是非執行緒安全的，例如List。  意思是說當會一個集合進行多執行緒操作的時候，會造成不可預期的情況，例如資料遺漏、索引重複等等...
+
+執行緒安全的collection，可使用在多執行緒的環境底下
+
+* ConcurrentQueue
+* ConcurrentStack
+* ConcurrentBag
+* ConcurrentDictionary
+
+<https://dotblogs.com.tw/mileslin/2016/03/13/150234>
+
+* BlockingCollection - thread safe
+
+<https://dotblogs.com.tw/kinanson/2017/05/17/145521#3>
+
 ## 5.開發交互式程序
 
 * 向用戶顯示消息
