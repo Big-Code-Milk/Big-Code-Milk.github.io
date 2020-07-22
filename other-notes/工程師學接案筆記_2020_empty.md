@@ -43,3 +43,9 @@ p2b就是利他性
 ## 比價比功能 需要會什麼 性價比多少 做那些能賺比較多 ( ex. 賣菜賣水果 )
 
 <http://www.gw-design.com/index.php/design_prices/index>
+
+## 行銷策略 ， 六角開源前端競賽提案炒夯熱度
+
+## idea
+
+行動化宮廟 / 行動化長照
