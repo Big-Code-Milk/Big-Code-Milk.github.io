@@ -7,11 +7,12 @@
     <title>Document</title>
     <style>
         img {
-            ... height: auto;
+            height: auto;
+            max-width: 100%;
         }
         
         .container {
-            ... margin: 0 auto;
+            margin: 0 auto;
         }
         
         .main {
@@ -20,12 +21,12 @@
         }
         
         .card {
-            ...
+            width: 25%;
         }
         
         @media (max-width: 768px) {
             .card {
-                ...
+                width: 50%;
             }
             .container {
                 max-width: 720px;
@@ -34,7 +35,7 @@
         
         @media (max-width: 576px) {
             .card {
-                ...
+                width: 100%;
             }
             .container {
                 max-width: 540px;
