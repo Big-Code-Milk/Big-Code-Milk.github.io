@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweetaste_hexo</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css' />
+
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
@@ -15,10 +18,10 @@
         .wrap {
             width: 940px;
             margin: 0 auto;
-            padding-top: 30px;
         }
         
         .header {
+            padding-top: 30px;
             margin: 0 auto;
             width: 940px;
             display: flex;
@@ -205,6 +208,27 @@
             color: #EAF0ED;
             background-color: #3F5D45;
             transition: all 1s;
+        }
+        
+        @media (max-width: 375px) {
+            .wrap {
+                width: 39.8%;
+            }
+            .header {
+                width: 39.8%;
+            }
+            .banner {
+                width: 375px;
+                height: auto;
+            }
+            .main {
+                width: 375px;
+                display: block;
+            }
+            .product {
+                display: block;
+            }
+            .namePrice {}
         }
     </style>
 </head>
