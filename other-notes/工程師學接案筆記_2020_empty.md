@@ -44,7 +44,11 @@ p2b就是利他性
 
 <http://www.gw-design.com/index.php/design_prices/index>
 
-## 行銷策略 ， 六角開源前端競賽提案炒夯熱度
+## 行銷策略
+
+海灘貨幣 <https://news.ltn.com.tw/news/life/breakingnews/2767225>
+
+六角開源前端競賽提案炒夯熱度
 
 ## idea
 
