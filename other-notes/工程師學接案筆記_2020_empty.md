@@ -37,3 +37,9 @@ b2p 就是我們的工作室
 p2b就是利他性
 
 在同個平台執行同套邏輯
+
+---
+
+## 比價比功能 需要會什麼 性價比多少 做那些能賺比較多 ( ex. 賣菜賣水果 )
+
+<http://www.gw-design.com/index.php/design_prices/index>
