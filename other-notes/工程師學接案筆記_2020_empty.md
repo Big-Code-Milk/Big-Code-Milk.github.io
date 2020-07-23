@@ -68,6 +68,14 @@ p2b就是利他性
 
 <https://forum.gamer.com.tw/C.php?bsn=60561&snA=11785>
 
+<https://ithelp.ithome.com.tw/users/20004901/ironman/526>
+
+<https://ithelp.ithome.com.tw/users/20040221/ironman>
+
+<https://forum.gamer.com.tw/Co.php?bsn=60561&sn=106178>
+
+<https://forum.gamer.com.tw/Co.php?bsn=60561&sn=95576>
+
 ---
 
 ## 工具
@@ -75,3 +83,11 @@ p2b就是利他性
 <http://dreamerslab.com/blog/tw/comparing-5-project-management-tools/>
 
 redmind 基於 ruby on rails 的流程控管工具
+
+## 利他性
+
+某soho網拍無私教人入門，最後學生都變成他的下線，由他分包案件。
+
+## 業務
+
+<https://forum.gamer.com.tw/Co.php?bsn=60561&sn=58878>
