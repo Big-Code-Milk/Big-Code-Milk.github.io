@@ -53,3 +53,25 @@ p2b就是利他性
 ## idea
 
 行動化宮廟 / 行動化長照
+
+---
+
+ 參考 freelancer.com 、 redmind 基於 自動化行銷／管理、利他性、開源社群性、 打造攬客與好管理的 MVP 接案工具
+
+## 工作室 ? 公司行號 ?
+
+<https://wcc723.github.io/business/2020/03/18/how-to-register-a-company/>
+
+---
+
+## 創業眉角
+
+<https://forum.gamer.com.tw/C.php?bsn=60561&snA=11785>
+
+---
+
+## 工具
+
+<http://dreamerslab.com/blog/tw/comparing-5-project-management-tools/>
+
+redmind 基於 ruby on rails 的流程控管工具
