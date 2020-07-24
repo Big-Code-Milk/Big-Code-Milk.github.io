@@ -5,37 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweetaste_hexo</title>
-
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css'>
-
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+    <!--css reset-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- 引入字體 -->
     <style>
         body {
             font-family: 'Noto Serif TC', serif;
         }
         
         .wrap {
-            width: 940px;
+            max-width: 940px;
             margin: 0 auto;
+            padding-top: 30px;
         }
         
         .header {
-            padding-top: 30px;
+            width: 100%;
             margin: 0 auto;
-            width: 940px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+        
+        .ham_menu {
+            display: none;
         }
         
         .logo {
-            width: 211px;
+            width: 70.5%;
         }
         
         .menu {
             font-size: 16px;
             display: flex;
-            width: 320px;
+            width: 33%;
             align-items: center;
             justify-content: space-between;
         }
@@ -54,7 +58,29 @@
             border-bottom: 1px solid green;
         }
         
+        @media (max-width:768px) {
+            .logo {
+                display: none;
+            }
+            .rwd_none {
+                display: none;
+            }
+            .rwd_logo {
+                width: 32%;
+                height: 18px;
+                display: block;
+            }
+            .menu {
+                width: 18%;
+            }
+            .ham_menu {
+                display: block;
+            }
+        }
+        /* --------------------------------------------------以上包在header------------------------------------------------------------ */
+        
         .banner {
+            max-width: 100%;
             margin-top: 30px;
         }
         
@@ -195,7 +221,6 @@
             box-sizing: border-box;
             width: 60px;
             height: 60px;
-            font-display: block;
             color: #3F5D45;
             text-decoration: none;
             justify-content: center;
@@ -210,45 +235,49 @@
             transition: all 1s;
         }
         
-        @media (max-width: 375px) {
-            .wrap {
-                width: 39.8%;
-            }
-            .header {
-                width: 39.8%;
-            }
-            .banner {
-                width: 375px;
-                height: auto;
-            }
+        @media (max-width: 768px) {
             .main {
-                width: 375px;
-                display: block;
+                flex-direction: column;
+                margin-top: 0px;
+            }
+            .category {
+                width: 100%;
+            }
+            .category li {
+                width: 100%;
             }
             .product {
-                display: block;
+                width: 100%;
+                justify-content: center;
             }
-            .namePrice {}
         }
     </style>
 </head>
 
 <body>
     <div class="wrap">
+        <!--  主要的容器包          -->
         <div class="header">
+            <!-- 功能導覽列               -->
+
             <a href="#"><img class="logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg" alt="sweetaste.icon"></a>
+            <a href="#"><img class="ham_menu" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true"></a>
+            <a class="rwd_logo" href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-sm-dark.svg" alt="logo"> </a>
             <ul class="menu">
-                <li><a href="#">首頁</a></li>
-                <li><a href="#">甜點</a></li>
-                <li><a href="#">登入</a></li>
+                <li class="rwd_none"><a href="#">首頁</a></li>
+                <li class="rwd_none"><a href="#">甜點</a></li>
+                <li class="rwd_none"><a href="#">登入</a></li>
                 <li>
                     <a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true" alt="購物車"></a>
                 </li>
             </ul>
         </div>
         <img class="banner" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/banner.png?raw=true" alt="banner.png ">
+        <!--   商家照片        -->
         <div class="main">
+            <!--     商品陳列           -->
             <ul class="category">
+                <!--       商品種類             -->
                 <li>
                     <h3>甜點類別</h3>
                 </li>
@@ -266,6 +295,7 @@
                 </li>
             </ul>
             <ul class="product">
+                <!--         商品瀏覽，專屬卡片           -->
                 <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true" alt="p-1.png">
                     <div class="namePrice">
                         <h4>焦糖瑪卡龍</h4>
@@ -324,8 +354,10 @@
             </ul>
         </div>
         <ul class="pagemark">
+            <!--       換頁欄         -->
             <li>
                 <a href="#">◂</a>
+                <!--       使用符號取代照片，來達到相同效果    -->
             </li>
             <li><a href="#">1</a></li>
             <li>
@@ -339,10 +371,23 @@
             </li>
             <li>
                 <a class="nextpage" href="#">▸</a>
+                <!--       使用符號取代照片，來達到相同效果    -->
             </li>
         </ul>
+        <footer>
+            <div class="mailbox" style="background-color: #3F5D45; height: 116px; display: flex; align-items: center; padding: 0 12.9%; font-size: 24px; color:#EAF0ED">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg" alt="sweet" style="width: 40px;">
+                <p>訂閱你我的甜蜜郵件</p>
+                <lable class="mail" for="mail" style="width: 308px; height: 56px;">
+                    <input style="width: 308px; height: 56px;background:#EAF0ED url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat 20px 17px;padding:1% 0 0 0; border: 0; padding: 0 0 0 20%;" id="mail">
+                </lable>
+                <input type="image" style="background-color: #FFE180; width: 64px;height: 56px; box-sizing: border-box; border: 0; padding: 17px 20px;" img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png">
+            </div>
+            <div style="background-color: #EAF0ED; height: 341px; "></div>
+        </footer>
     </div>
 
 </body>
 
 </html>
+<!-- 觀察與別人任務不同之處，發現差異在於別人的class選擇器如有相同的css樣式會寫在一起，這樣看起來會更簡潔，不過可讀性也許會降低，但如果利用了css預處理器之後，能讓CSS更加簡潔、適應性更強、可讀性更佳，更易於代碼的維護，所以各有好壞，不過都能用css預處器解決，參考https://changtsuiling.gitbooks.io/sass/chapter1/1-1-shi-me-shi-css-yu-chu-li-qi-ff1f.html -->
