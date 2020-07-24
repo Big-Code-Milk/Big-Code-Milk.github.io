@@ -91,3 +91,9 @@ redmind 基於 ruby on rails 的流程控管工具
 ## 業務
 
 <https://forum.gamer.com.tw/Co.php?bsn=60561&sn=58878>
+
+## 輪子
+
+<https://www.zhihu.com/question/40683460/answer/1350035138>
+
+<https://www.zhihu.com/question/295227280/answer/1333085582>
