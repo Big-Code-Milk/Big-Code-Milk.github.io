@@ -15,7 +15,7 @@
         }
         
         .wrap {
-            max-width: 940px;
+            max-width: 1024px;
             margin: 0 auto;
             padding-top: 30px;
         }
@@ -82,6 +82,7 @@
         .banner {
             max-width: 100%;
             margin-top: 30px;
+            width: 1024px;
         }
         
         .main {
@@ -249,6 +250,169 @@
             .product {
                 width: 100%;
                 justify-content: center;
+                margin-top: 30px;
+            }
+            .pagemark {
+                justify-content: center;
+            }
+        }
+        /* 以上包在main-------------------- */
+        
+        .mailbox {
+            background-color: #3F5D45;
+            height: 116px;
+            padding: 0 12.9%;
+            font-size: 24px;
+            color: #EAF0ED;
+            display: flex;
+            align-items: center;
+        }
+        
+        .icon {
+            width: 40px;
+        }
+        
+        .sub {
+            padding-left: 20px;
+            width: 100%;
+            color: #EAF0ED;
+            text-decoration: none;
+        }
+        
+        .mail {
+            width: 308px;
+            height: 56px;
+            position: relative;
+            display: flex;
+        }
+        
+        .mail img {
+            position: absolute;
+            left: 16px;
+            top: 16px;
+        }
+        
+        .yourmail {
+            background-color: #EAF0ED;
+            width: 308px;
+            height: 56px;
+            border: 0;
+            padding: 0 0 0 19%;
+        }
+        
+        .arrow {
+            background-color: #FFE180;
+            width: 64px;
+            height: 56px;
+            box-sizing: border-box;
+            border: 0;
+            padding: 17px 20px;
+        }
+        
+        .contact {
+            background-color: #EAF0ED;
+            padding: 0 12.9%;
+            color: #3F5D45;
+            height: 341px;
+        }
+        
+        .footerlogo {
+            width: 50%;
+            float: left;
+        }
+        
+        .footerlogo img {
+            width: 171.22px;
+            height: 26.6px;
+            margin: 38.9px 0 115.5px 0;
+        }
+        
+        .footerlogo p {
+            line-height: 24px;
+            margin: 0 0 30px;
+            font-weight: 600;
+        }
+        
+        .line {
+            width: 32px;
+            height: auto;
+        }
+        
+        .fb {
+            width: 32px;
+            height: auto;
+            margin-left: 8px;
+        }
+        
+        .sloganbox {
+            width: 50%;
+            float: right;
+        }
+        
+        .slogan {
+            writing-mode: vertical-lr;
+            writing-mode: vertical-rl;
+            font-size: 24px;
+            line-height: 1.2;
+            letter-spacing: 5px;
+            margin: 30px 0 46.31px;
+            float: right;
+            font-weight: 700;
+        }
+        
+        .copyright {
+            margin: 0 0 0 21%;
+            clear: both;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .icon {
+                margin-top: 8px;
+            }
+            .sub {
+                width: auto;
+            }
+            .sub p {
+                margin-top: 8px;
+            }
+            .mailbox {
+                flex-wrap: wrap;
+                height: 186px;
+                padding: 0;
+                justify-content: center;
+            }
+            .mail {
+                width: auto;
+                margin-bottom: 3px;
+            }
+            .yourmail {
+                width: 251px;
+            }
+            .arrow {
+                margin-bottom: 3px;
+            }
+            .slogan {
+                display: none;
+            }
+            .contact {
+                display: flex;
+                flex-direction: column;
+                height: 311px;
+                padding: 0px 0px 0px 30px;
+            }
+            .sloganbox {
+                width: 100%;
+                margin-top: 23px;
+            }
+            .footerlogo img {
+                margin-bottom: 39.5px;
+            }
+            .footerlogo p {
+                width: 230px;
+            }
+            .copyright {
+                margin: 0 auto;
             }
         }
     </style>
@@ -260,15 +424,15 @@
         <div class="header">
             <!-- 功能導覽列               -->
 
-            <a href="#"><img class="logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg" alt="sweetaste.icon"></a>
-            <a href="#"><img class="ham_menu" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true"></a>
+            <a href="#mail"><img class="logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg" alt="sweetaste.icon"></a>
+            <a href="#mail"><img class="ham_menu" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true"></a>
             <a class="rwd_logo" href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-sm-dark.svg" alt="logo"> </a>
             <ul class="menu">
                 <li class="rwd_none"><a href="#">首頁</a></li>
                 <li class="rwd_none"><a href="#">甜點</a></li>
                 <li class="rwd_none"><a href="#">登入</a></li>
                 <li>
-                    <a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true" alt="購物車"></a>
+                    <a href="#mail"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true" alt="購物車"></a>
                 </li>
             </ul>
         </div>
@@ -375,15 +539,33 @@
             </li>
         </ul>
         <footer>
-            <div class="mailbox" style="background-color: #3F5D45; height: 116px; display: flex; align-items: center; padding: 0 12.9%; font-size: 24px; color:#EAF0ED">
-                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg" alt="sweet" style="width: 40px;">
-                <p>訂閱你我的甜蜜郵件</p>
-                <lable class="mail" for="mail" style="width: 308px; height: 56px;">
-                    <input style="width: 308px; height: 56px;background:#EAF0ED url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat 20px 17px;padding:1% 0 0 0; border: 0; padding: 0 0 0 20%;" id="mail">
+            <form class="mailbox">
+                <img class="icon" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg" alt="sweet">
+                <a class="sub" href="#mail">
+                    <p>訂閱你我的甜蜜郵件</p>
+                </a>
+                <lable class="mail" for="mail">
+                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true" alt="">
+                    <input class="yourmail" type="email" name="email" id="mail" required>
                 </lable>
-                <input type="image" style="background-color: #FFE180; width: 64px;height: 56px; box-sizing: border-box; border: 0; padding: 17px 20px;" img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png">
+                <input class="arrow" type="image" img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png" onclick="alert('已寄確認發信件至：' + getElementById('mail').value);this.submit()">
+            </form>
+            <div class="contact">
+                <div class="footerlogo">
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-lg-dark.svg" />
+                    </a>
+                    <p>07-1234-5678<br/>sweetaste@email.com<br/>800 高雄市新興區幸福路 520 號</p>
+                    <a href="#"><input class="line" type="image" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/ic-line%40.svg "></a>
+                    <a href="#">
+                        <input class="fb" type="image" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/ic-facebook.svg">
+                    </a>
+                </div>
+                <div class="sloganbox">
+                    <p class="slogan">今天是個――<br/>吃甜點的好日子。</p>
+                    <p class="copyright">© 2018 Sweetaste* All Rights Reserved</p>
+                </div>
             </div>
-            <div style="background-color: #EAF0ED; height: 341px; "></div>
         </footer>
     </div>
 
