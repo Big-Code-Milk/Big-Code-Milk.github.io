@@ -406,7 +406,9 @@ Console.Read();
 <https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/base>
 
 * 子類屬性與方法
-* 擴究方法 ExtensionMethod
+* 擴究方法 Extension Method (partial)
+
+<http://blog.ctrlxctrlv.net/unity-extension-methods/>
 
 <https://tpu.thinkpower.com.tw/tpu/articleDetails/1184>
 
@@ -449,6 +451,43 @@ Console.Read();
 
 <https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/new-modifier>
 
+* Local Functions 區域函式
+
+<https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/local-functions>
+
+* Tuples 簡單、或者用完即丟的返回值方法
+
+<https://www.huanlintalk.com/2017/04/c-7-tuple-syntax.html>
+
+* try, catch, finally
+
+<https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/try-finally>
+
+使用 finally 區塊，即可清除 try 區塊中所配置的任何資源，以及執行程式碼，即使 try 區塊中發生例外狀況也是一樣。
+
+它是整段程式必執行的部分,通常是用來放清資源的
+
+<https://charleslin74.pixnet.net/blog/post/454942883-%5Bc%23%5D-exception%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95-try-catch-finally>
+
+<https://dotblogs.com.tw/yc421206/2011/06/09/27445>
+
+* re-throw exception , throw; vs throw ex
+
+```C#
+static string ReadAFile(string fileName) {
+    string result = string.Empty;
+    try {
+        result = File.ReadAllLines(fileName);
+    } catch(Exception ex) {
+        throw ex; // This will show ReadAFile in the StackTrace
+        throw;    // This will show ReadAllLines in the StackTrace
+    }
+```
+
+<https://stackoverflow.com/questions/178456/what-is-the-proper-way-to-re-throw-an-exception-in-c>
+
+<https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/throw>
+
 ## 9.列舉與結構體
 
 * Enum 枚舉 <https://www.runoob.com/cprogramming/c-enum.html>
@@ -475,6 +514,16 @@ Object and Struct (copy by value)
 
 ## 10.LINQ 語言整合查詢
 
+LINQ, query, filter, group, join, select
+
+<https://wellsb.com/csharp/beginners/linq-syntax-filter-list/>
+
+<https://docs.microsoft.com/zh-tw/dotnet/csharp/linq/write-linq-queries>
+
+1. 查詢語法
+2. 方法語法
+3. 合併使用查詢語法與方法語法
+
 * linq i
 * linq ii
 
@@ -490,6 +539,39 @@ select num;
 ```
 
 要選擇多過一個屬性 必須用 select new { cust.name,cust,balance}
+
+* Concat 合併兩個或多個陣列 List。
+
+<https://docs.microsoft.com/zh-tw/dotnet/csharp/linq/write-linq-queries#example---method-syntax>
+
+<https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/concat>
+
+### LINQ to DataSet
+
+<https://docs.microsoft.com/zh-tw/dotnet/framework/data/adonet/sorting-with-dataview-linq-to-dataset>
+
+* linq zip 將指定的函式套用至兩個序列的對應項目，產生結果的序列。
+
+<https://docs.microsoft.com/zh-tw/dotnet/api/system.linq.enumerable.zip?view=netcore-3.1>
+
+* linq skip 跳過來源序列中的前 n 筆項目，再把剩下的資料全部回傳 / take 取出來源序列中前 n 筆資料
+
+<https://ithelp.ithome.com.tw/articles/10104729>
+
+### ADO 資料庫操作
+
+* Connection String
+* Connection Pools 連接池
+* 要知道 SqlConnection, SqlCommand 等傳統方法
+* Transaction 資料庫交易, IsolationalLevel 指定交易層級, Rollback 從暫止狀態回復交易。
+
+<https://ithelp.ithome.com.tw/articles/10194749>
+
+<https://docs.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqlconnection.begintransaction?view=dotnet-plat-ext-3.1>
+
+<https://docs.microsoft.com/zh-tw/dotnet/api/system.transactions.isolationlevel?view=netcore-3.1>
+
+<https://docs.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqltransaction.rollback?view=dotnet-plat-ext-3.1>
 
 ## 11.文件處理
 
@@ -526,5 +608,23 @@ File.Exists() 查詢文件是否存在
 * 寫入文本文件
 
 steamWriter
+
+* Zip
+
+<https://docs.microsoft.com/zh-tw/dotnet/api/system.io.compression.zipfile?view=netcore-3.1>
+
+* C# 檔案操作大全
+
+  * FileSystemInfo 代表目前目錄的檔案與子目錄。, FIleInfo 檔案資訊, File 檔案, DirectoryInfo 取得目錄下的子目錄，和檔案及目錄的基本屬性。, Directory 目錄 , DriveInfo 取得磁碟相關資訊。
+  * Path
+  * Stream, StreamReader 實作以特定的編碼方式自位元組資料流讀取字元的 TextReader。, StreamWriter 實作以特定的編碼方式將字元寫入位元組資料流的 TextWriter。
+
+<https://www.itread01.com/p/623567.html>
+
+<https://einboch.pixnet.net/blog/post/266428691>
+
+* Stream 提供位元組序列的一般檢視。 這是抽象類別。
+
+<https://docs.microsoft.com/zh-tw/dotnet/api/system.io.stream?view=netcore-3.1>
 
 ## 12.簡單工資軟件項目
