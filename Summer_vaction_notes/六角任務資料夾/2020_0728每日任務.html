@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-            @keyframes example {
-            ...
-        }
-        
         .box {
             position: relative;
             width: 100px;
@@ -26,8 +22,36 @@
             width: 300px;
             height: 300px;
             border: 1px solid black;
+        }
+        
+        @keyframes example {
+            0% {
+                background-color: pink;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
     </style>
-
 </head>
 
 <body>
