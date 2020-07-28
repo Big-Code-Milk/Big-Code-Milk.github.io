@@ -97,3 +97,7 @@ redmind 基於 ruby on rails 的流程控管工具
 <https://www.zhihu.com/question/40683460/answer/1350035138>
 
 <https://www.zhihu.com/question/295227280/answer/1333085582>
+
+## 規格書&合約書
+
+<https://sites.google.com/site/laohuangdediannaowo/csie/programming-language/sdlc/sa-and-sd>
