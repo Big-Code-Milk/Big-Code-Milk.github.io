@@ -101,3 +101,7 @@ redmind 基於 ruby on rails 的流程控管工具
 ## 規格書&合約書
 
 <https://sites.google.com/site/laohuangdediannaowo/csie/programming-language/sdlc/sa-and-sd>
+
+## 避免被告 (網站掃描工具) 資安
+
+<https://www.google.com/search?client=ms-android-xiaomi-rev1&sxsrf=ALeKk00nxRJkTEs-tR02jck0v1xMAh3ecw%3A1595984867517&ei=48sgX-GNH6-2mAX2so7IDA&q=%E7%B6%B2%E7%AB%99%E6%8E%83%E6%8F%8F%E5%B7%A5%E5%85%B7&oq=%E7%B6%B2%E7%AB%99%E6%8E%83%E6%8F%8F&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAEYATICCAAyAggAMgYIABAFEB4yBQgAEM0CMgUIABDNAjIFCAAQzQI6BAgAEEc6BwgAELEDEEM6BQgAELEDOgQIABBDOggIABCxAxCDAVD7Lli-fmC1iQFoAXABeACAAeIBiAGdBpIBBTEuNC4xmAEAoAEBsAEAwAEB&sclient=mobile-gws-wiz-serp>
