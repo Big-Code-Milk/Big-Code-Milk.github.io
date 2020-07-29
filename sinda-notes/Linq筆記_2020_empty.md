@@ -133,3 +133,7 @@ DTO (Class/Model)
 ## SQL Like LINQ Contains
 
 <https://kevintsengtw.blogspot.com/2014/04/linq-contains-arraylist.html>
+
+## [SQL]將多筆資料合併為一筆顯示(FOR XML PATH)
+
+<https://dotblogs.com.tw/kevinya/2012/06/01/72553>
