@@ -103,3 +103,37 @@ List<Order> OrderList = viewModel.GroupBy(x => new {
 ```
 
 <https://dotblogs.com.tw/noncoder/2019/03/25/Lambda-GroupBy-Sum>
+
+## LINQ 多表連接
+
+<https://blog.csdn.net/lixiaoer757/article/details/80598966>
+
+## DBSet DbContext / DataTable DataRow DataSet DataView / List Array Object / Class
+
+DataTable 動態型別，資料量大會爆
+
+DTO (Class/Model)
+
+<https://whitecat2.pixnet.net/blog/post/62010016-%5B%E7%A8%8B%E5%BC%8F%E7%AD%86%E8%A8%98%5D%5Bc%23%5D%E7%94%A8datatable%E8%88%87dataset%E8%AE%80%E5%8F%96%E8%B3%87%E6%96%99%E8%A1%A8>
+
+<https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/221520/>
+
+<https://ithelp.ithome.com.tw/articles/10196856>
+
+## 搞懂 DbSet與上述 相關函式 Where add remove find...
+
+<https://docs.microsoft.com/zh-tw/dotnet/framework/data/adonet/sql/linq/how-to-display-linq-to-sql-commands>
+
+<https://docs.microsoft.com/zh-tw/dotnet/framework/data/adonet/sql/linq/how-to-directly-execute-sql-queries>
+
+軍規資料庫是不下 pk 都要手動 inner join 的
+
+<https://www.google.com/search?q=%E8%BB%8D%E8%A6%8F%E8%B3%87%E6%96%99%E5%BA%AB&rlz=1C1CHBF_zh-TWTW905TW905&oq=%E8%BB%8D%E8%A6%8F%E8%B3%87%E6%96%99%E5%BA%AB&aqs=chrome..69i57.542j0j7&sourceid=chrome&ie=UTF-8>
+
+## SQL Like LINQ Contains
+
+<https://kevintsengtw.blogspot.com/2014/04/linq-contains-arraylist.html>
+
+## [SQL]將多筆資料合併為一筆顯示(FOR XML PATH)
+
+<https://dotblogs.com.tw/kevinya/2012/06/01/72553>
