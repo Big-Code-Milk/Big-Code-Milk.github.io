@@ -103,3 +103,17 @@ List<Order> OrderList = viewModel.GroupBy(x => new {
 ```
 
 <https://dotblogs.com.tw/noncoder/2019/03/25/Lambda-GroupBy-Sum>
+
+## LINQ 多表連接
+
+<https://blog.csdn.net/lixiaoer757/article/details/80598966>
+
+## DBSet DbContext / DataTable DataRow DataSet DataView / List Array Object / Class
+
+<https://whitecat2.pixnet.net/blog/post/62010016-%5B%E7%A8%8B%E5%BC%8F%E7%AD%86%E8%A8%98%5D%5Bc%23%5D%E7%94%A8datatable%E8%88%87dataset%E8%AE%80%E5%8F%96%E8%B3%87%E6%96%99%E8%A1%A8>
+
+<https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/221520/>
+
+<https://ithelp.ithome.com.tw/articles/10196856>
+
+## 搞懂 DbSet與上述 相關函式 Where add remove find...
