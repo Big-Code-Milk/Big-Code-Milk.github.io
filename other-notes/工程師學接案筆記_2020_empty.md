@@ -8,6 +8,14 @@
 
 <https://woowohsu.pixnet.net/blog/post/349440598-%5B%E7%94%A8%E7%97%9E%E5%AE%A2%E9%82%A6%E7%8E%A9seo%5D-%E6%89%BE%E6%AF%94%E8%BC%83%E7%86%B1%E9%96%80%E7%9A%84%E6%96%87%E7%AB%A0%E4%BE%86%E5%B0%8E%E6%B5%81%E7%9A%84%E7%B5%90>
 
+## 利用QA，尋找TA，下定目標，開發MVP，AB test，反饋QA，如此循環，成功後穩住商業模式，再行銷等等 ...
+
+<https://www.ptt.cc/bbs/Soft_Job/M.1506702406.A.F04.html>
+
+<https://www.google.com/search?q=%E6%96%B0%E8%8E%8A%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88&rlz=1C1CHBF_zh-TWTW905TW905&oq=%E6%96%B0%E8%8E%8A%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88&aqs=chrome..69i57j69i61.4011j0j1&sourceid=chrome&ie=UTF-8>
+
+<https://www.google.com/search?rlz=1C1CHBF_zh-TWTW905TW905&ei=xyMiX5CrK9mLr7wProK00Aw&q=%E6%96%B0%E8%8E%8A%E7%B3%BB%E7%B5%B1%E8%A8%AD%E8%A8%88&oq=%E6%96%B0%E8%8E%8A%E7%B3%BB%E7%B5%B1%E8%A8%AD%E8%A8%88&gs_lcp=CgZwc3ktYWIQAzoECAAQRzoGCAAQBxAeULY-WNdJYNZLaABwAXgAgAE0iAGDA5IBATiYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=psy-ab&ved=0ahUKEwjQqtjz6vPqAhXZxYsBHS4BDcoQ4dUDCAw&uact=5>
+
 ## 簽核系統可以用在接案上，省去不必要的麻煩
 
 可參考 freelancer.com 業主與接案方的簽核方式 ( 之前有看過文章但忘記在哪了可能要找找 )
@@ -109,3 +117,9 @@ redmind 基於 ruby on rails 的流程控管工具
 <https://www.google.com/search?client=ms-android-xiaomi-rev1&sxsrf=ALeKk00nxRJkTEs-tR02jck0v1xMAh3ecw%3A1595984867517&ei=48sgX-GNH6-2mAX2so7IDA&q=%E7%B6%B2%E7%AB%99%E6%8E%83%E6%8F%8F%E5%B7%A5%E5%85%B7&oq=%E7%B6%B2%E7%AB%99%E6%8E%83%E6%8F%8F&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAEYATICCAAyAggAMgYIABAFEB4yBQgAEM0CMgUIABDNAjIFCAAQzQI6BAgAEEc6BwgAELEDEEM6BQgAELEDOgQIABBDOggIABCxAxCDAVD7Lli-fmC1iQFoAXABeACAAeIBiAGdBpIBBTEuNC4xmAEAoAEBsAEAwAEB&sclient=mobile-gws-wiz-serp>
 
 <https://www.youtube.com/watch?v=VxAjaMLmB_o&feature=emb_title>
+
+## 富爸爸辭職創業
+
+### 雇員傾向競爭 / 創業者更傾向合作
+
+詢問行銷公司或XX公司是否有案發包，可以先當作其中一個案源

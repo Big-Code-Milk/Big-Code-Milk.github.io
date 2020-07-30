@@ -1,4 +1,4 @@
-# Linq
+# dotNET以Linq延伸SQL
 
 ## Left Join
 
@@ -88,7 +88,7 @@ var IF008_EMP_NO = (from t1 in Repository.Entities.PAM_IF_RESIGN.AsNoTracking()
 
 <https://stackoverflow.com/questions/2176011/iqueryable-to-string-array/2176044>
 
-## Linq LAMDA groupby
+## Linq Lambda groupby
 
 ```C#
 List<Order> OrderList = viewModel.GroupBy(x => new {
@@ -137,3 +137,9 @@ DTO (Class/Model)
 ## [SQL]將多筆資料合併為一筆顯示(FOR XML PATH)
 
 <https://dotblogs.com.tw/kevinya/2012/06/01/72553>
+
+## Database first / Model first / Code first
+
+### Code first
+
+<https://dotblogs.com.tw/supershowwei/2016/04/11/000015>
