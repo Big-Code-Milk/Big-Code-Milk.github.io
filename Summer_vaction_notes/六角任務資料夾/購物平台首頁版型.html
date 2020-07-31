@@ -9,6 +9,7 @@
     <!--css reset-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <!-- 引入字體 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Noto Serif TC', serif;
@@ -421,7 +422,7 @@
 <body>
     <div class="wrap">
         <!--  主要的容器包          -->
-        <div class="header">
+        <div data-aos="fade-right" data-aos-duration="1500" data-aos-anchor="#trigger-left" class="header">
             <!-- 功能導覽列               -->
 
             <a href="#mail"><img class="logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg" alt="sweetaste.icon"></a>
@@ -570,6 +571,10 @@
     </div>
 
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
 <!-- 觀察與別人任務不同之處，發現差異在於別人的class選擇器如有相同的css樣式會寫在一起，這樣看起來會更簡潔，不過可讀性也許會降低，但如果利用了css預處理器之後，能讓CSS更加簡潔、適應性更強、可讀性更佳，更易於代碼的維護，所以各有好壞，不過都能用css預處器解決，參考https://changtsuiling.gitbooks.io/sass/chapter1/1-1-shi-me-shi-css-yu-chu-li-qi-ff1f.html -->
