@@ -117,6 +117,7 @@
         .category a:hover {
             background-color: #EAF0ED;
             border: 1px solid #3F5D45;
+            transform: translate(10px, 10px);
         }
         
         .product {
@@ -200,12 +201,13 @@
             position: absolute;
             top: 19px;
             right: 22px;
-            transition: all .5s;
+            transition: all 1s;
         }
         
         .favorite:hover {
             background-color: pink;
             border: 1px solid #3F5D45;
+            transform: rotateY(180deg);
         }
         
         .pagemark {
@@ -339,6 +341,11 @@
             height: auto;
             margin-top: 0;
             margin-bottom: 0;
+            transition: all .5s;
+        }
+        
+        .line:hover {
+            transform: translateY(-10px);
         }
         
         .fb {
@@ -346,6 +353,11 @@
             height: auto;
             margin-left: 8px;
             margin-bottom: 0;
+            transition: all .5s;
+        }
+        
+        .fb:hover {
+            transform: translateY(-10px);
         }
         
         .sloganbox {
@@ -483,7 +495,7 @@
                     <p>本日精選</p>
                     <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                 </li>
-                <li data-aos="zoom-in-left" data-aos-duration="3000" data-aos-once="false" data-aos-easing="ease-in-back" data-aos-delay="300" class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-3.png?raw=true" alt="p-3.png">
+                <li data-aos="zoom-in-left" data-aos-duration="3000" data-aos-once="false" class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-3.png?raw=true" alt="p-3.png">
                     <div class="namePrice">
                         <h4>焦糖瑪卡龍</h4>
                         <span>NT$ 450</span>
@@ -492,7 +504,7 @@
                     <p>本日精選</p>
                     <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                 </li>
-                <li data-aos="zoom-in-left" data-aos-duration="3000" data-aos-once="false" data-aos-easing="ease-in-back" data-aos-delay="300" class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-4.png?raw=true" alt="p-4.png">
+                <li data-aos="zoom-in-left" data-aos-duration="3000" data-aos-once="false" class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-4.png?raw=true" alt="p-4.png">
                     <div class="namePrice">
                         <h4>焦糖瑪卡龍</h4>
                         <span>NT$ 450</span>
@@ -501,7 +513,7 @@
                     <p>本日精選</p>
                     <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                 </li>
-                <li data-aos="zoom-in-left" data-aos-duration="3000" data-aos-once="false" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-5.png?raw=true" alt="p-5.png">
+                <li data-aos="zoom-in-left" data-aos-duration="3000" data-aos-once="false" class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-5.png?raw=true" alt="p-5.png">
                     <div class="namePrice">
                         <h4>焦糖瑪卡龍</h4>
                         <span>NT$ 450</span>
@@ -510,7 +522,7 @@
                     <p>本日精選</p>
                     <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                 </li>
-                <li data-aos="zoom-in-left" data-aos-duration="3000" data-aos-once="false" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-6.png?raw=true" alt="p-6.png">
+                <li data-aos="zoom-in-left" data-aos-duration="3000" data-aos-once="false" class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-6.png?raw=true" alt="p-6.png">
                     <div class="namePrice">
                         <h4>焦糖瑪卡龍</h4>
                         <span>NT$ 450</span>
@@ -542,7 +554,7 @@
                 <!--       使用符號取代照片，來達到相同效果    -->
             </li>
         </ul>
-        <footer data-aos="fade-left" data-aos-duration="3000" data-aos-once="false" data-aos-anchor-placement="top-bottom">
+        <footer data-aos="fade-up" data-aos-offset="500" data-aos-delay="100" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">>
             <form class=" mailbox ">
                 <img class="icon " src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg " alt="sweet ">
                 <a class="sub " href="#mail ">
@@ -566,7 +578,7 @@
                     </a>
                 </div>
                 <div class="sloganbox ">
-                    <p class="slogan ">今天是個――<br/>吃甜點的好日子。</p>
+                    <p data-aos="zoom-in-left" data-aos-offset="300" data-aos-delay="150" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center" class="slogan ">今天是個――<br/>吃甜點的好日子。</p>
                     <p class="copyright ">© 2018 Sweetaste* All Rights Reserved</p>
                 </div>
             </div>
@@ -589,7 +601,7 @@
 
 
         // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 500, // offset (in px) from the original trigger point
+        offset: 200, // offset (in px) from the original trigger point
         delay: 0, // values from 0 to 3000, with step 50ms
         duration: 1000, // values from 0 to 3000, with step 50ms
         easing: 'ease', // default easing for AOS animations
