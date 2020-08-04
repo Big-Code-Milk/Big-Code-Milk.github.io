@@ -143,3 +143,5 @@ DTO (Class/Model)
 ### Code first
 
 <https://dotblogs.com.tw/supershowwei/2016/04/11/000015>
+
+<https://programmium.wordpress.com/2017/07/17/ef-code-first-auto-increment-key/>
