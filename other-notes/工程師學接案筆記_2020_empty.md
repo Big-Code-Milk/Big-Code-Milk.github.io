@@ -96,7 +96,7 @@ redmind 基於 ruby on rails 的流程控管工具
 
 某soho網拍無私教人入門，最後學生都變成他的下線，由他分包案件。
 
-## 業務
+## 業務心得
 
 <https://forum.gamer.com.tw/Co.php?bsn=60561&sn=58878>
 
@@ -135,3 +135,23 @@ redmind 基於 ruby on rails 的流程控管工具
 ## 如何爭取客戶，給報價與我們能做什麼，與之現有使用 Salesforce 產品的差異
 
 <https://zh.wikipedia.org/wiki/Salesforce.com>
+
+## 實務
+
+### 行銷
+
+廣告投遞效益、線上線下、如何追蹤...
+
+### 業務
+
+價格、時程大略、需求大略、競業...
+
+### PM
+
+需求、Domain Know 流程面的問題、架構、時程管理...
+
+### 程式
+
+資料面的問題、邏輯面的問題、技術面問題...
+
+### 需要分門別類清楚才好個別擊破
