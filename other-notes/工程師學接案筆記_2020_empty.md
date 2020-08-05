@@ -123,3 +123,15 @@ redmind 基於 ruby on rails 的流程控管工具
 ### 雇員傾向競爭 / 創業者更傾向合作
 
 詢問行銷公司或XX公司是否有案發包，可以先當作其中一個案源
+
+## 企業管理熟 才能抽象化抽出來做 SaaS
+
+<https://www.infolight.com/MVC/Home/ProductDetail/NjA%3d>
+
+## 2b 與 2c 客群不一樣
+
+## 要考慮寫一次能夠賺幾次 -> 湖南進口貿易商 / 賣一貨櫃大於零售 / 賺美金人民幣價差，但容易受大環境(政經)影響
+
+## 如何爭取客戶，給報價與我們能做什麼，與之現有使用 Salesforce 產品的差異
+
+<https://zh.wikipedia.org/wiki/Salesforce.com>
