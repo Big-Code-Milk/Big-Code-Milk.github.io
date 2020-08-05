@@ -173,3 +173,5 @@ UAT (User Acceptance Testing)使用者驗收測試
 同業怎麼做，解決方案怎麼做。
 
 解決方案就是從各大流程或行銷或 XXX 如何資訊化電子化。
+
+<https://atm70000.com/%E9%9B%BB%E5%95%86%E5%B9%B3%E5%8F%B0%E9%96%8B%E5%BA%97%E5%B9%B3%E5%8F%B0%E7%B3%BB%E7%B5%B1%E7%9A%84%E8%B2%BB%E7%94%A8%E5%83%B9%E6%A0%BC%E6%AF%94%E8%BC%83%E8%88%87%E6%95%B4%E7%90%86/>
