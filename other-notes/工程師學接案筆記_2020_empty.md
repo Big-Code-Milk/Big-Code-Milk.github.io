@@ -48,11 +48,15 @@ p2b就是利他性
 
 ---
 
+某soho網拍無私教人入門，最後學生都變成他的下線，由他分包案件。
+
 ## 比價比功能 需要會什麼 性價比多少 做那些能賺比較多 ( ex. 賣菜賣水果 )
 
 <http://www.gw-design.com/index.php/design_prices/index>
 
 ## 行銷策略
+
+<https://domyweb.org/unfamiliar-contact/>
 
 海灘貨幣 <https://news.ltn.com.tw/news/life/breakingnews/2767225>
 
@@ -91,10 +95,6 @@ p2b就是利他性
 <http://dreamerslab.com/blog/tw/comparing-5-project-management-tools/>
 
 redmind 基於 ruby on rails 的流程控管工具
-
-## 利他性
-
-某soho網拍無私教人入門，最後學生都變成他的下線，由他分包案件。
 
 ## 業務心得
 
