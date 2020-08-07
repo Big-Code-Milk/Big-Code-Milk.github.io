@@ -143,3 +143,17 @@ DTO (Class/Model)
 ### Code first
 
 <https://dotblogs.com.tw/supershowwei/2016/04/11/000015>
+
+<https://programmium.wordpress.com/2017/07/17/ef-code-first-auto-increment-key/>
+
+## 資料繫結 DataSet vs DTO (Data transfer object)
+
+<https://www.google.com/search?q=DataSet+vs+DTO&rlz=1C1CHBF_zh-TWTW905TW905&oq=DataSet&aqs=chrome.1.69i59l3j0l2j69i60l3.641j0j7&sourceid=chrome&ie=UTF-8>
+
+<https://dotblogs.com.tw/yc421206/2011/03/07/21706>
+
+<https://whitecat2.pixnet.net/blog/post/62010016-%5B%E7%A8%8B%E5%BC%8F%E7%AD%86%E8%A8%98%5D%5Bc%23%5D%E7%94%A8datatable%E8%88%87dataset%E8%AE%80%E5%8F%96%E8%B3%87%E6%96%99%E8%A1%A8>
+
+---
+
+<https://ithelp.ithome.com.tw/articles/10186055>
