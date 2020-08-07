@@ -179,3 +179,11 @@ UAT (User Acceptance Testing)使用者驗收測試
 <https://www.meepshop.com/about/>
 
 <http://gelis-dotnet.blogspot.com/2018/07/clean-architecture.html>
+
+<https://www.google.com/search?q=webflow&rlz=1C1CHBF_zh-TWTW905TW905&oq=webflow&aqs=chrome..69i57j0l7.2483j1j7&sourceid=chrome&ie=UTF-8>
+
+## 對於寫程式來說 USER CASE 很重要，USER CASE 會產生後續工程師腦袋中的 CODE FLOW
+
+## 對於工程師協作來說，程式碼流程或圖，紀錄 DOCUMENT 很重要，不然就像在看天書玩猜謎
+
+
