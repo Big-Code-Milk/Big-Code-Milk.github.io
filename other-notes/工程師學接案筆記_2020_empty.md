@@ -24,6 +24,10 @@
 
 ---
 
+## 接案 / 知呼 keyword 程序員 私活
+
+<https://www.zhihu.com/question/24171142/answer/59755624>
+
 ## 必須被動接案，主動接案 給人的印象就是廉價
 
 <https://www.youtube.com/watch?v=nDkend5qjLY>
@@ -70,6 +74,10 @@ p2b就是利他性
 
 <https://wcc723.github.io/business/2020/03/18/how-to-register-a-company/>
 
+IT 創業似乎不太需要 OPM 而是技術 ?
+
+<https://www.google.com/search?client=ms-android-xiaomi-rev1&sxsrf=ALeKk033npaOpvlNPVh872GjQgG7WQBqqg%3A1596327147929&ei=6wQmX6qgOJySr7wP9NaKmAQ&q=opm%E6%84%8F%E6%80%9D&oq=opm&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAEYADIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQR1AAWABgh3BoAHABeACAAQCIAQCSAQCYAQDAAQE&sclient=mobile-gws-wiz-serp>
+
 ---
 
 ## 創業眉角
@@ -83,6 +91,10 @@ p2b就是利他性
 <https://forum.gamer.com.tw/Co.php?bsn=60561&sn=106178>
 
 <https://forum.gamer.com.tw/Co.php?bsn=60561&sn=95576>
+
+<https://www.youtube.com/watch?v=_UkgJ45b4ds&feature=youtu.be>
+
+<https://www.youtube.com/watch?v=rfGoB5I8dJ8>
 
 ---
 

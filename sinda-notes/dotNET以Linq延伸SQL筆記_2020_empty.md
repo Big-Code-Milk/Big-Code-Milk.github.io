@@ -143,3 +143,9 @@ DTO (Class/Model)
 ### Code first
 
 <https://dotblogs.com.tw/supershowwei/2016/04/11/000015>
+
+## DTO
+
+## EF.Database.BeginTransaction
+
+<https://docs.microsoft.com/zh-tw/ef/ef6/saving/transactions>
