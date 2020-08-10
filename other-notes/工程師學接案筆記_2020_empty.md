@@ -164,9 +164,9 @@ redmind 基於 ruby on rails 的流程控管工具
 
 2 .業務歸業務還是要寒暄...
 
-SIT (System Integration Testing) 系統整合測試，也叫做整合測試
+## SIT (System Integration Testing) 系統整合測試，也叫做整合測試
 
-UAT (User Acceptance Testing)使用者驗收測試
+## UAT (User Acceptance Testing)使用者驗收測試
 
 ### 提案技巧
 
@@ -186,4 +186,28 @@ UAT (User Acceptance Testing)使用者驗收測試
 
 ## 對於工程師協作來說，程式碼流程或圖，紀錄 DOCUMENT 很重要，不然就像在看天書玩猜謎
 
+## MVP
 
+<https://www.tsg.com.tw/>
+
+<https://www.24hosting.com.tw/>
+
+<https://webpagetone.com/>
+
+<https://wpw.design/>
+
+<https://www.webtech.com.tw/>
+
+<https://www.newscan.com.tw/>
+
+<https://www.design-hu.com/>
+
+<https://www.ibest.tw/>
+
+<https://achang.tw/>
+
+### V1
+
+### V2
+
+### V3
