@@ -1,3 +1,47 @@
+# MVP
+
+## 參考
+
+<https://www.tsg.com.tw/>
+
+<https://www.24hosting.com.tw/>
+
+<https://webpagetone.com/>
+
+<https://wpw.design/>
+
+<https://www.webtech.com.tw/>
+
+<https://www.newscan.com.tw/>
+
+<https://www.design-hu.com/>
+
+<https://www.ibest.tw/>
+
+<https://achang.tw/>
+
+### V1
+
+v1.1 MVP 工作室網站架構 主頁單頁式各大 接案網站匯集精華
+
+v1.2 版型頁 與 內容行銷頁(文章 Blog) 與 購物車頁 (需整合線上教學影音出售) 與 前置作業與中期作業透明自動化管理頁面(e.g. 網頁通 或 freelancer.com)
+
+v1.3 利用 github page ABTest - 多個工作室名稱帶來的流量 seo + ga + gtm
+
+### V2
+
+v2.1 確定工作室名稱 尋找 MVP 架站位置與網域
+
+v2.2 確定流程 SOP 化，戰略規劃方案(行銷、業務、開發、售後)與方案成效追蹤暨在改善優化計畫
+
+### V3
+
+v3.1 開始營業或前面其實已經開始營業但逐步進行
+
+...
+
+---
+
 <https://www.bigboycancode.com/all-courses/>
 
 <https://hiskio.com/courses/290>
@@ -52,11 +96,15 @@ p2b就是利他性
 
 ---
 
+某soho網拍無私教人入門，最後學生都變成他的下線，由他分包案件。
+
 ## 比價比功能 需要會什麼 性價比多少 做那些能賺比較多 ( ex. 賣菜賣水果 )
 
 <http://www.gw-design.com/index.php/design_prices/index>
 
 ## 行銷策略
+
+<https://domyweb.org/unfamiliar-contact/>
 
 海灘貨幣 <https://news.ltn.com.tw/news/life/breakingnews/2767225>
 
@@ -104,11 +152,7 @@ IT 創業似乎不太需要 OPM 而是技術 ?
 
 redmind 基於 ruby on rails 的流程控管工具
 
-## 利他性
-
-某soho網拍無私教人入門，最後學生都變成他的下線，由他分包案件。
-
-## 業務
+## 業務心得
 
 <https://forum.gamer.com.tw/Co.php?bsn=60561&sn=58878>
 
@@ -135,3 +179,65 @@ redmind 基於 ruby on rails 的流程控管工具
 ### 雇員傾向競爭 / 創業者更傾向合作
 
 詢問行銷公司或XX公司是否有案發包，可以先當作其中一個案源
+
+## 企業管理熟 才能抽象化抽出來做 SaaS
+
+<https://www.infolight.com/MVC/Home/ProductDetail/NjA%3d>
+
+## 2b 與 2c 客群不一樣
+
+## 要考慮寫一次能夠賺幾次 -> 湖南進口貿易商 / 賣一貨櫃大於零售 / 賺美金人民幣價差，但容易受大環境(政經)影響
+
+## 如何爭取客戶，給報價與我們能做什麼，與之現有使用 Salesforce 產品的差異
+
+<https://zh.wikipedia.org/wiki/Salesforce.com>
+
+## 實務
+
+### 行銷
+
+廣告投遞效益、線上線下、如何追蹤...
+
+### 業務
+
+價格、時程大略、需求大略、競業...
+
+### PM
+
+需求、Domain Know 流程面的問題、架構、時程管理...
+
+### 程式
+
+資料面的問題、邏輯面的問題、技術面問題...
+
+### 需要分門別類清楚才好個別擊破
+
+送教育訓練
+
+1. 一開始做就要找能決定的人
+
+例如今天經理交派 手下去做A，手下交派B，工程師改半天B，終於改完了，結果經理是要A
+
+2 .業務歸業務還是要寒暄...
+
+## SIT (System Integration Testing) 系統整合測試，也叫做整合測試
+
+## UAT (User Acceptance Testing)使用者驗收測試
+
+### 提案技巧
+
+同業怎麼做，解決方案怎麼做。
+
+解決方案就是從各大流程或行銷或 XXX 如何資訊化電子化。
+
+<https://atm70000.com/%E9%9B%BB%E5%95%86%E5%B9%B3%E5%8F%B0%E9%96%8B%E5%BA%97%E5%B9%B3%E5%8F%B0%E7%B3%BB%E7%B5%B1%E7%9A%84%E8%B2%BB%E7%94%A8%E5%83%B9%E6%A0%BC%E6%AF%94%E8%BC%83%E8%88%87%E6%95%B4%E7%90%86/>
+
+<https://www.meepshop.com/about/>
+
+<http://gelis-dotnet.blogspot.com/2018/07/clean-architecture.html>
+
+<https://www.google.com/search?q=webflow&rlz=1C1CHBF_zh-TWTW905TW905&oq=webflow&aqs=chrome..69i57j0l7.2483j1j7&sourceid=chrome&ie=UTF-8>
+
+## 對於寫程式來說 USER CASE 很重要，USER CASE 會產生後續工程師腦袋中的 CODE FLOW
+
+## 對於工程師協作來說，程式碼流程或圖，紀錄 DOCUMENT 很重要，不然就像在看天書玩猜謎

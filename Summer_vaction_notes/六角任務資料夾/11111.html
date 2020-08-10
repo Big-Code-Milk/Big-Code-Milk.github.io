@@ -117,7 +117,6 @@
         .category a:hover {
             background-color: #EAF0ED;
             border: 1px solid #3F5D45;
-            transform: translate(10px, 10px);
         }
         
         .product {
@@ -201,13 +200,12 @@
             position: absolute;
             top: 19px;
             right: 22px;
-            transition: all 1s;
+            transition: all .5s;
         }
         
         .favorite:hover {
             background-color: pink;
             border: 1px solid #3F5D45;
-            transform: rotateY(180deg);
         }
         
         .pagemark {
@@ -324,40 +322,27 @@
             float: left;
         }
         
+        .footerlogo img {
+            width: 171.22px;
+            height: 26.6px;
+            margin: 38.9px 0 115.5px 0;
+        }
+        
         .footerlogo p {
             line-height: 24px;
             margin: 0 0 30px;
             font-weight: 600;
         }
         
-        .footericon {
-            width: 171.22px;
-            margin-bottom: 115.5px;
-            margin-top: 38.9px;
-        }
-        
         .line {
             width: 32px;
             height: auto;
-            margin-top: 0;
-            margin-bottom: 0;
-            transition: all .5s;
-        }
-        
-        .line:hover {
-            transform: translateY(-10px);
         }
         
         .fb {
             width: 32px;
             height: auto;
             margin-left: 8px;
-            margin-bottom: 0;
-            transition: all .5s;
-        }
-        
-        .fb:hover {
-            transform: translateY(-10px);
         }
         
         .sloganbox {
@@ -414,6 +399,7 @@
             .contact {
                 display: flex;
                 flex-direction: column;
+                height: 311px;
                 padding: 0px 0px 0px 30px;
             }
             .sloganbox {
@@ -436,7 +422,7 @@
 <body>
     <div class="wrap">
         <!--  主要的容器包          -->
-        <div data-aos="fade-right" data-aos-duration="3000" class="header">
+        <div data-aos="fade-right" data-aos-duration="1500" data-aos-anchor="#trigger-left" class="header">
             <!-- 功能導覽列               -->
 
             <a href="#mail"><img class="logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg" alt="sweetaste.icon"></a>
@@ -451,11 +437,11 @@
                 </li>
             </ul>
         </div>
-        <img data-aos="zoom-in-up" class="banner" data-aos-duration="3000" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/banner.png?raw=true" alt="banner.png ">
+        <img class="banner" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/banner.png?raw=true" alt="banner.png ">
         <!--   商家照片        -->
         <div class="main">
             <!--     商品陳列           -->
-            <ul data-aos="zoom-in-right" data-aos-duration="3000" class="category">
+            <ul class="category">
                 <!--       商品種類             -->
                 <li>
                     <h3>甜點類別</h3>
@@ -475,7 +461,7 @@
             </ul>
             <ul class="product">
                 <!--         商品瀏覽，專屬卡片           -->
-                <li data-aos="zoom-in-left" data-aos-once="false" class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true" alt="p-1.png">
+                <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true" alt="p-1.png">
                     <div class="namePrice">
                         <h4>焦糖瑪卡龍</h4>
                         <span>NT$ 450</span>
@@ -484,7 +470,7 @@
                     <p>本日精選</p>
                     <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                 </li>
-                <li data-aos="zoom-in" data-aos-once="false" class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-2.png?raw=true" alt="p-2.png">
+                <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-2.png?raw=true" alt="p-2.png">
 
                     <div class="namePrice">
                         <h4>焦糖瑪卡龍</h4>
@@ -494,7 +480,7 @@
                     <p>本日精選</p>
                     <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                 </li>
-                <li data-aos="zoom-in-left" data-aos-once="false" class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-3.png?raw=true" alt="p-3.png">
+                <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-3.png?raw=true" alt="p-3.png">
                     <div class="namePrice">
                         <h4>焦糖瑪卡龍</h4>
                         <span>NT$ 450</span>
@@ -503,7 +489,7 @@
                     <p>本日精選</p>
                     <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                 </li>
-                <li data-aos="zoom-in-left" data-aos-once="false" class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-4.png?raw=true" alt="p-4.png">
+                <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-4.png?raw=true" alt="p-4.png">
                     <div class="namePrice">
                         <h4>焦糖瑪卡龍</h4>
                         <span>NT$ 450</span>
@@ -512,7 +498,7 @@
                     <p>本日精選</p>
                     <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                 </li>
-                <li data-aos="zoom-in-left" data-aos-once="false" class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-5.png?raw=true" alt="p-5.png">
+                <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-5.png?raw=true" alt="p-5.png">
                     <div class="namePrice">
                         <h4>焦糖瑪卡龍</h4>
                         <span>NT$ 450</span>
@@ -521,7 +507,7 @@
                     <p>本日精選</p>
                     <a href="#" class="favorite" onclick="alert('已加入我的收藏!')"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="加入收藏"></a>
                 </li>
-                <li data-aos="zoom-in-left" data-aos-duration="3000" data-aos-once="false" class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-6.png?raw=true" alt="p-6.png">
+                <li class="card"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-6.png?raw=true" alt="p-6.png">
                     <div class="namePrice">
                         <h4>焦糖瑪卡龍</h4>
                         <span>NT$ 450</span>
@@ -532,7 +518,7 @@
                 </li>
             </ul>
         </div>
-        <ul class="pagemark" id="trigger1">
+        <ul class="pagemark">
             <!--       換頁欄         -->
             <li>
                 <a href="#">◂</a>
@@ -553,62 +539,41 @@
                 <!--       使用符號取代照片，來達到相同效果    -->
             </li>
         </ul>
-        <footer data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
-            <form class=" mailbox ">
-                <img class="icon " src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg " alt="sweet ">
-                <a class="sub" href="#mail ">
+        <footer>
+            <form class="mailbox">
+                <img class="icon" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg" alt="sweet">
+                <a class="sub" href="#mail">
                     <p>訂閱你我的甜蜜郵件</p>
                 </a>
-                <lable class="mail " for="mail ">
-                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true " alt=" ">
-                    <input class="yourmail " type="email " name="email " id="mail " required>
+                <lable class="mail" for="mail">
+                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true" alt="">
+                    <input class="yourmail" type="email" name="email" id="mail" required>
                 </lable>
-                <input class="arrow" type="image" img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true " onclick="alert( '已寄確認發信件至：' + getElementById( 'mail').value);this.submit() ">
+                <input class="arrow" type="image" img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png" onclick="alert('已寄確認發信件至：' + getElementById('mail').value);this.submit()">
             </form>
             <div class="contact">
                 <div class="footerlogo">
-                    <a href="# ">
-                        <img class="footericon" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-lg-dark.svg " />
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-lg-dark.svg" />
                     </a>
                     <p>07-1234-5678<br/>sweetaste@email.com<br/>800 高雄市新興區幸福路 520 號</p>
-                    <a href="# "><img class="line " src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/ic-line%40.svg "></a>
-                    <a href="# ">
-                        <img class="fb" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/ic-facebook.svg ">
+                    <a href="#"><input class="line" type="image" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/ic-line%40.svg "></a>
+                    <a href="#">
+                        <input class="fb" type="image" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/ic-facebook.svg">
                     </a>
                 </div>
                 <div class="sloganbox">
-                    <p data-aos="zoom-in-left" data-aos-offset="300" data-aos-delay="150" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" class="slogan ">今天是個――<br/>吃甜點的好日子。</p>
-                    <p class="copyright ">© 2018 Sweetaste* All Rights Reserved</p>
+                    <p class="slogan">今天是個――<br/>吃甜點的好日子。</p>
+                    <p class="copyright">© 2018 Sweetaste* All Rights Reserved</p>
                 </div>
             </div>
         </footer>
     </div>
 
 </body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init({
-        // Global settings:
-        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-        initClassName: 'aos-init', // class applied after initialization
-        animatedClassName: 'aos-animate', // class applied on animation
-        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 200, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 1000, // values from 0 to 3000, with step 50ms
-        easing: 'ease', // default easing for AOS animations
-        once: true, // whether animation should happen only once - while scrolling down
-        mirror: false, // whether elements should animate out while scrolling past them
-        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-    });
+    AOS.init();
 </script>
 
 </html>
