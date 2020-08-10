@@ -1,3 +1,47 @@
+# MVP
+
+## 參考
+
+<https://www.tsg.com.tw/>
+
+<https://www.24hosting.com.tw/>
+
+<https://webpagetone.com/>
+
+<https://wpw.design/>
+
+<https://www.webtech.com.tw/>
+
+<https://www.newscan.com.tw/>
+
+<https://www.design-hu.com/>
+
+<https://www.ibest.tw/>
+
+<https://achang.tw/>
+
+### V1
+
+v1.1 MVP 工作室網站架構 主頁單頁式各大 接案網站匯集精華
+
+v1.2 版型頁 與 內容行銷頁(文章 Blog) 與 購物車頁 (需整合線上教學影音出售) 與 前置作業與中期作業透明自動化管理頁面(e.g. 網頁通 或 freelancer.com)
+
+v1.3 利用 github page ABTest - 多個工作室名稱帶來的流量 seo + ga + gtm
+
+### V2
+
+v2.1 確定工作室名稱 尋找 MVP 架站位置與網域
+
+v2.2 確定流程 SOP 化，戰略規劃方案(行銷、業務、開發、售後)與方案成效追蹤暨在改善優化計畫
+
+### V3
+
+v3.1 開始營業或前面其實已經開始營業但逐步進行
+
+...
+
+---
+
 <https://www.bigboycancode.com/all-courses/>
 
 <https://hiskio.com/courses/290>
@@ -185,29 +229,3 @@ redmind 基於 ruby on rails 的流程控管工具
 ## 對於寫程式來說 USER CASE 很重要，USER CASE 會產生後續工程師腦袋中的 CODE FLOW
 
 ## 對於工程師協作來說，程式碼流程或圖，紀錄 DOCUMENT 很重要，不然就像在看天書玩猜謎
-
-## MVP
-
-<https://www.tsg.com.tw/>
-
-<https://www.24hosting.com.tw/>
-
-<https://webpagetone.com/>
-
-<https://wpw.design/>
-
-<https://www.webtech.com.tw/>
-
-<https://www.newscan.com.tw/>
-
-<https://www.design-hu.com/>
-
-<https://www.ibest.tw/>
-
-<https://achang.tw/>
-
-### V1
-
-### V2
-
-### V3
