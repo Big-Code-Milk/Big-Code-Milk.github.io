@@ -1,0 +1,39 @@
+$primary-color:#3F5D45;
+$secondary-color:#EAF0ED;
+.wrap {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    .logo {
+        width: 76%;
+    }
+    .ham_menu {
+        display: none;
+    }
+    .menu {
+        font-size: 16px;
+        align-items: center;
+        display: flex;
+        line-height: 73px;
+        a {
+            text-decoration: none;
+            color: $primary-color;
+            padding: 15px 0px 15px 60px;
+            transition: all 1s;
+            &:hover {
+                background-color: $primary-color;
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+.banner {
+    margin-top: 30px;
+    max-width: 100%;
+}
