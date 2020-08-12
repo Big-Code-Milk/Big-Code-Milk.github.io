@@ -158,6 +158,8 @@ redmind 基於 ruby on rails 的流程控管工具
 
 ## 輪子
 
+<https://www.zhihu.com/answer/1387221082>
+
 <https://www.zhihu.com/question/40683460/answer/1350035138>
 
 <https://www.zhihu.com/question/295227280/answer/1333085582>
@@ -197,6 +199,8 @@ redmind 基於 ruby on rails 的流程控管工具
 ### 行銷
 
 廣告投遞效益、線上線下、如何追蹤...
+
+<https://fc.bnext.com.tw/google-tools-public-opinion/>
 
 ### 業務
 
