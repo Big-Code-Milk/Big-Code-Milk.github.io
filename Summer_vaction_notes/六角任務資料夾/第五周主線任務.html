@@ -9,7 +9,7 @@
     <!--css reset-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <!-- 引入字體 -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/第五周主線任務.css">
 </head>
 
@@ -19,17 +19,16 @@
         <div data-aos="fade-right" data-aos-duration="3000" class="header">
             <!-- 功能導覽列               -->
 
-            <a href="#mail"><img class="logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg" alt="sweetaste.icon"></a>
-            <a href="#mail"><img class="ham_menu" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true"></a>
+            <a class="logo" href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg" alt="sweetaste.icon"></a>
+            <button class="ham_menu" href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true"></button>
             <a class="rwd_logo" href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-sm-dark.svg" alt="logo"> </a>
             <ul class="menu">
                 <li class="rwd_none"><a href="#">首頁</a></li>
                 <li class="rwd_none"><a href="#">甜點</a></li>
                 <li class="rwd_none"><a href="#">登入</a></li>
-                <li>
-                    <a href="#mail"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true" alt="購物車"></a>
-                </li>
             </ul>
+            <a class="shopcart" href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true" alt="購物車"></a>
+
         </div>
         <img data-aos="zoom-in-up" class="banner" data-aos-duration="3000" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/banner.png?raw=true" alt="banner.png ">
         <!--   商家照片        -->
@@ -133,36 +132,38 @@
                 <!--       使用符號取代照片，來達到相同效果    -->
             </li>
         </ul>
-        <footer data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
-            <form class=" mailbox ">
-                <img class="icon " src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg " alt="sweet ">
-                <a class="sub" href="#mail ">
-                    <p>訂閱你我的甜蜜郵件</p>
-                </a>
-                <lable class="mail " for="mail ">
-                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true " alt=" ">
-                    <input class="yourmail " type="email " name="email " id="mail " required>
-                </lable>
-                <input class="arrow" type="image" img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true " onclick="alert( '已寄確認發信件至：' + getElementById( 'mail').value);this.submit() ">
-            </form>
-            <div class="contact">
-                <div class="footerlogo">
-                    <a href="# ">
-                        <img class="footericon" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-lg-dark.svg " />
-                    </a>
-                    <p>07-1234-5678<br/>sweetaste@email.com<br/>800 高雄市新興區幸福路 520 號</p>
-                    <a href="# "><img class="line " src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/ic-line%40.svg "></a>
-                    <a href="# ">
-                        <img class="fb" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/ic-facebook.svg ">
-                    </a>
-                </div>
-                <div class="sloganbox">
-                    <p data-aos="zoom-in-left" data-aos-offset="300" data-aos-delay="150" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" class="slogan ">今天是個――<br/>吃甜點的好日子。</p>
-                    <p class="copyright ">© 2018 Sweetaste* All Rights Reserved</p>
-                </div>
-            </div>
-        </footer>
     </div>
+    <footer data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+        <form class=" mailbox">
+            <div class="boxitem1"><img class="icon" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg " alt="sweet">
+                <a class="sub" href="#mail ">
+                    訂閱你我的甜蜜郵件
+                </a>
+            </div>
+            <lable class="mail" for="mail ">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true" alt=" ">
+                <input class="yourmail" type="email" name="email" id="mail" required>
+                <input class="arrow" type="image" img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true" onclick="alert( '已寄確認發信件至：' + getElementById( 'mail').value);this.submit() ">
+            </lable>
+        </form>
+        <div class="contact">
+            <div class="footerlogo">
+                <a href="# ">
+                    <img class="footericon" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-lg-dark.svg " />
+                </a>
+                <p>07-1234-5678<br />sweetaste@email.com<br />800 高雄市新興區幸福路 520 號</p>
+                <a href="# "><img class="line " src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/ic-line%40.svg "></a>
+                <a href="# ">
+                    <img class="fb" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/ic-facebook.svg ">
+                </a>
+            </div>
+            <div class="sloganbox">
+                <p data-aos="zoom-in-left" data-aos-offset="300" data-aos-delay="150" data-aos-duration="2000" class="slogan ">
+                    今天是個――<br />吃甜點的好日子。</p>
+                <p class="copyright ">© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
