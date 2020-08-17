@@ -146,6 +146,10 @@ IT 創業似乎不太需要 OPM 而是技術 ?
 
 ---
 
+## 保哥 有空有用的都筆記重點一下
+
+<https://ithelp.ithome.com.tw/m/articles/10134086>
+
 ## 工具
 
 <http://dreamerslab.com/blog/tw/comparing-5-project-management-tools/>
@@ -205,6 +209,12 @@ redmind 基於 ruby on rails 的流程控管工具
 ### 業務
 
 價格、時程大略、需求大略、競業...
+
+<https://ithelp.ithome.com.tw/m/questions/10189126>
+
+<https://blog.top.104.com.tw/2019/07/31/price_website/>
+
+<https://w3c.hexschool.com/-30-/7bd813e4>
 
 ### PM
 
