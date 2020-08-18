@@ -28,6 +28,8 @@ v1.2 版型頁 與 內容行銷頁(文章 Blog) 與 購物車頁 (需整合線�
 
 v1.3 利用 github page ABTest - 多個工作室名稱帶來的流量 seo + ga + gtm
 
+v1.4 六角 google 日歷 api
+
 ### V2
 
 v2.1 確定工作室名稱 尋找 MVP 架站位置與網域
