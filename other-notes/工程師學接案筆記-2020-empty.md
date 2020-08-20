@@ -20,6 +20,10 @@
 
 ### V1
 
+v1.0 取名 SEO
+
+<https://blog.shopline.tw/seo-guideline-and-list/>
+
 v1.1 MVP 工作室網站架構 主頁單頁式各大 接案網站匯集精華
 
 v1.2 版型頁 與 內容行銷頁(文章 Blog) 與 購物車頁 (需整合線上教學影音出售) 與 前置作業與中期作業透明自動化管理頁面(e.g. 網頁通 或 freelancer.com)
@@ -267,3 +271,7 @@ redmind 基於 ruby on rails 的流程控管工具
 ## 對於寫程式來說 USER CASE 很重要，USER CASE 會產生後續工程師腦袋中的 CODE FLOW
 
 ## 對於工程師協作來說，程式碼流程或圖，紀錄 DOCUMENT 很重要，不然就像在看天書玩猜謎
+
+## SEO
+
+<https://www.awoo.com.tw/blog/black-hat/>
