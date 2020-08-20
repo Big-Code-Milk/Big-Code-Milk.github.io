@@ -2,8 +2,6 @@
 
 ## 參考
 
-<https://www.tsg.com.tw/>
-
 <https://www.24hosting.com.tw/>
 
 <https://webpagetone.com/>
@@ -30,6 +28,12 @@ v1.3 利用 github page ABTest - 多個工作室名稱帶來的流量 seo + ga +
 
 v1.4 六角 google 日歷 api
 
+v1.5 各式系統與版型
+
+<https://www.tsg.com.tw/>
+
+<https://swoole.app/about/>
+
 ### V2
 
 v2.1 確定工作室名稱 尋找 MVP 架站位置與網域
@@ -53,6 +57,12 @@ v3.1 開始營業或前面其實已經開始營業但逐步進行
 <https://murmuring.idv.tw/2019/08/08/soho%E5%85%A9%E5%80%8B%E6%9C%88%E7%9A%84%E6%8E%A5%E6%A1%88%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%EF%BC%88%E6%96%87%E5%AD%97%E5%B7%A5%E4%BD%9C%E7%82%BA%E4%BE%8B%EF%BC%89/>
 
 <https://woowohsu.pixnet.net/blog/post/349440598-%5B%E7%94%A8%E7%97%9E%E5%AE%A2%E9%82%A6%E7%8E%A9seo%5D-%E6%89%BE%E6%AF%94%E8%BC%83%E7%86%B1%E9%96%80%E7%9A%84%E6%96%87%E7%AB%A0%E4%BE%86%E5%B0%8E%E6%B5%81%E7%9A%84%E7%B5%90>
+
+### V4
+
+v4.1 吸睛 主視覺 AB Test SEO 漏斗導流
+
+<https://experience.practicalvr.com/>
 
 ## 利用QA，尋找TA，下定目標，開發MVP，AB test，反饋QA，如此循環，成功後穩住商業模式，再行銷等等 ...
 
