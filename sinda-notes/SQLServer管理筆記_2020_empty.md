@@ -10,6 +10,10 @@
 
 ![alt](/sinda-notes/img/dbstep4.png)
 
+<https://dotblogs.com.tw/chis_itnote/2017/10/31/sql>
+
+<https://www.itread01.com/content/1547495120.html>
+
 ## SQL connectionStrings
 
 ```XML
