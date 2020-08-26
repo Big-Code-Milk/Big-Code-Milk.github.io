@@ -11105,12 +11105,12 @@ a.text-white:hover, a.text-white:focus {
 }
 
 .text-decoration-none:hover {
-  -webkit-transition: all 1s;
-  transition: all 1s;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
   -webkit-box-shadow: 10px 10px 8px #916000;
           box-shadow: 10px 10px 8px #916000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .card-btn {
@@ -11125,6 +11125,28 @@ a.text-white:hover, a.text-white:focus {
 .card-btn:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+  color: #AC8A46;
+}
+
+.act {
+  color: #AC8A46;
+  border-bottom: 1px solid #AC8A46;
+  padding: 0 5px 0 5px;
+}
+
+.page {
+  font-size: 20px;
+  margin: 0 5px 0 5px;
+}
+
+.page a {
+  color: black;
+  line-height: 30px;
+  padding: 0 5px 0 5px;
+  text-decoration: none;
+}
+
+.page a:hover {
   color: #AC8A46;
 }
 /*# sourceMappingURL=all.css.map */

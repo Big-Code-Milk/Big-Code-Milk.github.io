@@ -1,8 +1,8 @@
 .text-decoration-none {
     &:hover {
-        transition: all 1s;
         transform: translateY(-10px);
         box-shadow: 10px 10px 8px #916000;
+        transition: all 1s;
     }
 }
 
@@ -14,6 +14,26 @@
     color: #916000;
     &:hover {
         transform: scale(1.5);
-        color: #AC8A46
+        color: #AC8A46;
+    }
+}
+
+.act {
+    color: #AC8A46;
+    border-bottom: 1px solid #AC8A46;
+    padding: 0 5px 0 5px;
+}
+
+.page {
+    font-size: 20px;
+    margin: 0 5px 0 5px;
+    a {
+        color: black;
+        line-height: 30px;
+        padding: 0 5px 0 5px;
+        text-decoration: none;
+        &:hover {
+            color: #AC8A46;
+        }
     }
 }
