@@ -11051,6 +11051,29 @@ a.text-white:hover, a.text-white:focus {
   }
 }
 
+.footer-banner {
+  background-image: url("/Carl/Summer-vaction-notes/hexoschool_hw/week7/image/photo-footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  padding-top: 312px;
+}
+
+@media (max-width: 768px) {
+  .footer-banner {
+    background-image: url("/Carl/Summer-vaction-notes/hexoschool_hw/week7/image/photo-footer@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 480px;
+  }
+}
+
+.font-14px {
+  font-size: 14px;
+}
+
 .cus-banner {
   background-image: url("/Carl/Summer-vaction-notes/hexoschool_hw/week7/image/photo-1588159343745-445ae0b16383.png");
   background-repeat: no-repeat;
@@ -11079,28 +11102,5 @@ a.text-white:hover, a.text-white:focus {
 .s-out h4 {
   top: 47%;
   right: 35%;
-}
-
-.footer-banner {
-  background-image: url("/Carl/Summer-vaction-notes/hexoschool_hw/week7/image/photo-footer.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  padding-top: 312px;
-}
-
-@media (max-width: 768px) {
-  .footer-banner {
-    background-image: url("/Carl/Summer-vaction-notes/hexoschool_hw/week7/image/photo-footer@2x.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 480px;
-  }
-}
-
-.font-14px {
-  font-size: 14px;
 }
 /*# sourceMappingURL=all.css.map */
