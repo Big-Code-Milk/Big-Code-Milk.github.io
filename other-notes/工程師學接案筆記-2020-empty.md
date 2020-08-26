@@ -275,3 +275,9 @@ redmind 基於 ruby on rails 的流程控管工具
 ## SEO
 
 <https://www.awoo.com.tw/blog/black-hat/>
+
+<https://blog.shopline.tw/seo-guideline-and-list/>
+
+<https://blog.shopline.tw/seo-for-new-ecommerce-entrepreneurs/>
+
+<https://inboundmarketing.com.tw/seo/seo-%E9%97%9C%E9%8D%B5%E5%AD%97%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E5%84%AA%E5%8C%96%E7%9A%84%E5%B9%BE%E5%A4%A7%E5%9C%B0%E9%9B%B7.html>
