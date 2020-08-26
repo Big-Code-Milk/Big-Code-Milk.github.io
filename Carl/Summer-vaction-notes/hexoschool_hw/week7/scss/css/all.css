@@ -11103,4 +11103,28 @@ a.text-white:hover, a.text-white:focus {
   top: 47%;
   right: 35%;
 }
+
+.text-decoration-none:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 10px 10px 8px #916000;
+          box-shadow: 10px 10px 8px #916000;
+}
+
+.card-btn {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #916000;
+}
+
+.card-btn:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #AC8A46;
+}
 /*# sourceMappingURL=all.css.map */
