@@ -11128,6 +11128,10 @@ a.text-white:hover, a.text-white:focus {
   color: #AC8A46;
 }
 
+.card-btn:focus {
+  outline: 0;
+}
+
 .act {
   color: #AC8A46;
   border-bottom: 1px solid #AC8A46;
@@ -11148,5 +11152,9 @@ a.text-white:hover, a.text-white:focus {
 
 .page a:hover {
   color: #AC8A46;
+}
+
+.custom-select {
+  height: 50px;
 }
 /*# sourceMappingURL=all.css.map */
