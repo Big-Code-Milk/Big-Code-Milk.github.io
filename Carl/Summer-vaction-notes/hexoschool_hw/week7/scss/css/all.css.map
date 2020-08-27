@@ -94,7 +94,8 @@
         "../_layout.scss",
         "../_01.scss",
         "../_02.scss",
-        "../_03.scss"
+        "../_03.scss",
+        "../_04.scss"
     ],
     "names": [],
     "file": "all.css"
