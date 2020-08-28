@@ -11024,6 +11024,10 @@ a.text-white:hover, a.text-white:focus {
   }
 }
 
+.dropdown-menu {
+  left: -30px;
+}
+
 .cart-num {
   top: 5px;
   right: 55px;
