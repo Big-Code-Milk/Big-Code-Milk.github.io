@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -11023,6 +11024,10 @@ a.text-white:hover, a.text-white:focus {
   }
 }
 
+.dropdown-menu {
+  left: -30px;
+}
+
 .cart-num {
   top: 5px;
   right: 55px;
@@ -11062,11 +11067,11 @@ a.text-white:hover, a.text-white:focus {
 
 @media (max-width: 768px) {
   .footer-banner {
-    background-image: url("/Carl/Summer-vaction-notes/hexoschool_hw/week7/image/photo-footer@2x.png");
+    background-image: url("/Carl/Summer-vaction-notes/hexoschool_hw/week7/image/photo-footer-md.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 480px;
+    height: 600px;
   }
 }
 
@@ -11156,5 +11161,43 @@ a.text-white:hover, a.text-white:focus {
 
 .custom-select {
   height: 50px;
+}
+
+input[type=checkbox] {
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 15px;
+  height: 12px;
+  position: relative;
+}
+
+input[type=checkbox]:after {
+  position: absolute;
+  width: 20px;
+  height: 19px;
+  top: -3px;
+  left: 0px;
+  content: " ";
+  background-color: #fff;
+  color: #fff;
+  display: inline-block;
+  visibility: visible;
+  padding: 0px 0px 1px 5px;
+  border-radius: 3px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border: 1px solid #818A91;
+}
+
+input[type=checkbox]:checked:after {
+  content: "✓";
+  font-size: 12px;
+  background-color: #916000;
+}
+
+.little-gray {
+  color: #A5A5A5;
+  font-size: 14px;
 }
 /*# sourceMappingURL=all.css.map */
