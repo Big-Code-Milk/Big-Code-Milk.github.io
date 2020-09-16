@@ -628,3 +628,131 @@ steamWriter
 <https://docs.microsoft.com/zh-tw/dotnet/api/system.io.stream?view=netcore-3.1>
 
 ## 12.簡單工資軟件項目
+
+---
+
+## 13. csharp 各版本功能
+
+<https://zhuanlan.zhihu.com/p/109853373>
+
+## C# 2.0版 - 2005
+
+### 泛型
+
+Java中的泛型不支持值类型，且会运行时类型擦除，这一点.NET更优秀。
+
+```c#
+// Declare the generic class.
+public class GenericList<T>
+{
+    public void Add(T input) { }
+}
+class TestGenericList
+{
+    private class ExampleClass { }
+    static void Main()
+    {
+        // Declare a list of type int.
+        GenericList<int> list1 = new GenericList<int>();
+        list1.Add(1);
+
+        // Declare a list of type string.
+        GenericList<string> list2 = new GenericList<string>();
+        list2.Add("");
+
+        // Declare a list of type ExampleClass.
+        GenericList<ExampleClass> list3 = new GenericList<ExampleClass>();
+        list3.Add(new ExampleClass());
+    }
+}
+```
+
+### 部分类型
+
+拆分一个类、一个结构、一个接口或一个方法的定义到两个或更多的文件中是可能的。 每个源文件包含类型或方法定义的一部分，编译应用程序时将把所有部分组合起来。
+
+```c#
+public partial class Employee
+{
+    public void DoWork()
+    {
+    }
+}
+
+public partial class Employee
+{
+    public void GoToLunch()
+    {
+    }
+}
+```
+
+### 匿名方法
+
+```c#
+Func<int, int, int> sum = delegate (int a, int b) { return a + b; };
+Console.WriteLine(sum(3, 4));  // output: 7
+```
+
+### 可以为null的值类型
+
+```c#
+double? pi = 3.14;
+char? letter = 'a';
+
+int m2 = 10;
+int? m = m2;
+
+bool? flag = null;
+
+// An array of a nullable type:
+int?[] arr = new int?[10];
+```
+
+### 迭代器
+
+```c#
+static void Main()
+{
+    foreach (int number in SomeNumbers())
+    {
+        Console.Write(number.ToString() + " ");
+    }
+    // Output: 3 5 8
+    Console.ReadKey();
+}
+
+public static System.Collections.IEnumerable SomeNumbers()
+{
+    yield return 3;
+    yield return 5;
+    yield return 8;
+}
+```
+
+### 协变和逆变
+
+在 C# 中，协变和逆变能够实现数组类型、委托类型和泛型类型参数的隐式引用转换。 协变保留分配兼容性，逆变则与之相反。
+
+```c#
+// Assignment compatibility.
+string str = "test";
+// An object of a more derived type is assigned to an object of a less derived type.
+object obj = str;
+
+// Covariance.
+IEnumerable<string> strings = new List<string>();
+// An object that is instantiated with a more derived type argument
+// is assigned to an object instantiated with a less derived type argument.
+// Assignment compatibility is preserved.
+IEnumerable<object> objects = strings;
+
+// Contravariance.
+// Assume that the following method is in the class:
+// static void SetObject(object o) { }
+Action<object> actObject = SetObject;
+// An object that is instantiated with a less derived type argument
+// is assigned to an object instantiated with a more derived type argument.
+// Assignment compatibility is reversed.
+Action<string> actString = actObject;
+```
