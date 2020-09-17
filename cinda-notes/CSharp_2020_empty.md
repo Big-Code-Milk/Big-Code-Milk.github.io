@@ -1,5 +1,7 @@
 # 2020_0618
 
+[進階](#abc)
+
 ## 1.C#介紹
 
 * 課程介紹
@@ -631,7 +633,19 @@ steamWriter
 
 ---
 
-## 13. csharp 各版本功能
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+## 13. csharp 各版本功能 <a id="abc"></a>
 
 <https://zhuanlan.zhihu.com/p/109853373>
 
@@ -798,3 +812,614 @@ class Program
     }
 }
 ```
+
+### 匿名类型
+
+```C#
+var v = new { Amount = 108, Message = "Hello" };
+
+// Rest the mouse pointer over v.Amount and v.Message in the following
+// statement to verify that their inferred types are int and n .
+Console.WriteLine(v.Amount + v.Message);
+```
+
+### 查询表达式（LINQ）
+
+LINQ允许你可以像写SQL一样写C#代码，像这样：
+
+```C#
+from p in persons
+where p.Age > 18 && p.IsBeatiful
+select new
+{
+    p.WeChatId,
+    p.PhoneNumber
+}
+```
+
+LINQ的意义在于让C#做出了重大调整，本章中说到的lambda表达式、扩展方法、表达式树、匿名类型、自动属性等，都是LINQ的必要组成部分。
+
+由于用扩展方法的形式也能得到一致的结果，而且还能让代码风格更加一致，所以我平时用LINQ语法较少：
+
+```C#
+// 与上文代码相同，但改成了扩展方法风格：
+persons
+    .Where(x => x.Age > 18 && x.IsBeatiful)
+    .Select(x => new
+    {
+        x.WeChatId,
+        x.PhoneNumber,
+    });
+```
+
+### Lambda表达式
+
+```C#
+Func<int, int> square = x => x * x;
+Console.WriteLine(square(5));
+// Output:
+// 25
+```
+
+#### 表达式树
+
+这个是LINQ的基础之一，它的作用是将代码像数据一样，保存在内存中；然后稍后对这些"代码数据"进行重新解释/执行。
+
+Entity Framework就是一个经典场景，它先将表达式树保存起来，然后执行时，将其翻译为SQL发给数据库执行。
+
+注意：表达式树并不能表示所有的代码，C# 3.0之后的语法，包含??、?.、async await、可选参数等，都无法放到表达式树中。据说官方准备更新它，但迟迟没有进展。
+
+### 扩展方法
+
+扩展方法使你能够向现有类型"添加"方法，而无需创建新的派生类型、重新编译或以其他方式修改原始类型。
+
+```C#
+static void Main()
+{
+    Console.WriteLine ("Perth".IsCapitalized());
+    // Equivalent to:
+    Console.WriteLine (StringHelper.IsCapitalized ("Perth"));
+
+    // Interfaces can be extended, too:
+    Console.WriteLine ("Seattle".First());   // S
+}
+
+public static class StringHelper
+{
+    public static bool IsCapitalized (this string s)
+    {
+        if (string.IsNullOrEmpty(s)) return false;
+        return char.IsUpper (s[0]);
+    }
+
+    public static T First<T> (this IEnumerable<T> sequence)
+    {
+        foreach (T element in sequence)
+            return element;
+
+        throw new InvalidOperationException ("No elements!");
+    }
+}
+```
+
+### var
+
+```C#
+var i = 10; // Implicitly typed.
+int i = 10; // Explicitly typed.
+```
+
+### 分部方法
+
+```C#
+namespace PM
+{
+    partial class A
+    {
+        partial void OnSomethingHappened(string s);
+    }
+
+    // This part can be in a separate file.
+    partial class A
+    {
+        // Comment out this method and the program
+        // will still compile.
+        partial void OnSomethingHappened(String s)
+        {
+            Console.WriteLine("Something happened: {0}", s);
+        }
+    }
+}
+```
+
+### 对象和集合初始值设定项
+
+```C#
+public class Cat
+{
+    // Auto-implemented properties.
+    public int Age { get; set; }
+    public string Name { get; set; }
+
+    public Cat()
+    {
+    }
+
+    public Cat(string name)
+    {
+        this.Name = name;
+    }
+}
+```
+
+## C# 4.0版 - 2010
+
+### dynamic
+
+这个是特性使得CLR不得不进行一次修改。有了这个，C#也能像js、php、python等弱类型语言一样写代码了。
+
+```C#
+dynamic a = 3;
+a = 3.14;
+a = "Hello World";
+a = new[] { 1, 2, 3, 4, 5 };
+a = new Func<int>(() => 3);
+a = new StringBuilder();
+Console.WriteLine(a.GetType().Name); // StringBuilder
+```
+
+注意dynamic可以表示任何东西，包含数组、委托等等。滥用dynamic容易让程序变得很难维护。
+
+### 命名参数/可选参数
+
+```C#
+PrintOrderDetails(productName: "Red Mug", sellerName: "Gift Shop", orderNum: 31);
+public void ExampleMethod(int required, string optionalstr = "default string",
+    int optionalint = 10)
+```
+
+泛型中的协变和逆变
+IEnumerable<Derived> d = new List<Derived>();
+IEnumerable<Base> b = d;
+Action<Base> b = (target) => { Console.WriteLine(target.GetType().Name); };
+Action<Derived> d = b;
+d(new Derived());
+类型等效、内置互操作类型
+这个主要是为了和COM进行交互。之前需要引用一些COM类型相关的程序集，现在可以直接引用COM。 具体可以参见：https://docs.microsoft.com/zh-cn/dotnet/framework/interop/type-equivalence-and-embedded-interop-types
+
+C# 5.0版 - 2012
+async/await
+private DamageResult CalculateDamageDone()
+{
+    // Code omitted:
+    //
+    // Does an expensive calculation and returns
+    // the result of that calculation.
+}
+
+calculateButton.Clicked += async (o, e) =>
+{
+    // This line will yield control to the UI while CalculateDamageDone()
+    // performs its work.  The UI thread is free to perform other work.
+    var damageResult = await Task.Run(() => CalculateDamageDone());
+    DisplayDamage(damageResult);
+};
+async/await的本质是状态机，像IEnumerable<T>一样。以前游戏引擎Unity只支持C# 3.0，因此当时它用状态机发Http请求是用的IEnumerable<T>。
+
+async/await有两个好处，一是可以避免UI线程卡顿，二是提高系统吞吐率，最终提高性能。
+
+调用方信息
+public void DoProcessing()
+{
+    TraceMessage("Something happened.");
+}
+
+public void TraceMessage(string message,
+        [CallerMemberName] string memberName = "",
+        [CallerFilePath] string sourceFilePath = "",
+        [CallerLineNumber] int sourceLineNumber = 0)
+{
+    System.Diagnostics.Trace.WriteLine("message: " + message);
+    System.Diagnostics.Trace.WriteLine("member name: " + memberName);
+    System.Diagnostics.Trace.WriteLine("source file path: " + sourceFilePath);
+    System.Diagnostics.Trace.WriteLine("source line number: " + sourceLineNumber);
+}
+
+// Sample Output:
+//  message: Something happened.
+//  member name: DoProcessing
+//  source file path: c:\Visual Studio Projects\CallerInfoCS\CallerInfoCS\Form1.cs
+//  source line number: 31
+注意这个是编译期生成的，因此比StackTrace更能保证性能。
+
+C# 6.0版 - 2015
+静态导入
+终于可以不用写静态类名了。
+
+using static System.Math;
+using static System.Console;
+
+WriteLine(Sin(3.14)); // 0.00159265291648683
+异常筛选器
+在try-catch时，可以按指定的条件进行catch，其它条件不catch。
+
+public static async Task<string> MakeRequest()
+{
+    WebRequestHandler webRequestHandler = new WebRequestHandler();
+    webRequestHandler.AllowAutoRedirect = false;
+    using (HttpClient client = new HttpClient(webRequestHandler))
+    {
+        var stringTask = client.GetStringAsync("https://docs.microsoft.com/en-us/dotnet/about/");
+        try
+        {
+            var responseText = await stringTask;
+            return responseText;
+        }
+        catch (System.Net.Http.HttpRequestException e) when (e.Message.Contains("301"))
+        {
+            return "Site Moved";
+        }
+    }
+}
+自动初始化表达式
+public ICollection<double> Grades { get; } = new List<double>();
+Expression-bodied 函数成员
+public override string ToString() => $"{LastName}, {FirstName}";
+Null传播器
+var first = person?.FirstName;
+字符串内插
+public string GetGradePointPercentage() =>
+    $"Name: {LastName}, {FirstName}. G.P.A: {Grades.Average():F2}";
+nameof表达式
+有时字符串值和某个变量名称一致，尤其是在做参数验证时。这里nameof就能在编译期，自动从变量名生成一个字符串。
+
+if (IsNullOrWhiteSpace(lastName))
+    throw new ArgumentException(message: "Cannot be blank", paramName: nameof(lastName));
+索引初始值设定项
+使集合初始化更容易的另一个功能是对 Add 方法使用扩展方法 。 添加此功能的目的是进行 Visual Basic 的奇偶校验。 如果自定义集合类的方法具有通过语义方式添加新项的名称，则此功能非常有用。
+C# 7.0版本 - 2017
+out变量
+if (int.TryParse(input, out int result))
+    Console.WriteLine(result);
+else
+    Console.WriteLine("Could not parse input");
+元组和解构
+(string Alpha, string Beta) namedLetters = ("a", "b");
+Console.WriteLine($"{namedLetters.Alpha}, {namedLetters.Beta}");
+如上代码所示，解构可以将元组拆分为多个变量。
+
+模式匹配
+现在可以在匹配一个类型时，自动转换为这个类型的变量，如果转换失败，这个变量就赋值为默认值（null或0）。
+
+极简版：
+
+if (input is int count)
+    sum += count;
+switch/case版：
+
+public static int SumPositiveNumbers(IEnumerable<object> sequence)
+{
+    int sum = 0;
+    foreach (var i in sequence)
+    {
+        switch (i)
+        {
+            case 0:
+                break;
+            case IEnumerable<int> childSequence:
+            {
+                foreach(var item in childSequence)
+                    sum += (item > 0) ? item : 0;
+                break;
+            }
+            case int n when n > 0:
+                sum += n;
+                break;
+            case null:
+                throw new NullReferenceException("Null found in sequence");
+            default:
+                throw new InvalidOperationException("Unrecognized type");
+        }
+    }
+    return sum;
+}
+本地函数
+这个主要是方便，javascript就能这样写。
+
+比lambda的好处在于，这个可以定义在后面，而lambda必须定义在前面。
+
+public static IEnumerable<char> AlphabetSubset3(char start, char end)
+{
+    if (start < 'a' || start > 'z')
+        throw new ArgumentOutOfRangeException(paramName: nameof(start), message: "start must be a letter");
+    if (end < 'a' || end > 'z')
+        throw new ArgumentOutOfRangeException(paramName: nameof(end), message: "end must be a letter");
+
+    if (end <= start)
+        throw new ArgumentException($"{nameof(end)} must be greater than {nameof(start)}");
+
+    return alphabetSubsetImplementation();
+
+    IEnumerable<char> alphabetSubsetImplementation()
+    {
+        for (var c = start; c < end; c++)
+            yield return c;
+    }
+}
+更多的expression-bodied成员
+该功能可以让一些函数写成表达式的形式，非常的方便。
+
+// Expression-bodied constructor
+public ExpressionMembersExample(string label) => this.Label = label;
+
+// Expression-bodied finalizer
+~ExpressionMembersExample() => Console.Error.WriteLine("Finalized!");
+
+private string label;
+
+// Expression-bodied get / set accessors.
+public string Label
+{
+    get => label;
+    set => this.label = value ?? "Default label";
+}
+Ref 局部变量和返回结果
+此功能允许使用并返回对变量的引用的算法，这些变量在其他位置定义。 一个示例是使用大型矩阵并查找具有某些特征的单个位置。
+这个功能主要是为了提高值类型的性能，让它真正发挥其作用。C++就有类似的功能。
+
+public static ref int Find(int[,] matrix, Func<int, bool> predicate)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+        for (int j = 0; j < matrix.GetLength(1); j++)
+            if (predicate(matrix[i, j]))
+                return ref matrix[i, j];
+    throw new InvalidOperationException("Not found");
+}
+ref var item = ref MatrixSearch.Find(matrix, (val) => val == 42);
+Console.WriteLine(item);
+item = 24;
+Console.WriteLine(matrix[4, 2]);
+弃元
+通常，在进行元组解构或使用out参数调用方法时，必须定义一个其值无关紧要且你不打算使用的变量。 为处理此情况，C#增添了对弃元的支持 。 弃元是一个名为_的只写变量，可向单个变量赋予要放弃的所有值。 弃元类似于未赋值的变量；不可在代码中使用弃元（赋值语句除外）。
+using System;
+using System.Collections.Generic;
+
+public class Example
+{
+    public static void Main()
+    {
+        var (_, _, _, pop1, _, pop2) = QueryCityDataForYears("New York City", 1960, 2010);
+
+        Console.WriteLine($"Population change, 1960 to 2010: {pop2 - pop1:N0}");
+    }
+
+    private static (string, double, int, int, int, int) QueryCityDataForYears(string name, int year1, int year2)
+    {
+        int population1 = 0, population2 = 0;
+        double area = 0;
+
+        if (name == "New York City")
+        {
+            area = 468.48;
+            if (year1 == 1960)
+            {
+                population1 = 7781984;
+            }
+            if (year2 == 2010)
+            {
+                population2 = 8175133;
+            }
+            return (name, area, year1, population1, year2, population2);
+        }
+
+        return ("", 0, 0, 0, 0, 0);
+    }
+}
+// The example displays the following output:
+//      Population change, 1960 to 2010: 393,149
+二进制文本和数字分隔符
+这个用于使数字和二进制更可读。
+
+// 二进制文本：
+public const int Sixteen =   0b0001_0000;
+public const int ThirtyTwo = 0b0010_0000;
+public const int SixtyFour = 0b0100_0000;
+public const int OneHundredTwentyEight = 0b1000_0000;
+
+// 数字分隔符：
+public const long BillionsAndBillions = 100_000_000_000;
+public const double AvogadroConstant = 6.022_140_857_747_474e23;
+public const decimal GoldenRatio = 1.618_033_988_749_894_848_204_586_834_365_638_117_720_309_179M;
+throw表达式
+throw之前必须是一个语句，因此有时不得不写更多的代码来完成所需功能。但7.0提供了throw表达式来使代码更简洁，阅读更轻松。
+void Main()
+{
+    // You can now throw expressions in expressions clauses.
+    // This is useful in conditional expressions:
+
+    string result = new Random().Next(2) == 0 ? "Good" : throw new Exception ("Bad");
+    result.Dump();
+
+    Foo().Dump();
+}
+
+public string Foo() => throw new NotImplementedException();
+C# 8.0 版 - 2019
+Readonly 成员
+public readonly override string ToString() =>
+    $"({X}, {Y}) is {Distance} from the origin";
+默认接口方法
+接口中也能定义方法了，这个新功能经常受到争论。但想想，有时是先定义接口，而实现接口需要实现很多相关、但又繁琐的功能，如ASP.NET Core中的ILogger，谁用谁知道，特别多需要实现的方法，但又都差不多。因此所以这个功能其实很有必要。
+void Main()
+{
+    ILogger foo = new Logger();
+    foo.Log (new Exception ("test"));
+}
+
+class Logger : ILogger
+{
+    public void Log (string message) => Console.WriteLine (message);
+}
+
+interface ILogger
+{
+    void Log (string message);
+
+    // Adding a new member to an interface need not break implementors:
+    public void Log (Exception ex) => Log (ExceptionHeader + ex.Message);
+
+    // The static modifier (and other modifiers) are now allowed:
+    static string ExceptionHeader = "Exception: ";
+}
+模式匹配增强
+这个是为简化代码、函数式编程而生的，我个人非常喜欢。
+
+属性模式
+public static decimal ComputeSalesTax(Address location, decimal salePrice) =>
+    location switch
+    {
+        { State: "WA" } => salePrice * 0.06M,
+        { State: "MN" } => salePrice * 0.75M,
+        { State: "MI" } => salePrice * 0.05M,
+        // other cases removed for brevity...
+        _ => 0M
+    };
+Tuple模式
+public static string RockPaperScissors(string first, string second)
+    => (first, second) switch
+    {
+        ("rock", "paper") => "rock is covered by paper. Paper wins.",
+        ("rock", "scissors") => "rock breaks scissors. Rock wins.",
+        ("paper", "rock") => "paper covers rock. Paper wins.",
+        ("paper", "scissors") => "paper is cut by scissors. Scissors wins.",
+        ("scissors", "rock") => "scissors is broken by rock. Rock wins.",
+        ("scissors", "paper") => "scissors cuts paper. Scissors wins.",
+        (_, _) => "tie"
+    };
+位置模式
+static Quadrant GetQuadrant(Point point) => point switch
+{
+    (0, 0) => Quadrant.Origin,
+    var (x, y) when x > 0 && y > 0 => Quadrant.One,
+    var (x, y) when x < 0 && y > 0 => Quadrant.Two,
+    var (x, y) when x < 0 && y < 0 => Quadrant.Three,
+    var (x, y) when x > 0 && y < 0 => Quadrant.Four,
+    var (_, _) => Quadrant.OnBorder,
+    _ => Quadrant.Unknown
+};
+switch表达式
+这个功能能使代码从大量的if/else或switch/case变成“一行代码”，符合函数式编程的思想，非常好用！
+
+public static RGBColor FromRainbow(Rainbow colorBand) =>
+    colorBand switch
+    {
+        Rainbow.Red    => new RGBColor(0xFF, 0x00, 0x00),
+        Rainbow.Orange => new RGBColor(0xFF, 0x7F, 0x00),
+        Rainbow.Yellow => new RGBColor(0xFF, 0xFF, 0x00),
+        Rainbow.Green  => new RGBColor(0x00, 0xFF, 0x00),
+        Rainbow.Blue   => new RGBColor(0x00, 0x00, 0xFF),
+        Rainbow.Indigo => new RGBColor(0x4B, 0x00, 0x82),
+        Rainbow.Violet => new RGBColor(0x94, 0x00, 0xD3),
+        _              => throw new ArgumentException(message: "invalid enum value", paramName: nameof(colorBand)),
+    };
+using声明
+static int WriteLinesToFile(IEnumerable<string> lines)
+{
+    using var file = new System.IO.StreamWriter("WriteLines2.txt");
+    // Notice how we declare skippedLines after the using statement.
+    int skippedLines = 0;
+    foreach (string line in lines)
+    {
+        if (!line.Contains("Second"))
+        {
+            file.WriteLine(line);
+        }
+        else
+        {
+            skippedLines++;
+        }
+    }
+    // Notice how skippedLines is in scope here.
+    return skippedLines;
+    // file is disposed here
+}
+静态本地函数
+相比非静态本地函数，静态本地函数没有闭包，因此生成的代码更少，性能也更容易控制。
+
+int M()
+{
+    int y = 5;
+    int x = 7;
+    return Add(x, y);
+
+    static int Add(int left, int right) => left + right;
+}
+异步流
+这个功能和IEnumerable<T>、Task<T>对应，一个经典的表格如下：
+
+
+其中，这个问号?终于有了答案，它就叫异步流——IAsyncEnumerable<T>：
+
+public static async System.Collections.Generic.IAsyncEnumerable<int> GenerateSequence()
+{
+    for (int i = 0; i < 20; i++)
+    {
+        await Task.Delay(100);
+        yield return i;
+    }
+}
+不像IEnumerable<T>，IAsyncEnumerable<T>系统还没有内置扩展方法，因此可能没有IEnumerable<T>方便，但是可以通过安装NuGet包f来实现和IEnumerable<T>一样（或者更爽）的效果。
+
+索引和范围
+和Python中的切片器一样，只是-用^代替了。
+var words = new string[]
+{
+                // index from start    index from end
+    "The",      // 0                   ^9
+    "quick",    // 1                   ^8
+    "brown",    // 2                   ^7
+    "fox",      // 3                   ^6
+    "jumped",   // 4                   ^5
+    "over",     // 5                   ^4
+    "the",      // 6                   ^3
+    "lazy",     // 7                   ^2
+    "dog"       // 8                   ^1
+};              // 9 (or words.Length) ^0
+
+var quickBrownFox = words[1..4];
+var lazyDog = words[^2..^0];
+var allWords = words[..]; // contains "The" through "dog".
+var firstPhrase = words[..4]; // contains "The" through "fox"
+var lastPhrase = words[6..]; // contains "the", "lazy" and "dog"
+Null合并赋值
+List<int> numbers = null;
+int? i = null;
+
+numbers ??= new List<int>();
+numbers.Add(i ??= 17);
+numbers.Add(i ??= 20);
+
+Console.WriteLine(string.Join(" ", numbers));  // output: 17 17
+Console.WriteLine(i);  // output: 17
+非托管构造类型
+与任何非托管类型一样，可以创建指向此类型的变量的指针，或针对此类型的实例在堆栈上分配内存块
+Span<Coords<int>> coordinates = stackalloc[]
+{
+    new Coords<int> { X = 0, Y = 0 },
+    new Coords<int> { X = 0, Y = 3 },
+    new Coords<int> { X = 4, Y = 0 }
+};
+嵌套表达式中的 stackalloc
+Span<int> numbers = stackalloc[] { 1, 2, 3, 4, 5, 6 };
+var ind = numbers.IndexOfAny(stackalloc[] { 2, 4, 6 ,8 });
+Console.WriteLine(ind);  // output: 1
+附录/总结
+这么多功能，你印象最深刻的是哪个呢？
+
+参考资料：C#发展历史 - C#指南 | Microsoft Docs https://docs.microsoft.com/zh-cn/dotnet/csharp/whats-new/csharp-version-history
+本文内容和代码由肖鹏整理，有修改；转载已获得肖鹏本人授权。肖鹏是我公司从Java转.NET的同事。原文链接为：https://akiyax.github.io/new-features-in-csharp/。
+喜欢的朋友请关注我的微信公众号：【DotNet骚操作】
+
+
+
+http://weixin.qq.com/r/vy4oMAPEKF5XrUdT93ut (二维码自动识别)
