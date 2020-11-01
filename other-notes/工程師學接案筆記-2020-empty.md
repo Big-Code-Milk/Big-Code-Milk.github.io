@@ -24,6 +24,12 @@ v1.0 取名 SEO
 
 <https://blog.shopline.tw/seo-guideline-and-list/>
 
+多加一個 mvp 功能V1 把你的 idea 化成現實， 跑馬燈 open filler ，Ex 林少宇他們行業， 手機 app 掃 QRcode 推廣報廢機車抽成 ？ 無限業務 ？
+
+老弟要     <li><a href="#">方案說明</a></li>
+            <li><a href="#">作品錦集</a></li>
+            <li><a href="#">技術筆記</a></li>
+
 v1.1 MVP 工作室網站架構 主頁單頁式各大 接案網站匯集精華
 
 v1.2 版型頁 與 內容行銷頁(文章 Blog) 與 購物車頁 (需整合線上教學影音出售) 與 前置作業與中期作業透明自動化管理頁面(e.g. 網頁通 或 freelancer.com)
