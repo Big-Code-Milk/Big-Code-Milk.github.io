@@ -1,0 +1,205 @@
+@charset "UTF-8";
+.container {
+  margin: 0 auto;
+  width: 1000px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe .separate {
+  height: 15px;
+  border-right: 2px solid #cccccc;
+}
+
+.fb {
+  font-weight: bolder;
+  color: #4460a0;
+  display: block;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.fb img {
+  margin-right: 5px;
+}
+
+.fb:hover {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  background-color: #42beef;
+}
+
+.twitter {
+  font-weight: bolder;
+  color: #42beef;
+  display: block;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.twitter img {
+  margin-right: 5px;
+}
+
+.twitter:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  background-color: #4460a0;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 52px;
+}
+
+.nav_logo {
+  margin-left: 24px;
+  display: block;
+  background: url("/Carl/one-page/png/logo.png") no-repeat;
+  text-indent: 101%;
+  /*首行縮排*/
+  overflow: hidden;
+  /*自動隱藏超出的文字或圖片*/
+  white-space: nowrap;
+  /*希望元素在第一排上面，沒有斷行*/
+  background-size: cover;
+  height: 38px;
+  width: 180px;
+}
+
+.nav_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_bar a {
+  display: block;
+  padding: 0px 12px;
+  margin: 0px 12px;
+  text-decoration: none;
+  color: #00cc99;
+  font-weight: bolder;
+  border: 4px solid transparent;
+}
+
+.nav_bar a:hover {
+  border-bottom: 4px solid #00cc99;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.banner {
+  background-image: url(/Carl/one-page/png/banner-8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 346px;
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 65px;
+}
+
+.banner .banner_text {
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  line-height: 50px;
+  padding-left: 22px;
+}
+
+.banner .banner_text h2 {
+  color: white;
+  opacity: 1;
+}
+
+.card_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 19px;
+}
+
+.card_line .card {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 19px;
+  border-left: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  -webkit-box-shadow: 0px 2px #d6d6d6;
+          box-shadow: 0px 2px #d6d6d6;
+}
+
+.card_line .card h3 {
+  font-size: 24px;
+}
+
+.card_line .card p {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.card_line .card2 {
+  margin: 0px 28px;
+}
+/*# sourceMappingURL=all.css.map */
