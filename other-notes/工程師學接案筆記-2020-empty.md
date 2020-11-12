@@ -29,7 +29,7 @@ v1.0 取名 SEO
 老弟要     <li><a href="#">方案說明</a></li>
             <li><a href="#">作品錦集</a></li>
             <li><a href="#">技術筆記</a></li>
-            
+
 <https://github.com/mlouielu/twstock> 0050 股市 -5 -10 警訊 提醒要買
 
 v1.1 MVP 工作室網站架構 主頁單頁式各大 接案網站匯集精華
@@ -496,10 +496,9 @@ ICMS 內容管理平台系統
 
 MSA量測系統
 
-SAM 
+SAM
 軟體資產管理
 
 PAM
 
 PORTAL
-
