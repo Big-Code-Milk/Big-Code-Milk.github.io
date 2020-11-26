@@ -5,10 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
 </head>
 
 <body>
 
+    <input type="date" id="datetime">
+    <input type="text" id="title">
+    <input type="text" id="connect">
+    <input type="text" id="sort">
+    <textarea id="content"></textarea>
+    <button>送出</button>
+
+    <script>
+        let sendButton = document.querySelector('button');
+        sendButton.addEventListener('click', send);
+
+        function send() {
+            let datetime = document.querySelector('#datetime').value;
+            let title = document.querySelector('#title').value;
+            let connect = document.querySelector('#connect').value;
+            let sort = document.querySelector('#sort').value;
+            let content = document.querySelector('#content').value;
+
+            $.ajax({
+                url: "https://script.google.com/a/gapp.fju.edu.tw/macros/s/AKfycbz1ppLl9AWcVHNX8rnirR6R5_1DC-DyPxECav2o/exec",
+                data: {
+                    "datetime": datetime,
+                    "title": title,
+                    "connect": connect,
+                    "sort": sort,
+                    "content": content
+                },
+                success: function(response) {
+                    if (response == "成功") {
+                        alert("成功");
+                    }
+                },
+            });
+        };
+    </script>
 </body>
 
 </html>
