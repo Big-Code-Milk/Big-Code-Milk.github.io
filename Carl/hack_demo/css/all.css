@@ -1,5 +1,5 @@
 header {
-    background-color: black;
+    background-color: pink;
 }
 
 .header a {
@@ -75,4 +75,16 @@ header {
 .banner_footer {
     background-color: black;
     height: 200px;
+}
+
+.slogan {
+    padding: 50px;
+    display: block;
+    background-color: wheat;
+    border-radius: 60%;
+}
+
+.unliststyle {
+    margin: 0px 100px;
+    list-style: none;
 }
