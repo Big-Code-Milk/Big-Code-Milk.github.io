@@ -76,3 +76,15 @@ header {
     background-color: black;
     height: 200px;
 }
+
+.slogan {
+    padding: 50px;
+    display: block;
+    background-color: wheat;
+    border-radius: 60%;
+}
+
+.unliststyle {
+    margin: 0px 100px;
+    list-style: none;
+}
