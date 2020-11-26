@@ -5,10 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
 </head>
 
 <body>
 
+    <script>
+        let type = 'query';
+        $.ajax({
+            url: "https://script.google.com/a/gapp.fju.edu.tw/macros/s/AKfycbz1ppLl9AWcVHNX8rnirR6R5_1DC-DyPxECav2o/exec",
+            data: {
+                "type": type
+            },
+            success: function(response) {
+                console.log(response);
+            },
+        });
+    </script>
 </body>
 
 </html>

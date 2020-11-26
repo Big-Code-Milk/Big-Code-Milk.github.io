@@ -27,7 +27,7 @@
             let connect = document.querySelector('#connect').value;
             let sort = document.querySelector('#sort').value;
             let content = document.querySelector('#content').value;
-
+            let type = 'insert';
             $.ajax({
                 url: "https://script.google.com/a/gapp.fju.edu.tw/macros/s/AKfycbz1ppLl9AWcVHNX8rnirR6R5_1DC-DyPxECav2o/exec",
                 data: {
@@ -35,11 +35,12 @@
                     "title": title,
                     "connect": connect,
                     "sort": sort,
-                    "content": content
+                    "content": content,
+                    "type": type
                 },
                 success: function(response) {
                     if (response == "成功") {
-                        alert("成功");
+                        alert(response);
                     }
                 },
             });
