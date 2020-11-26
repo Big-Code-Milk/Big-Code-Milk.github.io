@@ -12,10 +12,55 @@
 </head>
 
 <body>
-    <div class="container-fluid mb-5 header>
-        <a href=" # "><img src="../img/logo.png " class="img_fluid "></a>
-    </div>
-    <div class="container-fluid d-flex justify-content-center ">
+    <header class="contanier-fluid">
+        <nav class="navbar navbar-expand-md  justify-content-around justify-content-md-between p-0">
+            <a class="navbar-brand" href="#">
+                <h1 class="text-hide" style="background-image: url('../img/logo.png'); width:150px;height:130px;">
+                    俠客行公益平台</h1>
+            </a>
+            <div class="d-md-none position-relative">
+                <a href="#"><img src="/Carl/Summer-vaction-notes/hexoschool_hw/week7/image/shopping-cart.svg" alt="cart">
+                </a>
+                <a class="position-absolute rounded-circle cart-num bg-primary text-white" href="#">3</a>
+                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-0 justify-content    " id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item  mr-md-2 order-md-1">
+                        <a class="nav-link text-center" href="02.html"><i
+                                class="fas fa-tshirt mr-1"></i>Product </a>
+                    </li>
+                    <li class="nav-item mr-md-2 order-md-3">
+                        <a class="nav-link text-center" href="#"><i class="fas fa-heart mr-1"></i>Wishlist</a>
+                    </li>
+                    <li class="nav-item mr-md-2 d-md-none">
+                        <a class="nav-link text-center" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item mr-md-2 d-md-none">
+                        <a class="nav-link text-center" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item mr-md-2 order-md-2">
+                        <a class="nav-link text-center" href="04.html"><i class="fas fa-user mr-1"></i>log in</a>
+                    </li>
+                    <li class="nav-item dropdown mr-md-2 d-none d-md-flex order-md-4">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-shopping-cart mr-1"></i>Cart(3)
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Rose*1</a>
+                            <a class="dropdown-item" href="#">Apple*1</a>
+                            <a class="dropdown-item" href="#">Ocean*1</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">前往付款</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid d-flex justify-content-center mt-5">
         <a href="# " class="disable ">
             <h2>為什麼需要幫助</h2>
         </a>
