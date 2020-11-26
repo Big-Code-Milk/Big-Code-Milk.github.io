@@ -1,0 +1,27 @@
+.header {
+    background-color: grey;
+    height: 100px;
+}
+
+.disable {
+    width: 30%;
+    height: 600px;
+    background-color: red;
+}
+
+.go {
+    width: 15%;
+    height: 600px;
+    background-color: blue;
+}
+
+.helper {
+    width: 30%;
+    height: 600px;
+    background-color: yellow;
+}
+
+.banner_footer {
+    background-color: black;
+    height: 200px;
+}
