@@ -1,24 +1,75 @@
 .header {
     background-color: grey;
-    height: 100px;
+}
+
+.header a {
+    display: block;
 }
 
 .disable {
     width: 30%;
     height: 600px;
-    background-color: red;
+    background-image: url(../img/disable.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: pink;
+}
+
+.disable:hover {
+    transform: translateX(-150px);
+    transition: all 2s;
 }
 
 .go {
     width: 15%;
     height: 600px;
     background-color: blue;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example {
+    0% {
+        background-color: #FFABAB;
+        top: 0px;
+    }
+    25% {
+        background-color: #FF0000;
+        top: 25px;
+    }
+    50% {
+        background-color: #A80000;
+        top: 50px;
+    }
+    75% {
+        background-color: #FF5959;
+        top: -50px;
+    }
+    100% {
+        background-color: #800000;
+        top: 0px;
+    }
 }
 
 .helper {
     width: 30%;
     height: 600px;
-    background-color: yellow;
+    background-color: gray;
+    background-image: url(../img/helper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -250px;
+}
+
+.helper:hover {
+    transform: translateX(150px);
+    transition: all 2s;
 }
 
 .banner_footer {
