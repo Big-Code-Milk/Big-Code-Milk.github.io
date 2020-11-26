@@ -6,7 +6,11 @@
 .disable {
     width: 30%;
     height: 600px;
-    background-color: red;
+    background-image: url(../img/disable.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: pink;
 }
 
 .go {
@@ -18,9 +22,15 @@
 .helper {
     width: 30%;
     height: 600px;
-    background-color: yellow;
+    background-color: gray;
+    background-image: url(../img/helper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -250px;
 }
 
+
+}
 .banner_footer {
     background-color: black;
     height: 200px;
