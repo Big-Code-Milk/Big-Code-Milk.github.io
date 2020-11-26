@@ -1,6 +1,9 @@
 .header {
     background-color: grey;
-    height: 100px;
+}
+
+.header a {
+    display: block;
 }
 
 .disable {
@@ -33,24 +36,24 @@
 
 @keyframes example {
     0% {
-        background-color: red;
-        top: 50px;
+        background-color: #FFABAB;
+        top: 0px;
     }
     25% {
-        background-color: yellow;
+        background-color: #FF0000;
         top: 25px;
     }
     50% {
-        background-color: blue;
-        top: 0px;
+        background-color: #A80000;
+        top: 50px;
     }
     75% {
-        background-color: green;
-        top: -25px;
+        background-color: #FF5959;
+        top: -50px;
     }
     100% {
-        background-color: red;
-        top: -50px;
+        background-color: #800000;
+        top: 0px;
     }
 }
 
