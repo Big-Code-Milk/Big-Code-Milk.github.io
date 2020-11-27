@@ -2,6 +2,20 @@ header {
     background-color: #fefae0;
 }
 
+@font-face {
+    font-family: 'cwTeXFangSong';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.eot);
+    src: url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.woff2) format('woff2'), url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.woff) format('woff'), url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.ttf) format('truetype');
+}
+
+.first {
+    padding-bottom: 200px;
+    border-bottom: 20px solid#e9c46a;
+    ;
+}
+
 .bigfont {
     font-size: 80px;
     font-family: 'Ma Shan Zheng', cursive;
@@ -22,14 +36,16 @@ header {
 .disable h2 {
     position: absolute;
     left: -75px;
-    font-family: 'Noto Serif TC', serif;
+    font-family: 'cwTeXFangSong';
     font-weight: bolder;
+    font-size: 32px;
 }
 
 .disable:hover {
     transform: translateX(-150px);
     transition: all 2s;
     opacity: 20%;
+    box-shadow: black -10px 10px 10px 5px;
 }
 
 .go {
@@ -37,12 +53,27 @@ header {
     height: 600px;
     position: relative;
     z-index: 999;
+    text-decoration: none;
     animation-name: example;
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+.go h2 {
+    font-family: 'cwTeXFangSong';
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.go:hover {
+    text-decoration: none;
+    transform: translateY(-600px);
+    transition: all 5s;
+    opacity: 0%;
+    box-shadow: black 10px 0px 10px 5px;
 }
 
 @keyframes example {
@@ -66,11 +97,12 @@ header {
 .heart {
     width: 200px;
     height: 200px;
-    background-color: red;
+    background-color: pink;
     position: relative;
     margin: 100px auto;
     animation: size 1s infinite;
     animation-direction: alternate;
+    box-shadow: pink 1px 1px 50px 10px;
 }
 
 .heart::before,
@@ -78,7 +110,8 @@ header {
     content: "";
     width: 200px;
     height: 200px;
-    background-color: red;
+    background-color: pink;
+    box-shadow: pink 1px 1px 100px 1px;
     position: absolute;
     border-radius: 50%;
 }
@@ -93,11 +126,22 @@ header {
 
 @keyframes size {
     0% {
+        box-shadow: none;
         transform: scale(0.6) rotate(45deg);
     }
     100% {
         transform: scale(1) rotate(45deg);
     }
+}
+
+.warriors_heart {
+    color: red;
+    position: absolute;
+    top: 159px;
+    left: 95px;
+    font-family: 'cwTeXFangSong';
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .helper {
@@ -115,30 +159,44 @@ header {
 .helper h2 {
     position: absolute;
     right: -75px;
-    font-family: 'Noto Serif TC', serif;
+    font-family: 'cwTeXFangSong';
     font-weight: bolder;
+    font-size: 32px;
 }
 
 .helper:hover {
     transform: translateX(150px);
     transition: all 2s;
+    opacity: 20%;
+    box-shadow: black 10px 10px 10px 5px;
 }
 
-.banner_footer {
-    background-color: black;
-    height: 200px;
+.sustainable {
+    padding-top: 200px;
+    border-top: 20px dashed #e9c46a;
 }
 
-.slogan {
-    padding: 50px;
-    display: block;
-    background-color: wheat;
-    border-radius: 60%;
+.s18_logo {
+    background-color: #e9c46a;
+    border-radius: 500px 100px 500px 100px;
 }
 
-.unliststyle {
-    margin: 0px 100px;
-    list-style: none;
+.s18_logo:hover {
+    z-index: 500;
+    transition: all 1s;
+    box-shadow: black 5px 10px 10px 1px;
+}
+
+.s18 {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.s18:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .god {
