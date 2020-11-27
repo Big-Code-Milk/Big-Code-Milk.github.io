@@ -25,14 +25,16 @@
         }
         let type = 'query';
         let id = getQueryVariable("query");
-        alert('id：' + id);
+        var Id = parseInt(id, 10);
+        Id = Id + 1;
+        alert('id：' + Id);
         $.ajax({
             url: "https://script.google.com/a/gapp.fju.edu.tw/macros/s/AKfycbz1ppLl9AWcVHNX8rnirR6R5_1DC-DyPxECav2o/exec",
             data: {
-                "id": id,
+                "id": Id,
                 "type": type
             },
-            success: function (response) {
+            success: function(response) {
                 console.log(response);
                 $("#content").text(response);
             },
