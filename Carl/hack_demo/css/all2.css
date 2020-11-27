@@ -37,6 +37,73 @@
     padding: 50px 250px;
 }
 
+.teaching_banner {
+    position: relative;
+}
+
+.skill {
+    font-size: 40px;
+    font-family: 'cwTeXFangSong';
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    top: 75px;
+    left: 195px;
+    text-shadow: black 2px 2px 1px;
+}
+
+.skillp {
+    font-size: 24px;
+    font-family: 'cwTeXFangSong';
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 163px;
+    text-shadow: black 2px 2px 1px;
+}
+
+.edu {
+    font-size: 40px;
+    font-family: 'cwTeXFangSong';
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    top: 225px;
+    left: 755px;
+    text-shadow: black 2px 2px 1px;
+}
+
+.edup {
+    font-size: 24px;
+    font-family: 'cwTeXFangSong';
+    color: white;
+    position: absolute;
+    top: 275px;
+    left: 716px;
+    text-shadow: black 2px 2px 1px;
+}
+
+.know {
+    font-size: 40px;
+    font-family: 'cwTeXFangSong';
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    top: 225px;
+    left: 1338px;
+    text-shadow: black 2px 2px 1px;
+}
+
+.knowp {
+    font-size: 24px;
+    font-family: 'cwTeXFangSong';
+    color: white;
+    position: absolute;
+    top: 275px;
+    left: 1278px;
+    text-shadow: black 2px 2px 1px;
+}
+
 .teaching {
     opacity: 0.7;
     width: 33.33333%;
@@ -68,3 +135,9 @@
     margin: 5%;
     width: 10%;
 }
+
+.god {
+    width: 590px;
+}
+
+.david {}
