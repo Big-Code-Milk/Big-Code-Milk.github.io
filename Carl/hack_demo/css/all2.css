@@ -9,7 +9,6 @@
 .banner {
     /* background: rgb(246, 242, 239);
     background: linear-gradient(90deg, rgba(246, 242, 239, 1) 0%, rgba(184, 168, 133, 1) 100%, rgba(104, 122, 97, 1) 100%); */
-    width: 100vw;
     height: 100vh;
     background-image: url(../img/背景.png);
     background-repeat: no-repeat;
@@ -22,7 +21,7 @@
 }
 
 .banner_logo {
-    width: 500px;
+    width: 800px;
 }
 
 .banner_text {
@@ -39,7 +38,7 @@
 }
 
 .teaching {
-    width: 33%;
+    width: 33.33333%;
 }
 
 .sdg {
