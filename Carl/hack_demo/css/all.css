@@ -32,38 +32,11 @@ header {
     opacity: 20%;
 }
 
-.heart {
-    position: relative;
-    width: 100px;
-    height: 150px;
-}
-
-.heart1 {
-    position: absolute;
-    left: 34px;
-    width: 100px;
-    height: 150px;
-    background-color: red;
-    border-radius: 50px 50px 0 0;
-    transform: rotate(-45deg);
-    border: 1px solid black;
-}
-
-.heart2 {
-    position: absolute;
-    left: 70px;
-    width: 100px;
-    height: 150px;
-    border: 1px solid black;
-    border-radius: 50px 50px 0 0;
-    transform: rotate(45deg);
-}
-
 .go {
     width: 15%;
     height: 600px;
-    background-color: blue;
     position: relative;
+    z-index: 999;
     animation-name: example;
     animation-duration: 5s;
     animation-timing-function: linear;
@@ -74,25 +47,56 @@ header {
 
 @keyframes example {
     0% {
-        border-radius: 50px 50px 0 0;
-        background-color: #FFABAB;
         top: 0px;
     }
     25% {
-        background-color: #FF0000;
         top: 25px;
     }
     50% {
-        background-color: #A80000;
         top: 50px;
     }
     75% {
-        background-color: #FF5959;
         top: -50px;
     }
     100% {
-        background-color: #800000;
         top: 0px;
+    }
+}
+
+.heart {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    margin: 100px auto;
+    animation: size 1s infinite;
+    animation-direction: alternate;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.heart::before {
+    left: -90px;
+}
+
+.heart::after {
+    top: -90px;
+}
+
+@keyframes size {
+    0% {
+        transform: scale(0.6) rotate(45deg);
+    }
+    100% {
+        transform: scale(1) rotate(45deg);
     }
 }
 
