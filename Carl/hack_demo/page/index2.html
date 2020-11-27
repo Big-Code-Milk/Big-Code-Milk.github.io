@@ -18,7 +18,10 @@
 </head>
 
 <body>
-    <div class="banner d-flex justify-content-center align-items-center">
+    <div id="menu">
+        <h2><a href="./DataTable.html">誰需要我需要誰</a></h2>
+    </div>
+    <div data-aos="flip-left" class="banner d-flex justify-content-center align-items-center">
         <a href="./DataTable.html" class="banner_click"><img src="../img/俠客抵嘉.png" class="img-fluid banner_logo mb-5">
             <h1 class="text-center banner_text">技轉公益平台</h1>
         </a>
@@ -46,7 +49,7 @@
         <ul>
             <li data-aos="flip-left" class="card flex-xl-row-reverse col-12 border-0 align-items-center">
                 <img src="../img/god.png" class="card-img-top rounded-0 img-fluid offset-xl-1  god" alt="...">
-                <div class="card-body col-lg-4 offset-xl-1 p-0">
+                <div class="card-body offset-xl-1 p-0 m-0">
                     <h2 class="card-title">誰需要我:</h2>
                     <p class="h5 card-text">
                         當我有能力無地方施展抱負時...<br> 當我想要將所學運用時...
@@ -58,7 +61,7 @@
             </li>
             <li data-aos="flip-left" class="card flex-xl-row col-12 border-0 align-items-center pl-5 pr-0 david_box">
                 <img src="../img/david.png" class="card-img-top col-lg-6 rounded-0 img-fluid p-0 david m-0 david" alt="...">
-                <div class="card-body col-lg-4">
+                <div class="card-body ml-5 pl-5">
                     <h2 class="card-title">我需要誰:</h2>
                     <p class="h5 card-text">當我的學校缺乏我想要的教學內容時... <br>當我的家鄉沒有我想要學習的東西時... <br>當我無法去技職訓練所訓練時...<br> 當我需要一技之長時..<br> 當我需要幫助時...
 
@@ -68,11 +71,24 @@
             </li>
         </ul>
     </div>
-    <div class="contanier-fluid d-flex justify-content-center">
-        <img src="../img/edu.png" class="img-fluid  sdg">
-        <img src="../img/root.png" class="img-fluid  sdg">
-        <img src="../img/disablegroup.png" class="img-fluid  sdg">
-    </div>
+    <footer class="bg-primary">
+        <div class="contanier-fluid d-flex justify-content-center">
+            <div class="sdg"> <img src="../img/edu.png" class="img-fluid mb-1">
+                <h3 class="text-center">偏鄉教育</h3>
+            </div>
+            <div class="sdg"><img src="../img/root.png" class="img-fluid mb-1">
+                <h3 class="text-center">在地深根</h3>
+            </div>
+            <div class="sdg"> <img src="../img/disablegroup.png" class="img-fluid mb-1">
+                <h3 class="text-center">關懷弱勢</h3>
+            </div>
+            <div class="sdg">
+                <img src="../img/1200px-NCYU.svg.png" class="mb-1" style="width:220px;height: 210px;">
+                <h3 class="text-center pl-4">師生合作</h3>
+            </div>
+
+        </div>
+    </footer>
 </body>
 <script>
     AOS.init({

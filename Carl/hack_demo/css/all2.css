@@ -132,7 +132,7 @@
 }
 
 .sdg {
-    margin: 5%;
+    margin: 2% 5%;
     width: 10%;
 }
 
@@ -140,4 +140,27 @@
     width: 590px;
 }
 
-.david {}
+.card-body {
+    font-family: 'Noto Serif TC', serif;
+}
+
+#menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: -2.5em;
+    writing-mode: vertical-rl;
+}
+
+#menu a {
+    background-color: black;
+    text-decoration: none;
+    font-family: 'Noto Serif TC', serif;
+    color: #ffde59;
+}
+
+#menu a:hover {
+    background-color: red;
+    transition: all 1s;
+}

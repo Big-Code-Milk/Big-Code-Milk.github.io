@@ -8,6 +8,8 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css' />
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css" />
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <style>
         body {
             padding: 1% 7%;
@@ -36,6 +38,28 @@
                 display: none;
             }
         }
+        
+        .sdg_logo {
+            width: 500px;
+        }
+        
+        .sdgs_text h3 {
+            font-size: 40px;
+            font-family: 'cwTeXFangSong';
+            font-weight: bolder;
+        }
+        
+        .sdgs_text p {
+            font-size: 20px;
+            line-height: 28px;
+            text-align: justify;
+            font-family: 'Noto Serif TC', serif;
+        }
+        
+        .sdg {
+            margin: 2% 5%;
+            width: 10%;
+        }
     </style>
 </head>
 
@@ -44,9 +68,8 @@
 <body>
     <div id="main" class="contanier-fluid">
         <nav class="navbar navbar-expand-md  justify-content-center">
-            <a class="navbar-brand" href="#">
-                <h1 class="text-hide" style="background-image: url('../img/logo.png'); width:150px;height:130px;">
-                    俠客行公益平台</h1>
+            <a class="navbar-brand" href="../page/index2.html">
+                <img src="../img/俠客.png" class="img-fluid" style="width: 300px;">
             </a>
             <div class="d-md-none position-relative">
                 <a href="#"><img src="/Carl/Summer-vaction-notes/hexoschool_hw/week7/image/shopping-cart.svg" alt="cart">
@@ -58,11 +81,8 @@
             </div>
             <div class="collapse navbar-collapse flex-grow-0 justify-content" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item  mr-md-2 order-md-1">
-                        <a class="nav-link text-center" href="02.html"><i class="fas fa-hands-helping mr-1"></i>瀏覽專案</a>
-                    </li>
-                    <li class="nav-item mr-md-2 order-md-3">
-                        <a class="nav-link text-center" href="#" onclick="displayinput()"><i class="fas fa-heart mr-1"></i>發起專案</a>
+                    <li class="nav-item mr-md-2 order-md-3 h1">
+                        <a class="nav-link text-center text-warning" href="#" onclick="displayinput()"><i class="fas fa-dragon mr-1"></i>發起專案</a>
                     </li>
                     <li class="nav-item mr-md-2 d-md-none">
                         <a class="nav-link text-center" href="#">Blog</a>
@@ -70,7 +90,7 @@
                     <li class="nav-item mr-md-2 d-md-none">
                         <a class="nav-link text-center" href="#">Contact</a>
                     </li>
-                    <li class="nav-item dropdown mr-md-2 d-none d-md-flex order-md-4">
+                    <!-- <li class="nav-item dropdown mr-md-2 d-none d-md-flex order-md-4">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-people-carry mr-1"></i>已關注專案(3)
                         </a>
@@ -81,7 +101,7 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">前往幫助</a>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </nav>
@@ -149,7 +169,6 @@
             </div>
         </div>
     </div>
-
 
 
     <script src='https://code.jquery.com/jquery-3.5.1.js'>
