@@ -42,7 +42,7 @@
 <!-- <body onload="startTime()"> -->
 
 <body>
-    <header class="contanier-fluid">
+    <div id="main" class="contanier-fluid">
         <nav class="navbar navbar-expand-md  justify-content-center">
             <a class="navbar-brand" href="#">
                 <h1 class="text-hide" style="background-image: url('../img/logo.png'); width:150px;height:130px;">
@@ -62,7 +62,7 @@
                         <a class="nav-link text-center" href="02.html"><i class="fas fa-hands-helping mr-1"></i>瀏覽專案</a>
                     </li>
                     <li class="nav-item mr-md-2 order-md-3">
-                        <a class="nav-link text-center" href="#"><i class="fas fa-heart mr-1"></i>發起專案</a>
+                        <a class="nav-link text-center" href="#" onclick="displayinput()"><i class="fas fa-heart mr-1"></i>發起專案</a>
                     </li>
                     <li class="nav-item mr-md-2 d-md-none">
                         <a class="nav-link text-center" href="#">Blog</a>
@@ -85,22 +85,21 @@
                 </ul>
             </div>
         </nav>
-    </header>
-    <h1 id="h1" class="display-6" style="display: inline-block;">v5 - © 2020.11 Made by johch3n611u all rights reserved.
-    </h1>
-    <span style="padding-left: 2%;padding-right: 2%;" id="clock"></span>
-    <span>v5 - © 2020.11 Made by johch3n611u all rights reserved.</span>
-    <!-- <input style="margin-left: 2%;" type="button" onclick="ClearSearch()" value="清除查詢" class="dt-button buttons-print" /> -->
-    <button class='phone col-12 btn badge badge-secondary' onclick="PickUP()"> 展開或收合進階查詢功能 </button>
-    <hr class="w-100" />
-    <div class="">
-        <div id="searchTable" width="100%"></div>
+        <h1 id="h1" class="display-6" style="display: inline-block;">v5 - © 2020.11 Made by johch3n611u all rights reserved.
+        </h1>
+        <span style="padding-left: 2%;padding-right: 2%;" id="clock"></span>
+        <span>v5 - © 2020.11 Made by johch3n611u all rights reserved.</span>
+        <!-- <input style="margin-left: 2%;" type="button" onclick="ClearSearch()" value="清除查詢" class="dt-button buttons-print" /> -->
+        <button class='phone col-12 btn badge badge-secondary' onclick="PickUP()"> 展開或收合進階查詢功能 </button>
         <hr class="w-100" />
-        <table id="dataTable" class="display" style="width:100vw" width="100%"></table>
+        <div class="">
+            <div id="searchTable" width="100%"></div>
+            <hr class="w-100" />
+            <table id="dataTable" class="display" style="width:100vw" width="100%"></table>
+        </div>
+        <p style="text-align: center;">v5 - © 2020.11 Made by johch3n611u all rights reserved.</p>
     </div>
-    <p style="text-align: center;">v5 - © 2020.11 Made by johch3n611u all rights reserved.</p>
-
-    <div style="height: 100vh;" id="insertform" class="container mt-5">
+    <div style="display:none;" id="insertform" class="container mt-5">
         <div class="card">
             <h5 class="card-header text-center">張貼公告</h5>
             <div class="card-body">
@@ -143,7 +142,7 @@
                     </div>
 
                     <div class="form-group">
-                        <button class="btn btn-primary btn-block">貼上傳單</button>
+                        <button class="btn btn-primary col-6">貼上傳單</button><button onclick="disableinput()" class="btn btn-danger col-6">取消</button>
                     </div>
                     </form>
                 </div>
@@ -556,6 +555,18 @@
             });
             return false;
         };
+    </script>
+    <script>
+        function displayinput() {
+            $("#insertform").attr("style", "display:block;position: absolute;top: 128px;left: 12%;");
+            $("#main").attr("style", "background-color:white;opacity:0.3;");
+        }
+
+        function disableinput() {
+            $("#insertform").attr("style", "display:none;");
+            $("#main").attr("style", "");
+
+        }
     </script>
 </body>
 
