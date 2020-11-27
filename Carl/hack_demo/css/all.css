@@ -1,24 +1,62 @@
 header {
-    background-color: pink;
+    background-color: #fefae0;
 }
 
-.header a {
-    display: block;
+.bigfont {
+    font-size: 80px;
+    font-family: 'Ma Shan Zheng', cursive;
 }
 
 .disable {
     width: 30%;
-    height: 600px;
-    background-image: url(../img/disable.png);
-    background-size: cover;
+    height: 6 00px;
+    background-image: url(../img/helpme.png);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: pink;
+    background-color: #e9c46a;
+    opacity: 100%;
+    writing-mode: vertical-rl;
+    position: relative;
+}
+
+.disable h2 {
+    position: absolute;
+    left: -75px;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: bolder;
 }
 
 .disable:hover {
     transform: translateX(-150px);
     transition: all 2s;
+    opacity: 20%;
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 150px;
+}
+
+.heart1 {
+    position: absolute;
+    left: 34px;
+    width: 100px;
+    height: 150px;
+    background-color: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    border: 1px solid black;
+}
+
+.heart2 {
+    position: absolute;
+    left: 70px;
+    width: 100px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(45deg);
 }
 
 .go {
@@ -36,6 +74,7 @@ header {
 
 @keyframes example {
     0% {
+        border-radius: 50px 50px 0 0;
         background-color: #FFABAB;
         top: 0px;
     }
@@ -61,10 +100,19 @@ header {
     width: 30%;
     height: 600px;
     background-color: gray;
-    background-image: url(../img/helper.png);
-    background-size: cover;
+    background-image: url(../img/warriors.png);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position-x: -250px;
+    background-position-y: 57px;
+    writing-mode: vertical-rl;
+    position: relative;
+}
+
+.helper h2 {
+    position: absolute;
+    right: -75px;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: bolder;
 }
 
 .helper:hover {
@@ -87,4 +135,14 @@ header {
 .unliststyle {
     margin: 0px 100px;
     list-style: none;
+}
+
+.god {
+    top: 108px;
+    left: -10px;
+}
+
+.david {
+    top: -85px;
+    left: 81px;
 }
