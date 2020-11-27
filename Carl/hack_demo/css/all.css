@@ -73,7 +73,6 @@ header {
     transform: translateY(-600px);
     transition: all 5s;
     opacity: 0%;
-    box-shadow: black 10px 0px 10px 5px;
 }
 
 @keyframes example {
