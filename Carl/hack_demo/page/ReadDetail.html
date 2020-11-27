@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+    <script src="https://unpkg.com/dayjs"></script>
 </head>
 
 <body>
-    <div id="content"></div>
+    <div class="row" style="width: 100vw;">
+        <img class="col-6" src="https://source.unsplash.com/random" alt="Girl in a jacket" style="height: 100vh;">
+        <div class="col-6" id="content"></div>
+    </div>
     <script>
         // https://www.runoob.com/w3cnote/js-get-url-param.html
         function getQueryVariable(variable) {
@@ -26,8 +31,16 @@
         let type = 'query';
         let id = getQueryVariable("query");
         var Id = parseInt(id, 10);
+        var sortresponse = "";
         Id = Id + 1;
-        alert('id：' + Id);
+        //alert('id：' + Id);
+
+        let datetime = "";
+        let title = "";
+        let connect = "";
+        let sort = "";
+        let content = "";
+
         $.ajax({
             url: "https://script.google.com/a/gapp.fju.edu.tw/macros/s/AKfycbz1ppLl9AWcVHNX8rnirR6R5_1DC-DyPxECav2o/exec",
             data: {
@@ -35,7 +48,18 @@
                 "type": type
             },
             success: function(response) {
+
                 console.log(response);
+
+                sortresponse = response.split(',');
+                sortresponse[0] = datetime;
+                sortresponse[1] = title;
+                sortresponse[2] = connect;
+                sortresponse[3] = sort;
+                sortresponse[4] = content;
+
+                console.log(sortresponse);
+
                 $("#content").text(response);
             },
         });
