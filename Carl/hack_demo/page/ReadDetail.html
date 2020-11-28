@@ -19,11 +19,15 @@
     <div class="row" style="width: 100vw;">
         <img class="col-6" src="https://source.unsplash.com/random" alt="Girl in a jacket" style="height: 100vh;">
         <div class="col-6 justify-content-center align-items-center" style="margin-bottom: 5%;margin-top: 5%;">
-            <div class="container">
-                <a class="navbar-brand" href="../page/DataTable.html">
-                    <img src="../img/俠客.png" class="img-fluid" style="width: 300px;">
-                </a>
-                <div id="content"></div>
+            <div class="card" style="background-image: url(../img/背景.png);border: 0;">
+                <div class="card-body">
+                    <a class="navbar-brand" href="../page/DataTable.html">
+                        <img src="../img/俠客.png" class="img-fluid" style="width: 300px;">
+                    </a>
+                    <h1 style="display: inline-block;" id="title"></h1>
+                    <div></div>
+                    datetime = dayjs(sortresponse[0]).format('YYYY/MM/DD'); title = sortresponse[1]; connect = sortresponse[2]; sort = sortresponse[3]; content = sortresponse[4];
+                </div>
             </div>
         </div>
     </div>
@@ -63,16 +67,20 @@
 
                 console.log(response);
 
-                sortresponse = response.split(',');
-                sortresponse[0] = datetime;
-                sortresponse[1] = title;
-                sortresponse[2] = connect;
-                sortresponse[3] = sort;
-                sortresponse[4] = content;
+                sortresponse = response.split(",");
+                datetime = dayjs(sortresponse[0]).format('YYYY/MM/DD');
+                title = sortresponse[1];
+                connect = sortresponse[2];
+                sort = sortresponse[3];
+                content = sortresponse[4];
 
                 console.log(sortresponse);
 
-                $("#content").text(response);
+                $("#title").text(title);
+                $("#datetime").text(datetime);
+                $("#connect").text(connect);
+                $("#sort").text(sort);
+                $("#content").text(content);
             },
         });
     </script>
