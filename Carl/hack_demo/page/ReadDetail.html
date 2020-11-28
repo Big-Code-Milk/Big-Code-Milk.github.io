@@ -29,16 +29,16 @@
 </head>
 
 <body>
-    <div class="row" style="width: 100vw;">
-        <img class="col-6" src="https://source.unsplash.com/random" alt="Girl in a jacket" style="height: 100vh;">
-        <div class="col-6 justify-content-center align-items-center" style="margin-bottom: 5%;margin-top: 5%;">
+    <div class="d-flex flex-column flex-lg-row" style="width: 100vw;">
+        <img class="col-6 p-0" src="https://source.unsplash.com/random" alt="Girl in a jacket" style="height: 100vh;">
+        <div class="col-6 justify-content-center align-items-center">
             <div class="card" style="background-image: url(../img/背景.png);border: 0;">
                 <div class="card-body">
                     <div class="d-flex align-items-center justify-content-center">
-                        <a class="navbar-brand" href="../page/DataTable.html">
-                            <img src="../img/俠客.png" class="img-fluid" style="width: 300px;">
+                        <a class="d-block" href="../page/DataTable.html">
+                            <img src="../img/俠客.png" class="img-fluid" style="width: 60%;">
+                            <h2 style="display: inline-block; font-size:50px; font-weight: bolder; text-decoration: none; color:black;" class="">懸賞榜</h2>
                         </a>
-                        <h2 style="display: inline-block; font-size:50px; font-weight: bolder;" class="">懸賞榜</h2>
                     </div>
                     <div class="d-flex" style="flex-direction: column;">
                         <h2 id="datetime" class="my-4"></h2>
@@ -52,7 +52,9 @@
                             <h4 id="connect" style="display: inline-block;"></h4>
                         </div>
                         </h3>
-                        <p id="content" style="font-size: 20px; text-align: justify; border:1px solid black; padding: 20px; max-height: 300px; overflow-y: auto;"></p>
+                        <div style="font-size: 20px; text-align: justify; border:1px solid black; padding: 5%;height: 33vh;overflow-y: auto;">
+                            <p id="content"></p>
+                        </div>
 
                     </div>
                 </div>
