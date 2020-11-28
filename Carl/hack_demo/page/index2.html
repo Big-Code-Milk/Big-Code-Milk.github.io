@@ -69,7 +69,6 @@
                 <div class="sdgs_text card-body ml-5 pl-5" style="font-family: 'cwTeXFangSong';font-weight: bolder;">
                     <h3 class="card-title">我需要誰:</h3>
                     <p class="h5 card-text">當我的學校缺乏我想要的教學內容時... <br>當我的家鄉沒有我想要學習的東西時... <br>當我無法去技職訓練所訓練時...<br> 當我需要一技之長時..<br> 當我需要幫助時...
-
                     </p>
                     <a href="#" class="btn btn-white text-primary p-0">
                         <h2 class="card-title">誰能幫助我...</h2>
@@ -123,6 +122,25 @@
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
     });
+</script>
+<script>
+    function detectmob() {
+        if (navigator.userAgent.match(/Android/i) ||
+            navigator.userAgent.match(/webOS/i) ||
+            navigator.userAgent.match(/iPhone/i) ||
+            navigator.userAgent.match(/iPad/i) ||
+            navigator.userAgent.match(/iPod/i) ||
+            navigator.userAgent.match(/BlackBerry/i) ||
+            navigator.userAgent.match(/Windows Phone/i)
+        ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    if (!detectmob()) {
+        alert("本服務目前不支援手機 RWD \n請見諒，麻煩切換回電腦版。")
+    }
 </script>
 
 </html>
