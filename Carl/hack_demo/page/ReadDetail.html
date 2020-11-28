@@ -30,32 +30,32 @@
 
 <body>
     <div class="d-flex flex-column flex-lg-row" style="width: 100vw;">
-        <img class="col-6 p-0" src="https://source.unsplash.com/random" alt="Girl in a jacket" style="height: 100vh;">
-        <div class="col-6 justify-content-center align-items-center">
+        <img class="col-12 col-md-6 col-lg-6 p-0" src="https://source.unsplash.com/random" alt="Girl in a jacket" style="height: 100vh;">
+        <div class="col-12 col-md-6 col-lg-6 justify-content-center align-items-center">
             <div class="card" style="background-image: url(../img/背景.png);border: 0;">
                 <div class="card-body">
                     <div class="d-flex align-items-center justify-content-center">
                         <a class="d-block" href="../page/DataTable.html">
                             <img src="../img/俠客.png" class="img-fluid" style="width: 60%;">
-                            <h2 style="display: inline-block; font-size:50px; font-weight: bolder; text-decoration: none; color:black;" class="">懸賞榜</h2>
+                            <h2 style="display: inline-block; font-size:4em; text-decoration: none; color:black;" class="">懸賞榜</h2>
                         </a>
                     </div>
-                    <div class="d-flex" style="flex-direction: column;">
-                        <h2 id="datetime" class="my-4"></h2>
-                        <h1 id="title"></h1>
-                        <div class="d-flex">
-                            <h3 style="display: inline-block;">類別 : </h3>
+                    <div>
+                        <h2 id="datetime" style="display: inline; font-size: 1.2em;"></h2>
+                        <h1 id="title" style="margin-left: 2%;"></h1>
+                        <div style="display: inline;">
+                            <h3 style="display: inline-block; margin-left: 2%; color:darkslategrey">類別 : </h3>
                             <h3 id="sort" style="display: inline-block;">
                         </div>
-                        <div class="d-flex">
-                            <h4 style="display: inline-block;" class="mb-5">聯絡資訊 :</h4>
-                            <h4 id="connect" style="display: inline-block;"></h4>
+                        <div style="display: inline;">
+                            <h3 style="display: inline-block;margin-left: 4%; color:darkslategrey" class="mb-2">聯絡資訊 :</h4>
+                                <h3 id="connect" style="display: inline-block;">
+                                    </h4>
                         </div>
                         </h3>
-                        <div style="font-size: 20px; text-align: justify; border:1px solid black; padding: 5%;height: 33vh;overflow-y: auto;">
+                        <div style="font-size: 1.5em; text-align: justify; border:1px solid black; padding: 2%;height: 40vh;overflow-y: auto;">
                             <p id="content"></p>
                         </div>
-
                     </div>
                 </div>
 
