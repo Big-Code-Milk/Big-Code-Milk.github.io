@@ -151,16 +151,19 @@
     width: 8em;
     margin-top: -2.5em;
     writing-mode: vertical-rl;
+    z-index: 10000;
 }
 
-#menu a {
+#menu a>h2 {
     background-color: black;
     text-decoration: none;
     font-family: 'Noto Serif TC', serif;
     color: #ffde59;
 }
 
-#menu a:hover {
+#menu a>h2:hover {
     background-color: red;
-    transition: all 1s;
+    outline-color: #f9aa1a;
+    outline-width: 3px;
+    outline-style: dashed;
 }
