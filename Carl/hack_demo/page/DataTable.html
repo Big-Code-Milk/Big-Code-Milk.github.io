@@ -567,10 +567,11 @@
                     if (response == "成功") {
                         alert(response);
                         window.location.replace("DataTable.html");
+                        disableinput();
                     }
                 },
             });
-            disableinput();
+
             // http://zhi-yuan-chenge.blogspot.com/2015/11/jsjquery.html
             // https://www.ewdna.com/2009/06/formonsubmitsubmit.html
             return false
