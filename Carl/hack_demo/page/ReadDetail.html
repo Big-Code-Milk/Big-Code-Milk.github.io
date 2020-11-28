@@ -10,7 +10,17 @@
     <script src="https://unpkg.com/dayjs"></script>
     <style>
         body {
+            font-family: 'cwTeXFangSong';
+            overflow-x: hidden;
             background-image: url(../img/背景.png);
+        }
+        
+        @font-face {
+            font-family: 'cwTeXFangSong';
+            font-style: normal;
+            font-weight: 500;
+            src: url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.eot);
+            src: url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.woff2) format('woff2'), url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.woff) format('woff'), url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.ttf) format('truetype');
         }
     </style>
 </head>
@@ -21,15 +31,36 @@
         <div class="col-6 justify-content-center align-items-center" style="margin-bottom: 5%;margin-top: 5%;">
             <div class="card" style="background-image: url(../img/背景.png);border: 0;">
                 <div class="card-body">
-                    <a class="navbar-brand" href="../page/DataTable.html">
-                        <img src="../img/俠客.png" class="img-fluid" style="width: 300px;">
-                    </a>
-                    <h1 style="display: inline-block;" id="title"></h1>
-                    <div>datetime/sort/content/connect</div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a class="navbar-brand" href="../page/DataTable.html">
+                            <img src="../img/俠客.png" class="img-fluid" style="width: 300px;">
+                        </a>
+                        <h2 style="display: inline-block; font-size:50px; font-weight: bolder;" class="">懸賞榜</h2>
+                    </div>
+                    <div class="d-flex" style="flex-direction: column;">
+                        <h2 id="datetime" class="my-4"></h2>
+                        <h1 id="title"></h1>
+                        <div class="d-flex">
+                            <h3 style="display: inline-block;">類別 : </h3>
+                            <h3 id="sort" style="display: inline-block;">
+                        </div>
+                        <div class="d-flex">
+                            <h4 style="display: inline-block;" class="mb-5">聯絡資訊 :</h4>
+                            <h4 id="connect" style="display: inline-block;"></h4>
+                        </div>
+                        </h3>
+                        <p id="content" style="font-size: 20px; text-align: justify; border:1px solid black; padding: 20px; max-height: 300px; overflow-y: auto;"></p>
+
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
+    <div style="background-color: #86473F; box-sizing: border-box;" class="pt-5">
+        <div id="disqus_thread" class="container"></div>
+    </div>
+
     <script>
         // https://www.runoob.com/w3cnote/js-get-url-param.html
         function getQueryVariable(variable) {
@@ -82,6 +113,37 @@
                 $("#content").text(content);
             },
         });
+    </script>
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+        var disqus_config = function() {
+            this.language = "zh_TW";
+            this.page.url = "https://www.wpchen.net/zh/posts/disqus";
+            this.page.identifier = "/zh/posts/disqus"
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document,
+                s = d.createElement('script');
+            s.src = 'https://l1u9b0330.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <script>
+        (function($) {
+            setInterval(() => {
+                $.each($('iframe'), (arr, x) => {
+                    let src = $(x).attr('src');
+                    if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
+                        $(x).remove();
+                    }
+                });
+            }, 300);
+        })(jQuery);
     </script>
 </body>
 
