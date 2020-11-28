@@ -34,7 +34,7 @@
 
 .bg {
     background: rgb(246, 242, 239);
-    padding: 50px 250px;
+    padding: 10%;
 }
 
 .teaching_banner {
@@ -47,8 +47,8 @@
     font-weight: bolder;
     color: white;
     position: absolute;
-    top: 75px;
-    left: 195px;
+    top: 61%;
+    left: 2%;
     text-shadow: black 2px 2px 1px;
 }
 
@@ -57,8 +57,8 @@
     font-family: 'cwTeXFangSong';
     color: white;
     position: absolute;
-    top: 120px;
-    left: 163px;
+    top: 79%;
+    left: 3%;
     text-shadow: black 2px 2px 1px;
 }
 
@@ -68,8 +68,8 @@
     font-weight: bolder;
     color: white;
     position: absolute;
-    top: 225px;
-    left: 755px;
+    top: 61%;
+    left: 35%;
     text-shadow: black 2px 2px 1px;
 }
 
@@ -78,8 +78,8 @@
     font-family: 'cwTeXFangSong';
     color: white;
     position: absolute;
-    top: 275px;
-    left: 716px;
+    top: 79%;
+    left: 35%;
     text-shadow: black 2px 2px 1px;
 }
 
@@ -89,8 +89,8 @@
     font-weight: bolder;
     color: white;
     position: absolute;
-    top: 225px;
-    left: 1338px;
+    top: 61%;
+    left: 67%;
     text-shadow: black 2px 2px 1px;
 }
 
@@ -99,8 +99,8 @@
     font-family: 'cwTeXFangSong';
     color: white;
     position: absolute;
-    top: 275px;
-    left: 1278px;
+    top: 79%;
+    left: 67%;
     text-shadow: black 2px 2px 1px;
 }
 
@@ -115,7 +115,7 @@
 }
 
 .sdg_logo {
-    width: 500px;
+    width: 25%;
 }
 
 .sdgs_text h3 {
