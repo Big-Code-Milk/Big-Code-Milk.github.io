@@ -903,4 +903,6 @@ Triple Bottom Line
 
 收秀 斑馬 ? 分散式帳本 
 
-利他性 csr oss 生態系(社群) 透明 能創造信任感 
+利他性 oss 生態系(社群) 透明 能創造信任感 
+
+CSR HR PR PD 從公益 去讓群眾支持自己 轉而擴大自己 ex 微軟 買 github
