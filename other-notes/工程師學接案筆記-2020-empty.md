@@ -898,3 +898,7 @@ email 內是 偷偷 solution，包含未來漸進式擴充需求規劃 ，詳細
 ## 唐鳳
 
 cicq vc 本夢比 特別股 綜效 生態系 oss 商業模式 / 阿爾網 Github 省大錢 ? 區塊鏈 ， 軟體品質很難捉摸 靠 社群去盯 / 明碁 oss /
+
+Triple Bottom Line
+
+收秀 斑馬 ? 分散式帳本
