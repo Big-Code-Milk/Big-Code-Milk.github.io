@@ -901,4 +901,6 @@ cicq vc 本夢比 特別股 綜效 生態系 oss 商業模式 / 阿爾網 Github
 
 Triple Bottom Line
 
-收秀 斑馬 ? 分散式帳本
+收秀 斑馬 ? 分散式帳本 
+
+oss 生態系(社群) 透明 能創造信任感 
