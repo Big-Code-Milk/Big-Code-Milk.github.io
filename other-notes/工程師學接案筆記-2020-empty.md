@@ -886,3 +886,13 @@ PORTAL
 email 內是 偷偷 solution，包含未來漸進式擴充需求規劃 ，詳細部分都可以在依照你們考量價位預算考量，做刪減或排後，第一階段可以先 retry 100萬內 
 
 正行 erp 70w
+
+## 技術筆記系統
+
+感覺之後要學大男孩，要推一個類似線上題庫 (類似六角翻譯 BS TW) 初期可能只是方便我們筆記技術，中期 可以發展成系統 類似 教育訓練 或是 課程那種感覺 就很有資源使用
+
+靈感 [刻意練習：如何鍛鍊你的抽象化能力](https://github.com/johch3n611u/Experience-of-Cinda-Company/blob/master/2020_NET_Conf/Speaker.md) 
+
+簡易版六角
+
+<>
