@@ -906,3 +906,7 @@ Triple Bottom Line
 利他性 oss 生態系(社群) 透明 能創造信任感 
 
 CSR HR PR PD 從公益 去讓群眾支持自己 轉而擴大自己 ex 微軟 買 github
+
+---
+
+錄影片就有點接近 教育訓練自動化
