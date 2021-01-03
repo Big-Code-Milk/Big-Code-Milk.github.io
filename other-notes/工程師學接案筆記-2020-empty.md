@@ -934,3 +934,5 @@ https://podcasts.apple.com/us/podcast/ep63-surveycake%E5%A6%82%E4%BD%95%E5%BE%9E
 13:29 ㄩ\ㄔㄥ/ 創投比較不會去投專案公司
 
 綁住 automating 一條龍，對方轉換成本高的狀況下，維護與開發就你統包了
+
+https://www.ithome.com.tw/node/40947
