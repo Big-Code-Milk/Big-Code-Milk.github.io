@@ -936,3 +936,5 @@ https://podcasts.apple.com/us/podcast/ep63-surveycake%E5%A6%82%E4%BD%95%E5%BE%9E
 綁住 automating 一條龍，對方轉換成本高的狀況下，維護與開發就你統包了
 
 https://www.ithome.com.tw/node/40947
+
+業務 跟 企劃 (統籌好賺得自己賺不好賺得發包之類的，需要有相關人脈等等) 蠻重要的 直接開始 才能慢慢磨練
