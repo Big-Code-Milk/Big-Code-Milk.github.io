@@ -938,3 +938,7 @@ https://podcasts.apple.com/us/podcast/ep63-surveycake%E5%A6%82%E4%BD%95%E5%BE%9E
 https://www.ithome.com.tw/node/40947
 
 業務 跟 企劃 (統籌好賺得自己賺不好賺得發包之類的，需要有相關人脈等等) 蠻重要的 直接開始 才能慢慢磨練
+
+---
+
+行銷業務最重要的事情是 產品要好，產品夠好妳就算沒半個業務東西也能賣很好
