@@ -948,3 +948,7 @@ https://www.ithome.com.tw/node/40947
 ---
 
 沒有競爭的市場才會恐怖，但競爭會有各種策略 e.g. 找痛點 定義廣義狹義市場 ( 哪些主攻哪些能放 ) M&A
+
+https://player.soundon.fm/p/511455c6-f5ee-4e8f-aac3-912b277c0efe/episodes/bbe89660-c036-11e9-8139-411f4174ed7f
+
+找投資人要找 keyman 缺啥補啥，不一定是錢
