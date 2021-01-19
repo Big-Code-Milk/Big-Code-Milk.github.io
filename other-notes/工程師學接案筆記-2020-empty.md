@@ -952,3 +952,9 @@ https://www.ithome.com.tw/node/40947
 https://player.soundon.fm/p/511455c6-f5ee-4e8f-aac3-912b277c0efe/episodes/bbe89660-c036-11e9-8139-411f4174ed7f
 
 找投資人要找 keyman 缺啥補啥，不一定是錢
+
+---
+
+事業 => 各種系統
+
+名單 (開發/維護客戶關係)、成交 (淺在客戶 => 客戶)、價值交付 (東西要滿足市場幫的到人的)
