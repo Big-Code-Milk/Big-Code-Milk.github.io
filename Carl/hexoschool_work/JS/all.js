@@ -53,12 +53,10 @@ function subscription() {
 
 
 function cancel(event) {
-    event.preventDefault();
     $('.subscription').fadeOut();
 }
 
 function success(event) {
-    event.preventDefault();
     cancel();
     $('.success').fadeIn(1500).fadeOut(1500);
 }
