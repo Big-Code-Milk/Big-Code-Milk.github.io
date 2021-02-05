@@ -1,7 +1,6 @@
 $(document).ready(function() {
     course_slidedown();
     subscription();
-    // swiper
     var swiper = new Swiper('.swiper-container', {
         effect: 'cube',
         grabCursor: true,
@@ -53,11 +52,13 @@ function subscription() {
 }
 
 
-function cancel() {
+function cancel(event) {
+    event.preventDefault();
     $('.subscription').fadeOut();
 }
 
-function success() {
+function success(event) {
+    event.preventDefault();
     cancel();
     $('.success').fadeIn(1500).fadeOut(1500);
 }
