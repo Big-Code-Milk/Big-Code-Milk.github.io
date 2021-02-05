@@ -3,10 +3,13 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 1024px;
 }
 
 .nav {
+  position: absolute;
+  z-index: 10;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -25,6 +28,21 @@ body {
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.menu-course {
+  position: relative;
+}
+
+.course-open {
+  position: absolute;
+  padding: 0;
+}
+
+.course-open li {
+  border-left: 1px solid #00cc99;
+  width: 180%;
+  display: none;
 }
 
 .nav-bar {
@@ -52,15 +70,124 @@ body {
   transition: all 1s;
 }
 
-.banner {
-  background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_index.png);
-  background-repeat: no-repeat;
+.course-slide.active {
+  color: #00cc99;
+  border-bottom: 8px solid #00cc99;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.subscription {
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 25%;
+  left: 35%;
+}
+
+.subscription h3 {
+  color: white;
+}
+
+.subscription .btn-white {
+  font-size: 20px;
+  background-color: white;
+  border-radius: 5px;
+  border: transparent;
+  float: right;
+  width: 140px;
+  height: 52px;
+  color: black;
+  word-spacing: 20px;
+}
+
+.btn-cancel {
+  font-size: 20px;
+  background-color: red;
+  border-radius: 5px;
+  border: transparent;
+  float: right;
+  width: 140px;
+  height: 52px;
+  color: black;
+  word-spacing: 20px;
+}
+
+.success {
+  z-index: 20;
+  display: none;
+  padding: 10px;
+  font-size: 32px;
+  color: white;
+  position: fixed;
+  top: 25%;
+  left: 45%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-container {
+  max-width: 1024px;
   height: 560px;
-  background-position: bottom;
+}
+
+.swiper-slide {
+  color: white;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #00cc99;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+  opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #00cc99;
+}
+
+.top {
+  right: -5%;
+  bottom: 10%;
+  position: fixed;
+  display: block;
+}
+
+.top img {
+  width: 20%;
+}
+
+.banner {
+  height: 560px;
 }
 
 .banner-text {
-  margin: 110px 0px 0px 40px;
+  margin: 110px 0px 0px 60px;
 }
 
 .banner-text h2 {
@@ -88,12 +215,10 @@ body {
 }
 
 .banner-button:hover {
+  text-decoration: none;
   -webkit-transition: all 1s;
   transition: all 1s;
-  -webkit-transform: translateX(30px);
-          transform: translateX(30px);
-  color: white;
-  text-decoration: none;
+  color: black;
 }
 
 .course-list {
@@ -159,14 +284,25 @@ body {
           box-shadow: #b8b8b8 0px 5px 5px 2px;
 }
 
-.course-list-card li h4 {
+.course-list-card h4 {
   margin-top: 16px;
   font-size: 20px;
   color: #4a4a4a;
 }
 
-.course-list-card li p {
+.course-list-card p {
   color: #9b9b9b;
+}
+
+.course-list-card a {
+  padding: 5px;
+}
+
+.course-list-card a:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .course-table {
@@ -224,6 +360,11 @@ body {
   padding: 26px 21px;
   font-size: 20px;
   margin-bottom: 20px;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 204, 153, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 204, 153, 0.5);
 }
 
 .btn-green {
