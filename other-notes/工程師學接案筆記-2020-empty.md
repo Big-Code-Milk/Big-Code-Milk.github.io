@@ -976,3 +976,7 @@ https://player.soundon.fm/p/511455c6-f5ee-4e8f-aac3-912b277c0efe/episodes/bbe896
 ---
 
 免費包或軟體試用，靠驗證碼獲取 email 或 手機
+
+---
+
+有機會被洩漏報價，需靠合約之類的防止這種狀況
