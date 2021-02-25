@@ -972,3 +972,7 @@ https://player.soundon.fm/p/511455c6-f5ee-4e8f-aac3-912b277c0efe/episodes/bbe896
 ---
 
 知道不要什麼很簡單，要什麼很難
+
+---
+
+免費包或軟體試用，靠驗證碼獲取 email 或 手機
