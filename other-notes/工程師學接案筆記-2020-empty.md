@@ -980,3 +980,7 @@ https://player.soundon.fm/p/511455c6-f5ee-4e8f-aac3-912b277c0efe/episodes/bbe896
 ---
 
 有機會被洩漏報價，需靠合約之類的防止這種狀況
+
+---
+
+串接 API 一支報 3 萬，之前雅虎串後台 15萬 做1個月 虧本
