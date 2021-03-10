@@ -984,3 +984,7 @@ https://player.soundon.fm/p/511455c6-f5ee-4e8f-aac3-912b277c0efe/episodes/bbe896
 ---
 
 串接 API 一支報 3 萬，之前雅虎串後台 15萬 做1個月 虧本
+
+---
+
+客戶都希望報價越細越好例如爸爸公司索羅斯其實都有蒜工時
