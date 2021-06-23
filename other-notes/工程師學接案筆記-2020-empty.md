@@ -1072,3 +1072,7 @@ AD 廣告是會塞選受眾的，觀眾的注意力在哪，錢就在哪，這�
 ---
 
 文章頁面需導流 可模仿 張阿道
+
+https://zhuanlan.zhihu.com/p/137472953
+
+https://www.zhihu.com/question/62351184
