@@ -86,3 +86,7 @@ class Program
             
 }
 ```
+
+  * Stack, Heap memory 
+  * Garbage Collection 
+  * using ( …) { … } 
