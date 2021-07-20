@@ -91,3 +91,13 @@ class Program
 * Stack, Heap memory https://nwpie.blogspot.com/2017/05/5-stack-heap.html
 * Garbage Collection https://derjohng.doitwell.tw/533/%E9%9B%BB%E8%85%A6%E9%A1%9E%E5%88%A5/%E7%A8%8B%E5%BC%8F%E7%AD%86%E8%A8%98/c-garbage-collection-%E7%AD%86%E8%A8%98/
 * using ( …) { … } 
+
+---
+    
+* Parallel.For, Parallel.Foreach 
+* Task 
+* Lock 
+* Interlocked 
+* Monitor 
+* Mutex 
+* Semaphore 
