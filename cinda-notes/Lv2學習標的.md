@@ -5,8 +5,11 @@
 https://www.tutorialspoint.com/compile_csharp_online.php
 
 * CSharp
-  * Action<T>,Func<T>
-  http://tpcg.io/y0l1SWWN
+  * http://tpcg.io/y0l1SWWN
+  * Action<T>,Func<T> 
+  * Anonymous Methods 
+  * Lambda expressions 
+  * Events 
 
 ```
 using System.IO;
@@ -15,11 +18,16 @@ using System;
 class Program
 {
     // 參考文章
+    // https://ithelp.ithome.com.tw/articles/10205614
+    // https://me1237guy.pixnet.net/blog/post/65140795-c%23-delegate-and-event-%E5%A7%94%E8%A8%97%E8%88%87%E4%BA%8B%E4%BB%B6
     // https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/206252/
     // https://iter01.com/137001.html
     
     // delegate 委託
     public delegate void GreetingDelegate(string Name);
+    public delegate int AnonymousMethods  (int x, int y);
+    public delegate void EventMethod();
+    static event EventMethod DelegateEvent;
     
     static void Main()
     {
@@ -34,6 +42,21 @@ class Program
        // Action<T> 無法傳值的委託
        Action<string,GreetingDelegate> SaySomeThing2 = Program.Say;
        SaySomeThing2("育誠",SayCN);
+       
+       // 匿名函式
+       AnonymousMethods AM = delegate (int x, int y) {
+                return x + y;
+       };
+       Console.WriteLine(AM(1,1));
+       
+       // 匿名 Lambda表達式
+       AM = (int x, int y) => { return x * y; };
+       Console.WriteLine(AM(2,2));
+       
+       // Event
+       Program.DelegateEvent += new EventMethod(WriteName);
+       Program.DelegateEvent += new EventMethod(WriteName);
+       Program.DelegateEvent(); // 事件觸發
     }
 
     static void SayCN(string Name)
@@ -55,6 +78,11 @@ class Program
     {
         return "育誠";
     }  
-        
+    
+    static void WriteName()
+    {
+        Console.WriteLine("育誠");
+    }  
+            
 }
 ```
