@@ -101,3 +101,61 @@ class Program
 * Monitor 
 * Mutex 
 * Semaphore 
+
+---
+    
+* HttpClient
+* EntityFramework
+    
+---
+    
+* async, await
+    
+---
+    
+* Custom Attributes 
+* dynamic 
+* ExpandoObject
+    
+---
+    
+## SQL
+    
+* OFFSET 
+* FETCH NEXT 
+* CTE 
+* MERGE 
+* OUTPUT 
+* View(檢視表) 
+* CREATE VIEW 
+* ALTER VIEW 
+* DROP VIEW 
+* WITH CHECK OPTION 
+* Index(索引) 
+* 叢集索引(Clustered Indexes) link 
+* 非叢集索引(Nonclustered Indexes) 
+* 複合索引 
+* PRIMARY KEY欄位的索引 
+* UNIQUE 欄位的索引 
+* 如何建立索引 
+* 如何檢視執行計劃 
+* 篩選索引(Filtered Index) 
+* 資料行索引(Columnstore Index) 
+* BEGIN/END 
+* WHILE, BREAK, CONTINU, GOTO 
+* IF/ELSE 
+* WAITFOR 
+* IIF , CHOOSE 
+* 預存程序(Stored Procedures, SP) 
+* 建立SP 
+* 執行SP 
+* SP參數 
+* Sequence的建立及操作 
+* 自訂函數 User-defined Functions, UDF 
+* 純量值函數 
+* 資料表值函數 
+* CURSOR 指標 
+* Trigger 
+* Transaction 概念 
+* commit, rollback 
+* Lock, Dead Lock 
