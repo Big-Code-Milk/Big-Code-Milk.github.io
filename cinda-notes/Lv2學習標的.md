@@ -153,8 +153,9 @@ class Program
 
 ---
     
-* HttpClient
-* EntityFramework
+* HttpClient https://blog.darkthread.net/blog/httpclient-sigleton/
+  => HttpClientFactory
+* EntityFramework https://medium.com/sally-thinking/%E7%A8%8B%E5%BC%8F%E5%AD%B8%E7%BF%92%E4%B9%8B%E8%B7%AF-day28-c-ado-net-entity-framework-%E7%89%A9%E4%BB%B6%E9%97%9C%E8%81%AF%E5%B0%8D%E6%87%89-4b27943af679
     
 ---
     
@@ -162,9 +163,9 @@ class Program
     
 ---
     
-* Custom Attributes 
-* dynamic 
-* ExpandoObject
+* Custom Attributes https://dotblogs.com.tw/johnny/2015/07/31/csharp-custom-attributes
+* dynamic https://iter01.com/154116.html
+* ExpandoObject https://dotblogs.com.tw/Leo_CodeSpace/2020/01/05/115025
     
 ---
     
