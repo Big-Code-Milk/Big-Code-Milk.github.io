@@ -94,13 +94,62 @@ class Program
 
 ---
     
-* Parallel.For, Parallel.Foreach 
-* Task 
-* Lock 
-* Interlocked 
-* Monitor 
-* Mutex 
-* Semaphore 
+* Parallel.For, Parallel.Foreach
+    
+```
+using System.IO;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+// 參考 
+// https://dotblogs.com.tw/asdtey/2010/05/08/parallelforforeach
+// https://dotblogs.com.tw/JesperLai/2018/04/05/232204
+// Parallel 平行運算
+
+class Program
+{
+    static void Main()
+    {
+        List<int> list = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        
+        for (int i = 1; i <= 5; i++)
+            {
+                Console.WriteLine("【第" + i.ToString() + "回合】");
+                Single(list);
+                Multi(list);
+                Console.WriteLine();
+            }
+
+    }
+    
+    private static void Single(List<int> list)
+    {
+            Console.Write("單執行緒");
+            list.ForEach(i => Console.Write(i + ", "));
+            Console.WriteLine();
+            Console.WriteLine("-完成-");
+    }
+
+    private static void Multi(List<int> list)
+    {
+            Console.Write("平行處理");
+            Parallel.ForEach(list, q =>
+            {
+                Console.Write(q + ", ");
+            });
+            Console.WriteLine();
+            Console.WriteLine("-完成-");
+    }
+}
+```
+    
+* Task https://dotblogs.com.tw/JesperLai/2018/04/06/013332
+* Lock https://dotblogs.com.tw/JesperLai/2018/04/06/010817
+* Interlocked http://noteofisabella.blogspot.com/2019/03/c-threadlock.html
+* Monitor https://dotblogs.com.tw/noncoder/2018/06/30/lock-Monitor
+* Mutex http://noteofisabella.blogspot.com/2019/03/c-threadmutexsemaphore.html
+* Semaphore https://dotblogs.com.tw/JesperLai/2018/04/06/011954
 
 ---
     
@@ -109,7 +158,7 @@ class Program
     
 ---
     
-* async, await
+* async, await https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/async/
     
 ---
     
