@@ -173,8 +173,20 @@ class Program
     
 * OFFSET 
 * FETCH NEXT 
-* CTE 
-* MERGE 
+    
+```
+SELECT OrderID, CustomerID, EmployeeID, OrderDate
+FROM dbo.Orders
+ORDER BY OrderDate DESC
+ OFFSET 0 ROWS -- 跳過幾行
+ FETCH FIRST 50 ROWS ONLY; -- 抓取幾行
+GO
+```
+    
+* CTE ( Common Table Expression ) 暫存表
+  * https://dotblogs.com.tw/dc690216/2010/02/02/13440
+  * https://dotblogs.com.tw/wasichris/2016/11/03/151251
+* MERGE https://shunnien.github.io/2018/04/19/sql-merge-into/
 * OUTPUT 
 * View(檢視表) 
 * CREATE VIEW 
