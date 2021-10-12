@@ -1,1 +1,0 @@
-將edmx中的 schema="TEST" 拿掉

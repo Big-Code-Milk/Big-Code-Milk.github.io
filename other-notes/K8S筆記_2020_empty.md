@@ -1,1 +1,0 @@
-<https://medium.com/@C.W.Hu/kubernetes-basic-concept-tutorial-e033e3504ec0>
