@@ -1,5 +1,5 @@
 backend:
-  name: https://github.com/Big-Code-Milk/Big-Code-Milk.github.io # https://github.com/netlify/netlify-cms
+  name: git-gateway # https://github.com/netlify/netlify-cms
   branch: master # 要更新的分支(可选；默认为主分支)
 
 # This line should *not* be indented
