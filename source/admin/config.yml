@@ -9,8 +9,8 @@ publish_mode: editorial_workflow
 media_folder: "source/images/uploads" # 媒体文件将存储在图片/上载下的Repo中。
 public_folder: "/images/uploads" # 上传的媒体的src属性将以/images/uploads开头。
 
-site_url: https://unruffled-euler-1a9783.netlify.app/ # 网站网址
-display_url: https://unruffled-euler-1a9783.netlify.app/ # 显示网址
+site_url: https://unruffled-euler-1a9783.netlify.app # 网站网址
+display_url: https://unruffled-euler-1a9783.netlify.app # 显示网址
 
 locale: "zh_Hans" # 语言环境 https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-locales/src
 
@@ -21,7 +21,7 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
     create: true # 允许用户在这个集合中创建新的文件。
     fields: # 每份文件的字段，通常是前面的内容。
       - {
-          label: "顶部图",
+          label: "看板圖",
           name: "banner_img",
           widget: "image",
           required: false,
@@ -35,7 +35,7 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
       - { label: "文章排序", name: "sticky", widget: "number", required: false }
       - { label: "标题", name: "title", widget: "string" }
       - {
-          label: "发布日期",
+          label: "發布日期",
           name: "date",
           widget: "datetime",
           format: "YYYY-MM-DD HH:mm:ss",
@@ -52,19 +52,19 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
           timeFormat: "HH:mm:ss",
           required: false,
         }
-      - { label: "标签", name: "tags", widget: "list", required: false }
-      - { label: "分类", name: "categories", widget: "list", required: false }
-      - { label: "关键词", name: "keywords", widget: "list", required: false }
+      - { label: "標籤", name: "tags", widget: "list", required: false }
+      - { label: "分類", name: "categories", widget: "list", required: false }
+      - { label: "關鍵詞", name: "keywords", widget: "list", required: false }
       - { label: "摘要", name: "excerpt", widget: "list", required: false }
       - { label: "内容", name: "body", widget: "markdown", required: false }
       - {
-          label: "永久链接",
+          label: "永久連結",
           name: "permalink",
           widget: "string",
           required: false,
         }
       - {
-          label: "评论",
+          label: "評論",
           name: "comments",
           widget: "boolean",
           default: true,
@@ -76,12 +76,12 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
     files:
       - file: "source/about/index.md"
         name: "about"
-        label: "关于"
+        label: "關於"
         fields:
-          - { label: "标题", name: "title", widget: "string" }
+          - { label: "標題", name: "title", widget: "string" }
           - { label: "内容", name: "body", widget: "markdown", required: false }
           - {
-              label: "评论",
+              label: "評論",
               name: "comments",
               widget: "boolean",
               default: true,
@@ -103,76 +103,76 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
             widget: "object"
             collapsed: true # 是否折叠显示
             fields:
-              - label: "顶部图"
+              - label: "看板圖"
                 name: "banner_img"
                 widget: "image"
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
-          - label: "文章页"
+          - label: "文章頁"
             name: "post"
             widget: "object"
             collapsed: true
             fields:
-              - label: "顶部图(默认)"
+              - label: "看板圖(默認)"
                 name: "banner_img"
                 widget: "image"
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
-              - label: "文章封面图(默认)"
+              - label: "文章看板圖(默認)"
                 name: "default_index_img"
                 widget: "image"
-          - label: "归档页"
+          - label: "歸檔頁"
             name: "archive"
             widget: "object"
             collapsed: true
             fields:
-              - label: "顶部图"
+              - label: "看板圖"
                 name: "banner_img"
                 widget: "image"
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
-          - label: "分类页"
+          - label: "分類頁"
             name: "category"
             widget: "object"
             collapsed: true
             fields:
-              - label: "顶部图"
+              - label: "看板圖"
                 name: "banner_img"
                 widget: "image"
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
-          - label: "标签页"
+          - label: "標籤頁"
             name: "tag"
             widget: "object"
             collapsed: true
             fields:
-              - label: "顶部图"
+              - label: "看板圖"
                 name: "banner_img"
                 widget: "image"
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
-          - label: "关于页"
+          - label: "關於頁"
             name: "about"
             widget: "object"
             collapsed: true
             fields:
-              - label: "顶部图"
+              - label: "看板圖"
                 name: "banner_img"
                 widget: "image"
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
-          - label: "友链页面"
+          - label: "友情連結頁"
             name: "links"
             widget: "object"
             collapsed: true
             fields:
-              - label: "顶部图"
+              - label: "看板圖"
                 name: "banner_img"
                 widget: "image"
               - label: "高度"
@@ -183,25 +183,25 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
                 widget: "list"
                 fields:
                   - {
-                      label: "网站名称",
+                      label: "網站名稱",
                       name: "title",
                       widget: "string",
                       required: false,
                     }
                   - {
-                      label: "网址描述",
+                      label: "網站描述",
                       name: "intro",
                       widget: "string",
                       required: false,
                     }
                   - {
-                      label: "网站地址",
+                      label: "網站地址",
                       name: "link",
                       widget: "string",
                       required: false,
                     }
                   - {
-                      label: "网站图片",
+                      label: "網站圖片",
                       name: "avatar",
                       widget: "image",
                       required: false,
