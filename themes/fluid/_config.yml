@@ -694,7 +694,7 @@ gitalk:
   repo:
   owner:
   admin: ['name']
-  language: zh-CN
+  language: zh-TW
   labels: ['Gitalk']
   perPage: 10
   pagerDirection: last
