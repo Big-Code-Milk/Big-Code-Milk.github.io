@@ -1,7 +1,7 @@
 ---
-title: Hello World123
-date: 2021-12-22 23:54:33
-updated: 2021-12-22 23:54:33
+title: 2022 如何建立 Hexo + NetlifyCMS 懶人包 ( Netlify 篇 )
+date: 2021-12-22
+updated: 2021-12-22
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 

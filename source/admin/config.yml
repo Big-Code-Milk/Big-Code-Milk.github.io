@@ -120,7 +120,7 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
-              - label: "文章看板圖(默认)"
+              - label: "文章看板圖(默認)"
                 name: "default_index_img"
                 widget: "image"
           - label: "歸檔頁"
