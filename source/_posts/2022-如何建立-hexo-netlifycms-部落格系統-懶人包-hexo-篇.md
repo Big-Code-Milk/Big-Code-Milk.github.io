@@ -1,5 +1,5 @@
 ---
-title: 2022 如何建立 Hexo + NetlifyCMS 部落格系統 - 懶人包 ( Hexo 篇 )
+title: 2022 如何建立 Hexo + NetlifyCMS 部落格 - ( Hexo 篇 )
 date: 2021-12-23 16:00:03
 updated: 2021-12-23 16:00:05
 tags: []
