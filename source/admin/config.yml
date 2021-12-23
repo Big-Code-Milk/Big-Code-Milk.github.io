@@ -98,7 +98,7 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
         editor:
           preview: true # 是否开启编辑预览
         fields:
-          - label: "首页"
+          - label: "首頁"
             name: "index"
             widget: "object"
             collapsed: true # 是否折叠显示
@@ -123,7 +123,7 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
               - label: "文章看板圖(默認)"
                 name: "default_index_img"
                 widget: "image"
-          - label: "歸檔頁"
+          - label: "檢索頁"
             name: "archive"
             widget: "object"
             collapsed: true

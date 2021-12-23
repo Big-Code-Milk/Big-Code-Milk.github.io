@@ -789,7 +789,7 @@ twikoo:
 cusdis:
   host:
   app_id:
-  lang: zh-cn
+  lang: zh-tw
 
 #---------------------------
 # 归档页
