@@ -1,20 +1,4 @@
 <div class="mt-1">
-  <% if (theme.post.meta.wordcount.enable) { %>
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      <%- theme.post.meta.wordcount.format.replace('{}', wordcount(page)) %>
-    </span>
-  <% } %>
-
-  <% if (theme.post.meta.min2read.enable) { %>
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-clock-fill"></i>
-      <% var awl = parseInt(theme.post.meta.min2read.awl) %>
-      <% var wpm = parseInt(theme.post.meta.min2read.wpm) %>
-      <%- theme.post.meta.min2read.format.replace('{}', min2read(page, { awl: awl, wpm: wpm })) %>
-    </span>
-  <% } %>
-
   <% var views_texts = theme.post.meta.views.format.split('{}') %>
   <% if (theme.post.meta.views.enable) { %>
     <% if (theme.post.meta.views.source === 'leancloud') { %>
