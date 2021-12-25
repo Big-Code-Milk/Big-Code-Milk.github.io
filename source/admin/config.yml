@@ -55,7 +55,7 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
           required: false,
         }
       - { label: "標籤", name: "tags", widget: "list", required: false }
-      - { label: "分類", name: "categories", widget: "list", required: false }
+      - { label: "作品", name: "categories", widget: "list", required: false }
       - { label: "關鍵詞", name: "keywords", widget: "list", required: false }
       - { label: "摘要", name: "excerpt", widget: "list", required: false }
       - { label: "内容", name: "body", widget: "markdown", required: false }
