@@ -502,6 +502,10 @@ index:
 # Post Page
 #---------------------------
 post:
+
+  target:
+  painPoints:
+
   banner_img: /img/default.png
   banner_img_height: 70
   banner_mask_alpha: 0.3
