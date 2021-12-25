@@ -34,8 +34,8 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
         }
       - { label: "文章排序", name: "sticky", widget: "number", required: false }
       - { label: "標題", name: "title", widget: "string" }
-        { label: "受眾", name: "target", widget: "string" }
-        { label: "痛點", name: "painPoints", widget: "markdown" }
+      - { label: "受眾", name: "target", widget: "string" }
+      - { label: "痛點", name: "painPoints", widget: "markdown" }
       - {
           label: "發布日期",
           name: "date",
