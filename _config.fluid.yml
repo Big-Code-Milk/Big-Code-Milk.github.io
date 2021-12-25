@@ -715,15 +715,15 @@ gitalk:
 # Based on LeanCloud
 # See: https://valine.js.org/
 valine:
-  appId:
-  appKey:
+  appId: l3jc3Y6EM0O6ucR98qkiwDBa-MdYXbMMI
+  appKey: KGwfe7uGOz5rUcHTQW36gzT2
   path: window.location.pathname
   placeholder:
   avatar: 'retro'
   meta: ['nick', 'mail', 'link']
   requiredFields: []
   pageSize: 10
-  lang: 'zh-CN'
+  lang: 'zh-TW'
   highlight: false
   recordIP: false
   serverURLs: ''
