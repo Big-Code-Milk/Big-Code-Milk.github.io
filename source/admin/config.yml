@@ -32,6 +32,7 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
           widget: "image",
           required: false,
         }
+      - { label: "分類", name: "categories", widget: "list", required: false }
       - { label: "文章排序", name: "sticky", widget: "number", required: false }
       - { label: "標題", name: "title", widget: "string" }
       - { label: "受眾", name: "target", widget: "string" }
