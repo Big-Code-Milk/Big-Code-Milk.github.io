@@ -35,7 +35,7 @@ page.banner_mask_alpha = page.banner_mask_alpha || theme.post.banner_mask_alpha
                 <% if (theme.post.meta.date.enable) { %>
                   <span class="post-meta">
                     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-                    <time datetime="<%= full_date(page.date, 'YYYY-MM-DD HH:mm') %>" pubdate>
+                    <time datetime="<%= full_date(page.date, 'YYYY-MM-DD') %>" pubdate>
                       <%= full_date(page.date, theme.post.meta.date.format) %>
                     </time>
                   </span>
