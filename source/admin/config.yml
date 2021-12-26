@@ -72,6 +72,12 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
           default: true,
           required: false,
         }
+      - {
+          label: "評論",
+          name: "comment",
+          widget: "string",
+          default: 'valine',
+        }
 
   - name: "pages"
     label: "Pages"
