@@ -724,8 +724,8 @@ valine:
   requiredFields: []
   pageSize: 10
   lang: 'zh-TW'
-  highlight: false
-  recordIP: false
+  highlight: true
+  recordIP: true
   serverURLs: 'https://l3jc3y6e.api.lncldglobal.com'
   emojiCDN:
   emojiMaps:
