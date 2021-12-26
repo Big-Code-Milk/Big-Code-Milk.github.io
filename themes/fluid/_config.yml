@@ -726,7 +726,7 @@ valine:
   lang: 'zh-TW'
   highlight: false
   recordIP: false
-  serverURLs: ''
+  serverURLs: 'l3jc3y6e.api.lncldglobal.com'
   emojiCDN:
   emojiMaps:
   enableQQ: false
