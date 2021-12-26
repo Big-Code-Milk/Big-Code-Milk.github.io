@@ -66,14 +66,14 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
           required: false,
         }
       - {
-          label: "評論",
+          label: "啟用評論",
           name: "comments",
           widget: "boolean",
           default: true,
           required: false,
         }
       - {
-          label: "評論",
+          label: "評論模組",
           name: "comment",
           widget: "string",
           default: 'valine',
