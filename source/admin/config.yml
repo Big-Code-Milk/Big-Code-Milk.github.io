@@ -9,8 +9,8 @@ publish_mode: editorial_workflow
 media_folder: "source/images/uploads" # 媒体文件将存储在图片/上载下的Repo中。
 public_folder: "/images/uploads" # 上传的媒体的src属性将以/images/uploads开头。
 
-site_url: https://unruffled-euler-1a9783.netlify.app # 网站网址
-display_url: https://unruffled-euler-1a9783.netlify.app # 显示网址
+site_url: https://shidashi.netlify.app # 网站网址
+display_url: https://shidashi.netlify.app # 显示网址
 
 locale: "zh_Hans" # 语言环境 https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-locales/src
 
@@ -55,7 +55,7 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
           required: false,
         }
       - { label: "標籤", name: "tags", widget: "list", required: false }
-      - { label: "作品", name: "categories", widget: "list", required: false }
+      - { label: "作品頁類別", name: "categories", widget: "list", required: false }
       - { label: "關鍵詞", name: "keywords", widget: "list", required: false }
       - { label: "摘要", name: "excerpt", widget: "list", required: false }
       - { label: "内容", name: "body", widget: "markdown", required: false }
