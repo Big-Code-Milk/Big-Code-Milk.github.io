@@ -20,6 +20,12 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
     folder: "source/_posts" # 存储文件的文件夹的路径。
     create: true # 允许用户在这个集合中创建新的文件。
     fields: # 每份文件的字段，通常是前面的内容。
+      - { 
+          label: "作者",
+          name: "author",
+          widget: "select",
+          options: ["油圈", "愷子", "龔龔"]
+        }
       - {
           label: "看板圖",
           name: "banner_img",
