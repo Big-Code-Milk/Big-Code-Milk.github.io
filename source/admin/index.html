@@ -14,8 +14,9 @@
 
 <body>
     <script defer="true" src="https://cdn.jsdelivr.net/npm/netlify-cms@2/dist/netlify-cms.js"></script>
-    <nav onclick="FocusMode()" id="testt" style="position: absolute; bottom:0px;left: 0px;z-index:1000000;">
-        <a style="cursor: pointer;">專注模式</a>
+    <nav style="position: absolute; bottom:0px;left: 0px;z-index:1000000;">
+        <a onclick="FocusMode()" style="cursor: pointer;">專注模式</a>
+        <a style="cursor: pointer;">黑暗模式</a>
     </nav>
     <script>
         let IsFocusMode = false;
@@ -24,11 +25,13 @@
                 $('.evqrzhe4').css('display', 'none');
                 $('.css-y7r3-AppHeader').css('display', 'none');
                 $('.css-1prcas7-ControlPaneContainer').css('max-width', 'unset');
+                $('.css-hn3jn7-EditorContainer').css('padding-top', 'unset');
                 IsFocusMode = false;
             } else {
                 $('.evqrzhe4').css('display', 'flex');
                 $('.css-y7r3-AppHeader').css('display', 'block');
                 $('.css-1prcas7-ControlPaneContainer').css('max-width', '800px');
+                $('.css-hn3jn7-EditorContainer').css('padding-top', '66px');
                 IsFocusMode = true;
             }
         }
