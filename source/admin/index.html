@@ -13,8 +13,6 @@
 </head>
 
 <body>
-    <div class="evqrzhe4">aaa</div>
-    <div class="css-y7r3-AppHeader">bbb</div>
     <script defer="true" src="https://cdn.jsdelivr.net/npm/netlify-cms@2/dist/netlify-cms.js"></script>
     <nav onclick="FocusMode()" id="testt" style="position: absolute; bottom:0px;left: 0px;z-index:1000000;">
         <a style="cursor: pointer;">專注模式</a>
@@ -23,6 +21,7 @@
         function FocusMode() {
             $('.evqrzhe4').toggle();
             $('.css-y7r3-AppHeader').toggle();
+            $('css-1prcas7-ControlPaneContainer').css('max-width','unset');
         }
     </script>
 </body>
