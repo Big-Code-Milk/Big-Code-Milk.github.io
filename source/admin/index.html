@@ -34,16 +34,16 @@
         let IsFocusMode = false;
         function FocusMode() {
             if (IsFocusMode) {
-                $('.evqrzhe4').css('display', 'none');
-                $('.css-y7r3-AppHeader').css('display', 'none');
-                $('.css-1prcas7-ControlPaneContainer').css('max-width', 'unset');
-                $('.css-hn3jn7-EditorContainer').css('padding-top', 'unset');
-                IsFocusMode = false;
-            } else {
                 $('.evqrzhe4').css('display', 'flex');
                 $('.css-y7r3-AppHeader').css('display', 'block');
                 $('.css-1prcas7-ControlPaneContainer').css('max-width', '800px');
                 $('.css-hn3jn7-EditorContainer').css('padding-top', '66px');
+                IsFocusMode = false;
+            } else {
+                $('.evqrzhe4').css('display', 'none');
+                $('.css-y7r3-AppHeader').css('display', 'none');
+                $('.css-1prcas7-ControlPaneContainer').css('max-width', 'unset');
+                $('.css-hn3jn7-EditorContainer').css('padding-top', 'unset');
                 IsFocusMode = true;
             }
         }
