@@ -18,10 +18,19 @@
         <a style="cursor: pointer;">專注模式</a>
     </nav>
     <script>
+        let IsFocusMode = false;
         function FocusMode() {
-            $('.evqrzhe4').toggle();
-            $('.css-y7r3-AppHeader').toggle();
-            $('css-1prcas7-ControlPaneContainer').css('max-width','unset');
+            if (IsFocusMode) {
+                $('.evqrzhe4').css('display', 'none');
+                $('.css-y7r3-AppHeader').css('display', 'none');
+                $('.css-1prcas7-ControlPaneContainer').css('max-width', 'unset');
+                IsFocusMode = false;
+            } else {
+                $('.evqrzhe4').css('display', 'block');
+                $('.css-y7r3-AppHeader').css('display', 'flex');
+                $('.css-1prcas7-ControlPaneContainer').css('max-width', '800px');
+                IsFocusMode = true;
+            }
         }
     </script>
 </body>
