@@ -10,6 +10,12 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <title>內容管理系統</title>
+    <style>
+        .ColorWhite > *
+        {
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -42,12 +48,12 @@
                 $('.e1pxf6c46').css('background-color', '#F7EDE6');
                 $('.css-83wr9v').css('background-color', '#F7EDE6').css('color','black');
                 $('.css-n3v41w-control').css('background-color', '#F7EDE6').css('color','black');
-                $('.css-1b0jsy4').css('background-color', '#F7EDE6').css('color','black');
+                $('.css-1b0jsy4').css('background-color', '#F7EDE6').css('color','black').removeClass('ColorWhite');
             }else{
-                $('.e1pxf6c46').css('background-color', 'block');
+                $('.e1pxf6c46').css('background-color', 'black');
                 $('.css-83wr9v').css('background-color', '#1c0209').css('color','white');
                 $('.css-n3v41w-control').css('background-color', '#1c0209').css('color','white');
-                $('.css-1b0jsy4').css('background-color', '#1c0209').css('color','white');
+                $('.css-1b0jsy4').css('background-color', '#1c0209').css('color','white').addClass('ColorWhite');
             }
         }
     </script>
