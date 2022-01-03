@@ -6,42 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="x-UA-Compatible" content="IE=Edge">
     <meta name="apple-mobile-web-app-status-bar-style" content="white" />
-    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <title>內容管理系統</title>
 </head>
 
 <body>
-    <script defer="true" src="https://cdn.jsdelivr.net/npm/netlify-cms@2/dist/netlify-cms.js"></script>
-    <nav style="position: absolute; bottom:0px;left: 0px;z-index:1000000;" onclick="FocusMode()">
+    <div class="evqrzhe4">aaa</div>
+    <div class="css-y7r3-AppHeader">bbb</div>
+    <!-- <script defer="true" src="https://cdn.jsdelivr.net/npm/netlify-cms@2/dist/netlify-cms.js"></script> -->
+    <nav id="testt" style="position: absolute; bottom:0px;left: 0px;z-index:1000000;">
         <a style="cursor: pointer;">專注模式</a>
     </nav>
     <script>
-        function FocusMode() {
 
             let test = $('.evqrzhe4');
-            test.toggle(
-                function () {
-                    $(this).attr("style", "display:none;");
-                },
-                function () {
-                    $(this).attr("style", "display:block;");
-                }
-            );
-
             let test2 = $('.css-y7r3-AppHeader');
-            test2.toggle(
+            $('#testt').toggle(
                 function () {
-                    $(this).attr("style", "display:none;");
+                    test.attr("style", "display:none;");
+                    test2.attr("style", "display:none;");
                 },
                 function () {
-                    $(this).attr("style", "display:block;");
+                    test.attr("style", "display:block;");
+                    test2.attr("style", "display:block;");
                 }
             );
            
-            console.log('FocusMode');
-        }
     </script>
 </body>
 
