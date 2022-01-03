@@ -14,9 +14,32 @@
 
 <body>
     <script defer="true" src="https://cdn.jsdelivr.net/npm/netlify-cms@2/dist/netlify-cms.js"></script>
-    <nav style="position: absolute; top:0px;right: 0px;" onclick="FocusMode()"><a href="#">專注模式</a></nav>
+    <nav style="position: absolute; bottom:0px;left: 0px;z-index:1000000;" onclick="FocusMode()">
+        <a style="cursor: pointer;">專注模式</a>
+    </nav>
     <script>
         function FocusMode() {
+            
+            let test = $('.evqrzhe4');
+            test.toggle(
+                function () {
+                    $(this).attr("style", "display:none;");
+                },
+                function () {
+                    $(this).attr("style", "display:block;");
+                }
+            );
+
+            let test = $('.css-y7r3-AppHeader');
+            test.toggle(
+                function () {
+                    $(this).attr("style", "display:none;");
+                },
+                function () {
+                    $(this).attr("style", "display:block;");
+                }
+            );
+           
             console.log('FocusMode');
         }
     </script>
