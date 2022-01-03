@@ -20,6 +20,9 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
     folder: "source/_posts" # 存储文件的文件夹的路径。
     create: true # 允许用户在这个集合中创建新的文件。
     fields: # 每份文件的字段，通常是前面的内容。
+      - { label: "受眾", name: "target", widget: "string", required: false }
+      - { label: "痛點", name: "painPoints", widget: "markdown", required: false }
+      - { label: "文章内容", name: "body", widget: "markdown", required: false }
       - { 
           label: "作者",
           name: "author",
@@ -40,8 +43,6 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
         }
       - { label: "文章排序", name: "sticky", widget: "number", required: false }
       - { label: "標題", name: "title", widget: "string" }
-      - { label: "受眾", name: "target", widget: "string" }
-      - { label: "痛點", name: "painPoints", widget: "markdown" }
       - {
           label: "發布日期",
           name: "date",
@@ -64,7 +65,6 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
       - { label: "作品頁類別", name: "categories", widget: "list", required: false }
       - { label: "關鍵詞", name: "keywords", widget: "list", required: false }
       - { label: "摘要", name: "excerpt", widget: "list", required: false }
-      - { label: "内容", name: "body", widget: "markdown", required: false }
       - {
           label: "永久連結",
           name: "permalink",
