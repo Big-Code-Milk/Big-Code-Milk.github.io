@@ -6,34 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="x-UA-Compatible" content="IE=Edge">
     <meta name="apple-mobile-web-app-status-bar-style" content="white" />
-    <!-- <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <title>內容管理系統</title>
+    <style>
+        .ColorWhite > * {color: white;}
+        .ColorWhite > * > * {color: white;}
+        .ColorWhite > * > * > * {color: white;}
+        .ColorWhite > * > * > * > * {color: white;}
+        .ColorWhite > * > * > * > * > * {color: white;}
+        .ColorWhite > * > * > * > * > * > * {color: white;}
+        .ColorWhite > * > * > * > * > * > * > * {color: white;}
+        .ColorWhite > * > * > * > * > * > * > * > * {color: white;}
+        .ColorWhite > * > * > * > * > * > * > * > * > * {color: white;}
+        .ColorWhite > * > * > * > * > * > * > * > * > * > * {color: white;}
+    </style>
 </head>
 
 <body>
-    <div class="evqrzhe4">aaa</div>
-    <div class="css-y7r3-AppHeader">bbb</div>
-    <!-- <script defer="true" src="https://cdn.jsdelivr.net/npm/netlify-cms@2/dist/netlify-cms.js"></script> -->
-    <nav id="testt" style="position: absolute; bottom:0px;left: 0px;z-index:1000000;">
-        <a style="cursor: pointer;">專注模式</a>
+    <script defer="true" src="https://cdn.jsdelivr.net/npm/netlify-cms@2/dist/netlify-cms.js"></script>
+    <nav style="position: absolute; bottom:0px;left: 0px;z-index:1000000;">
+        <a onclick="FocusMode()" style="cursor: pointer;">專注模式</a>
+        <a onclick="BlackMode()" style="cursor: pointer;">黑暗模式</a>
     </nav>
     <script>
-
-            let test = $('.evqrzhe4');
-            let test2 = $('.css-y7r3-AppHeader');
-            $('#testt').toggle(
-                function () {
-                    test.attr("style", "display:none;");
-                    test2.attr("style", "display:none;");
-                },
-                function () {
-                    test.attr("style", "display:block;");
-                    test2.attr("style", "display:block;");
-                }
-            );
-           
+        let IsFocusMode = false;
+        function FocusMode() {
+            if (IsFocusMode) {
+                $('.evqrzhe4').css('display', 'flex');
+                $('.css-y7r3-AppHeader').css('display', 'block');
+                $('.css-1prcas7-ControlPaneContainer').css('max-width', '800px');
+                $('.css-hn3jn7-EditorContainer').css('padding-top', '66px');
+                IsFocusMode = false;
+            } else {
+                $('.evqrzhe4').css('display', 'none');
+                $('.css-y7r3-AppHeader').css('display', 'none');
+                $('.css-1prcas7-ControlPaneContainer').css('max-width', 'unset');
+                $('.css-hn3jn7-EditorContainer').css('padding-top', 'unset');
+                IsFocusMode = true;
+            }
+        }
+        let IsBlackMode = false;
+        function BlackMode()
+        {
+            if(IsBlackMode){
+                $('.e1pxf6c46').css('background-color', '#F7EDE6');
+                $('.css-83wr9v').css('background-color', '#F7EDE6').css('color','black');
+                $('.css-n3v41w-control').css('background-color', '#F7EDE6').css('color','black');
+                $('.css-1b0jsy4').css('background-color', '#F7EDE6').css('color','black').removeClass('ColorWhite');
+                IsBlackMode = false;
+            }else{
+                $('.e1pxf6c46').css('background-color', 'black');
+                $('.css-83wr9v').css('background-color', 'rgb(12 0 3)').css('color','white');
+                $('.css-n3v41w-control').css('background-color', 'rgb(12 0 3)').css('color','white');
+                $('.css-1b0jsy4').css('background-color', 'rgb(12 0 3)').css('color','white').addClass('ColorWhite');
+                IsBlackMode = true;
+            }
+        }
     </script>
 </body>
 
