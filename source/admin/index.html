@@ -89,7 +89,8 @@
     <script defer="true" src="https://cdn.jsdelivr.net/npm/netlify-cms@2/dist/netlify-cms.js"></script>
     <nav class="Mode">
         <a onclick="FocusMode()" style="cursor: pointer;">專注模式</a>/
-        <a onclick="BlackMode()" style="cursor: pointer;">黑暗模式</a>
+        <a onclick="BlackMode()" style="cursor: pointer;">黑暗模式</a>/
+        <a onclick="test()" style="cursor: pointer;">測試</a>
     </nav>
     <script>
         let IsFocusMode = false;
@@ -130,6 +131,11 @@
 
         let test = $('.css-stmjdx-CardGridContainer');
         console.log('test',test.html());
+
+function test() {
+    let test = $('.css-stmjdx-CardGridContainer');
+        console.log('test',test.html());
+}
 
         $('.e16dayda1').on('click',function(){
            $('.css-stmjdx-CardGridContainer').html(test);
