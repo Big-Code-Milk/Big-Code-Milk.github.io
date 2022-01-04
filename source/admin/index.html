@@ -22,6 +22,14 @@
         .ColorWhite > * > * > * > * > * > * > * > * > * {color: white;}
         .ColorWhite > * > * > * > * > * > * > * > * > * > * {color: white;}
 
+        .Mode{
+             position: absolute;
+             bottom:0px;left: 0px;
+             z-index:1000000;
+             padding: 20px;
+             box-shadow: rgb(68 74 87 / 5%) 0px 2px 6px 0px, rgb(68 74 87 / 10%) 0px;
+        }
+
         @media screen and (max-width:768px) {
 
             .css-12b66la-AppHeaderContent{
@@ -51,14 +59,20 @@
                 display: unset !important;
                 margin: 24px;
             }
+            .css-pyrflv-WorkflowListContainer > div {
+                height: unset !important;
+            }
+            .css-1f3mf5k-StyledModal{
+                width: unset !important;
+            }
         }
     </style>
 </head>
 
 <body>
     <script defer="true" src="https://cdn.jsdelivr.net/npm/netlify-cms@2/dist/netlify-cms.js"></script>
-    <nav style="position: absolute; bottom:0px;left: 0px;z-index:1000000;">
-        <a onclick="FocusMode()" style="cursor: pointer;">專注模式</a>
+    <nav class="Mode">
+        <a onclick="FocusMode()" style="cursor: pointer;">專注模式</a>/
         <a onclick="BlackMode()" style="cursor: pointer;">黑暗模式</a>
     </nav>
     <script>
