@@ -505,6 +505,7 @@ post:
 
   target:
   painPoints:
+  trackMilestones:
 
   banner_img: /img/default.png
   banner_img_height: 70
