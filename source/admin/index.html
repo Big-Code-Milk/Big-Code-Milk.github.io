@@ -183,7 +183,7 @@
 
         let Precautions = localStorage.getItem('Precautions');
         if (Precautions != '已確認') {
-            if (confirm('發布、草稿、未發布將存放於 Git 儲存庫不同分支，請確認文章內容版控。\n如按下確認將不再次提醒。')) {
+            if (confirm('發布、草稿、未發布將存放於 Git 儲存庫不同分支，\n請確認文章內容版控。\n如按下確認將不再次提醒。')) {
                 localStorage.setItem('Precautions', '已確認');
             }
         }
