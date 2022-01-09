@@ -11,74 +11,115 @@
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <title>內容管理系統</title>
     <style>
-        .ColorWhite > * {color: white;}
-        .ColorWhite > * > * {color: white;}
-        .ColorWhite > * > * > * {color: white;}
-        .ColorWhite > * > * > * > * {color: white;}
-        .ColorWhite > * > * > * > * > * {color: white;}
-        .ColorWhite > * > * > * > * > * > * {color: white;}
-        .ColorWhite > * > * > * > * > * > * > * {color: white;}
-        .ColorWhite > * > * > * > * > * > * > * > * {color: white;}
-        .ColorWhite > * > * > * > * > * > * > * > * > * {color: white;}
-        .ColorWhite > * > * > * > * > * > * > * > * > * > * {color: white;}
+        .ColorWhite>* {
+            color: white;
+        }
 
-        .Mode{
-             position: absolute;
-             bottom:0px;left: 0px;
-             z-index:1000000;
-             padding: 20px;
-             box-shadow: rgb(68 74 87 / 5%) 0px 2px 6px 0px, rgb(68 74 87 / 10%) 0px;
+        .ColorWhite>*>* {
+            color: white;
+        }
+
+        .ColorWhite>*>*>* {
+            color: white;
+        }
+
+        .ColorWhite>*>*>*>* {
+            color: white;
+        }
+
+        .ColorWhite>*>*>*>*>* {
+            color: white;
+        }
+
+        .ColorWhite>*>*>*>*>*>* {
+            color: white;
+        }
+
+        .ColorWhite>*>*>*>*>*>*>* {
+            color: white;
+        }
+
+        .ColorWhite>*>*>*>*>*>*>*>* {
+            color: white;
+        }
+
+        .ColorWhite>*>*>*>*>*>*>*>*>* {
+            color: white;
+        }
+
+        .ColorWhite>*>*>*>*>*>*>*>*>*>* {
+            color: white;
+        }
+
+        .Mode {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            z-index: 1000000;
+            padding: 20px;
+            box-shadow: rgb(68 74 87 / 5%) 0px 2px 6px 0px, rgb(68 74 87 / 10%) 0px;
         }
 
         @media screen and (max-width:768px) {
 
-            .css-12b66la-AppHeaderContent{
-                display:block !important;
+            .css-12b66la-AppHeaderContent {
+                display: block !important;
                 min-width: unset !important;
             }
-            .css-y7r3-AppHeader{
-                height:14vh !important;
+
+            .css-y7r3-AppHeader {
+                height: 14vh !important;
             }
-            .css-v758ki-AppMainContainer{
+
+            .css-v758ki-AppMainContainer {
                 min-width: unset !important;
                 max-width: unset !important;
             }
-            .css-1gj57a0-SidebarContainer-card{
+
+            .css-1gj57a0-SidebarContainer-card {
                 position: unset !important;
-                width:unset !important;
+                width: unset !important;
             }
-            .css-1f7nhiq-CollectionMain{
+
+            .css-1f7nhiq-CollectionMain {
                 padding-left: unset !important;
             }
-            .css-pyrflv-WorkflowListContainer{
+
+            .css-pyrflv-WorkflowListContainer {
                 display: unset !important;
             }
-            .css-wdtipp-column-WorkflowList{
+
+            .css-wdtipp-column-WorkflowList {
                 margin: unset !important;
             }
-            .css-1cx9csd{
+
+            .css-1cx9csd {
                 display: unset !important;
                 margin: 40px;
             }
-            .css-pyrflv-WorkflowListContainer > div {
+
+            .css-pyrflv-WorkflowListContainer>div {
                 height: unset !important;
             }
-            .css-1f3mf5k-StyledModal{
+
+            .css-1f3mf5k-StyledModal {
                 width: unset !important;
                 display: flex !important;
-                grid-template-rows:unset !important;
+                grid-template-rows: unset !important;
                 width: unset !important;
                 height: 100% !important;
                 flex-direction: column !important;
             }
-            .css-hn3jn7-EditorContainer{
-                min-width:unset !important;
+
+            .css-hn3jn7-EditorContainer {
+                min-width: unset !important;
             }
-            .css-stmjdx-CardGridContainer > div > div
-            {
+
+            .css-stmjdx-CardGridContainer>div>div {
                 overflow: unset !important;
             }
-            .css-134r1tn-RowContainer{
+
+            .css-134r1tn-RowContainer {
                 display: unset !important;
             }
         }
@@ -110,36 +151,42 @@
             }
         }
         let IsBlackMode = false;
-        function BlackMode()
-        {
-            if(IsBlackMode){
+        function BlackMode() {
+            if (IsBlackMode) {
                 $('.e1pxf6c46').css('background-color', '#F7EDE6');
-                $('.css-83wr9v').css('background-color', '#F7EDE6').css('color','black');
-                $('.css-n3v41w-control').css('background-color', '#F7EDE6').css('color','black');
-                $('body').css('background-color', '#F7EDE6').css('color','black');
-                $('.css-1b0jsy4').css('background-color', '#F7EDE6').css('color','black').removeClass('ColorWhite');
+                $('.css-83wr9v').css('background-color', '#F7EDE6').css('color', 'black');
+                $('.css-n3v41w-control').css('background-color', '#F7EDE6').css('color', 'black');
+                $('body').css('background-color', '#F7EDE6').css('color', 'black');
+                $('.css-1b0jsy4').css('background-color', '#F7EDE6').css('color', 'black').removeClass('ColorWhite');
                 IsBlackMode = false;
-            }else{
+            } else {
                 $('.e1pxf6c46').css('background-color', 'black');
-                $('.css-83wr9v').css('background-color', 'rgb(12 0 3)').css('color','white');
-                $('.css-n3v41w-control').css('background-color', 'rgb(12 0 3)').css('color','white');
-                $('body').css('background-color', 'rgb(12 0 3)').css('color','white');
-                $('.css-1b0jsy4').css('background-color', 'rgb(12 0 3)').css('color','white').addClass('ColorWhite');
+                $('.css-83wr9v').css('background-color', 'rgb(12 0 3)').css('color', 'white');
+                $('.css-n3v41w-control').css('background-color', 'rgb(12 0 3)').css('color', 'white');
+                $('body').css('background-color', 'rgb(12 0 3)').css('color', 'white');
+                $('.css-1b0jsy4').css('background-color', 'rgb(12 0 3)').css('color', 'white').addClass('ColorWhite');
                 IsBlackMode = true;
             }
         }
 
         let test = $('.css-stmjdx-CardGridContainer');
-        console.log('test',test.html());
+        console.log('test', test.html());
 
         function testsss() {
             let test = $('.css-stmjdx-CardGridContainer');
-            console.log('test',test.html());
+            console.log('test', test.html());
         }
 
-        $('.e16dayda1').on('click',function(){
-           $('.css-stmjdx-CardGridContainer').html(test);
+        $('.e16dayda1').on('click', function () {
+            $('.css-stmjdx-CardGridContainer').html(test);
         });
+
+        let Precautions = localStorage.getItem('Precautions');
+        if (Precautions != '已確認') {
+            if (confirm('草稿與未發布並不會備份至 Git 儲存庫，請確認文章內容版控。\n如按下確認將不再次提醒。')) {
+                localStorage.setItem('Precautions', '已確認');
+            }
+        }
 
     </script>
 </body>
