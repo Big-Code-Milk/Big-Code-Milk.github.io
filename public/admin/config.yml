@@ -1,0 +1,104 @@
+backend:
+  name: git-gateway # https://github.com/netlify/netlify-cms
+  branch: master # 要更新的分支(可选；默认为主分支)
+
+# This line should *not* be indented
+publish_mode: editorial_workflow
+
+# This line should *not* be indented
+media_folder: "source/images/uploads" # 媒体文件将存储在图片/上载下的Repo中。
+public_folder: "/images/uploads" # 上传的媒体的src属性将以/images/uploads开头。
+
+site_url: https://shidashi.netlify.app # 网站网址
+display_url: https://shidashi.netlify.app # 显示网址
+
+locale: "zh_Hant" # 语言环境 https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-locales/src
+
+collections: # https://www.netlifycms.org/docs/configuration-options/#collections
+  - name: "posts" # 在路由中使用，例如：/admin/collections/blog。
+    label: "Post" # 在用户界面中使用
+    folder: "source/_posts" # 存储文件的文件夹的路径。
+    create: true # 允许用户在这个集合中创建新的文件。
+    fields: # 每份文件的字段，通常是前面的内容。
+      - {
+          label: "作者",
+          name: "author",
+          widget: "select",
+          options: ["油圈", "愷子", "龔龔"]
+        }
+      - { label: "標題", name: "title", widget: "string" }
+      # - { label: "目標 ( 可能是事情或是受眾，範例：技術文章用於面試 )", name: "target", widget: "string", required: false }
+      # - { label: "痛點 ( 定性，範例：有些技術記不起來，花時間釐清後也沒其餘效益 )", name: "painPoints", widget: "markdown", required: false }
+      # - { label: "追蹤里程碑 ( 定量，範例：累積 50 篇，面試主管很有興趣 )", name: "trackMilestones", widget: "markdown", required: false }
+      - { label: "文章内容", name: "body", widget: "markdown", required: false }
+      - {
+          label: "看板圖",
+          name: "banner_img",
+          widget: "image",
+          required: false,
+        }
+      - {
+          label: "文章封面",
+          name: "index_img",
+          widget: "image",
+          required: false,
+        }
+      # - { label: "文章排序", name: "sticky", widget: "number", required: false }
+      # - {
+      #     label: "發布日期",
+      #     name: "date",
+      #     widget: "datetime",
+      #     format: "YYYY-MM-DD HH:mm:ss",
+      #     dateFormat: "YYYY-MM-DD",
+      #     timeFormat: "HH:mm:ss",
+      #     required: false,
+      #   }
+      # - {
+      #     label: "更新日期",
+      #     name: "updated",
+      #     widget: "datetime",
+      #     format: "YYYY-MM-DD HH:mm:ss",
+      #     dateFormat: "YYYY-MM-DD",
+      #     timeFormat: "HH:mm:ss",
+      #     required: false,
+      #   }
+      - { label: "標籤", name: "tags", widget: "list", required: false }
+      - { label: "作品頁類別", name: "categories", widget: "list", required: false }
+      # - { label: "關鍵詞 (SEO)", name: "keywords", widget: "list", required: false }
+      # - { label: "摘要", name: "excerpt", widget: "list", required: false }
+      # - {
+      #     label: "永久連結",
+      #     name: "permalink",
+      #     widget: "string",
+      #     required: false,
+      #   }
+      # - {
+      #     label: "啟用評論",
+      #     name: "comments",
+      #     widget: "boolean",
+      #     default: true,
+      #     required: false,
+      #   }
+      # - {
+      #     label: "評論模組",
+      #     name: "comment",
+      #     widget: "string",
+      #     default: 'valine',
+      #   }
+
+  # - name: "pages"
+  #   label: "Pages"
+  #   files:
+  #     - file: "source/about/index.md"
+  #       name: "about"
+  #       label: "關於"
+  #       fields:
+  #         - { label: "標題", name: "title", widget: "string" }
+  #         - { label: "内容", name: "body", widget: "markdown", required: false }
+  #         - {
+  #             label: "評論",
+  #             name: "comments",
+  #             widget: "boolean",
+  #             default: true,
+  #             required: false,
+  #           }
