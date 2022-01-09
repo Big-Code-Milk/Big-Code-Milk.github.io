@@ -64,8 +64,8 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
       #   }
       - { label: "標籤", name: "tags", widget: "list", required: false }
       - { label: "作品頁類別", name: "categories", widget: "list", required: false }
-      - { label: "關鍵詞", name: "keywords", widget: "list", required: false }
-      - { label: "摘要", name: "excerpt", widget: "list", required: false }
+      # - { label: "關鍵詞 (SEO)", name: "keywords", widget: "list", required: false }
+      # - { label: "摘要", name: "excerpt", widget: "list", required: false }
       # - {
       #     label: "永久連結",
       #     name: "permalink",
@@ -86,19 +86,19 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
       #     default: 'valine',
       #   }
 
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "source/about/index.md"
-        name: "about"
-        label: "關於"
-        fields:
-          - { label: "標題", name: "title", widget: "string" }
-          - { label: "内容", name: "body", widget: "markdown", required: false }
-          - {
-              label: "評論",
-              name: "comments",
-              widget: "boolean",
-              default: true,
-              required: false,
-            }
+  # - name: "pages"
+  #   label: "Pages"
+  #   files:
+  #     - file: "source/about/index.md"
+  #       name: "about"
+  #       label: "關於"
+  #       fields:
+  #         - { label: "標題", name: "title", widget: "string" }
+  #         - { label: "内容", name: "body", widget: "markdown", required: false }
+  #         - {
+  #             label: "評論",
+  #             name: "comments",
+  #             widget: "boolean",
+  #             default: true,
+  #             required: false,
+  #           }
