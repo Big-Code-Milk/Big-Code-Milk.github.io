@@ -24,7 +24,7 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
           label: "作者",
           name: "author",
           widget: "select",
-          options: ["油圈", "愷子", "龔龔"]
+          options: ["油圈", "愷弟貓男", "龔龔"]
         }
       - { label: "標題", name: "title", widget: "string" }
       # - { label: "目標 ( 可能是事情或是受眾，範例：技術文章用於面試 )", name: "target", widget: "string", required: false }
