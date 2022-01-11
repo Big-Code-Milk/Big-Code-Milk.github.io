@@ -7,7 +7,8 @@
           <%- JSON.stringify(theme.valine || {}) %>,
           {
             el: "#valine",
-            path: <%= theme.valine.path %>
+            path: <%= theme.valine.path %>,
+            placeholder: "來點交流，不管是好的或壞的?"
           }
         )
         new Valine(options);
