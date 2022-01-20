@@ -156,8 +156,17 @@
 
 .tocbot-list
   ol
-    list-style none
+    list-style decimal
     padding-left 1rem
+    list-style-position inside
+    counter-reset item
+
+    li
+      display: block
+
+    li&:before
+      content: counters(item, ".") " ";
+      counter-increment: item;
 
   a
     font-size 0.95rem
