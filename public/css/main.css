@@ -1534,8 +1534,17 @@ post-custom {
   display: none;
 }
 .tocbot-list ol {
-  list-style: none;
+  list-style: decimal;
+  list-style-position: inside;
   padding-left: 1rem;
+  counter-reset: item;
+}
+.tocbot-list ol li {
+  display: block
+}
+.tocbot-list ol li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
 }
 .tocbot-list a {
   font-size: 0.95rem;
