@@ -165,8 +165,8 @@
       display: block
 
     li&:before
-      content: counters(item, ".") " ";
-      counter-increment: item;
+      content counters(item, ".") " "
+      counter-increment item
 
   a
     font-size 0.95rem
