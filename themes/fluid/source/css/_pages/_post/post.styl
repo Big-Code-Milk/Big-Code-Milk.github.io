@@ -160,13 +160,6 @@
   list-style-position inside !important
   counter-reset item !important
 
-  li
-    counter-increment: item !important;
-
-  li::before
-    content counter(item) " " !important
-    margin-right 9px !important
-
 .tocbot-link
   color var(--text-color)
 
@@ -180,6 +173,13 @@
 .tocbot-is-collapsible
   overflow hidden
   transition all .3s ease-in-out
+
+  li
+    counter-increment: item !important;
+
+  li::before
+    content counter(item) " " !important
+    margin-right 9px !important
 
 @media (max-width: 1024px)
   .toc-container
