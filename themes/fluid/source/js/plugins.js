@@ -86,7 +86,7 @@ Fluid.plugins = {
       }
 
       var imageTitle = $image.attr('title') || $image.attr('alt');
-      if (imageTitle) {
+      if (imageTitle != '大頭貼') {
         $imageWrap.append(`<p class="image-caption">${imageTitle}</p>`);
         $imageWrap.attr('title', imageTitle).attr('data-caption', imageTitle);
       }
