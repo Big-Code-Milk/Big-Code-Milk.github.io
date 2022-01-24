@@ -35,6 +35,13 @@
 </div>
 
 <div class="mt-1">
+
+  <%= theme.post.meta.views.source %>
+
+<%= theme.post.meta.views.format %>
+
+<%= theme.post.meta.views.enable %>
+
   <% var views_texts = theme.post.meta.views.format.split('{}') %>
   <% if (theme.post.meta.views.enable) { %>
     <% if (theme.post.meta.views.source === 'leancloud') { %>
