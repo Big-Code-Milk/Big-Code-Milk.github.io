@@ -1,24 +1,24 @@
 index:
-  banner_img: https://images.unsplash.com/photo-1582281171754-405cb2a75fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80h
+  banner_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
   banner_img_height: 100
 post:
-  banner_img: https://images.unsplash.com/photo-1640066427157-d26f9a1a242a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80
+  banner_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
   banner_img_height: 30
-  default_index_img: https://images.unsplash.com/photo-1640066427157-d26f9a1a242a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80
+  default_index_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
 archive:
-  banner_img: https://images.unsplash.com/photo-1640066427157-d26f9a1a242a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80
+  banner_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
   banner_img_height: 30
 category:
-  banner_img: https://images.unsplash.com/photo-1640066427157-d26f9a1a242a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80
+  banner_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
   banner_img_height: 30
 tag:
-  banner_img: https://images.unsplash.com/photo-1640066427157-d26f9a1a242a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80
+  banner_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
   banner_img_height: 30
 about:
-  banner_img: https://images.unsplash.com/photo-1640066427157-d26f9a1a242a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80
+  banner_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
   banner_img_height: 30
 links:
-  banner_img: https://images.unsplash.com/photo-1640066427157-d26f9a1a242a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80
+  banner_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
   banner_img_height: 30
   items:
     - title: 小丁的个人博客
