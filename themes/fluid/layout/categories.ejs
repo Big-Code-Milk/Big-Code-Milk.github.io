@@ -65,4 +65,7 @@ var orderBy = theme.category.order_by || 'name'
 <div class="category-list">
   <% cats = site.categories.find({parent: {$exists: false}}).sort(orderBy).filter(cat => cat.length) %>
   <%- render_categories(cats) %>
+  <% if(cats.length == 0){ %>
+    <p class="FontFocus">很抱歉！目前沒有沒有上架作品，近期會在盡速更新，在麻煩持續關注，萬分感謝 ^_^</p>
+  <% } %>
 </div>

@@ -5,7 +5,7 @@ search:
     success: v
     error: x
 
-postTotal: 總共 %d 篇文章
+postTotal: _%d_
 
 paginator:
   pre: 上一頁

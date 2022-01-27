@@ -313,8 +313,8 @@ navbar:
     - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
     - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
-    - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
-    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+    # - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+    #- { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
@@ -851,7 +851,7 @@ tag:
     min_font: 15
     max_font: 30
     unit: px
-    start_color: "#BBBBEE"
+    start_color: "#0C0C0C"
     end_color: "#337ab7"
 
 

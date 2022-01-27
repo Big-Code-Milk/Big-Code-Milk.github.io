@@ -32,9 +32,6 @@
     </span>
   <% } %>
 
-</div>
-
-<div class="mt-1">
   <% var views_texts = theme.post.meta.views.format.split('{}') %>
   <% if (theme.post.meta.views.enable) { %>
     <% if (theme.post.meta.views.source === 'leancloud') { %>
@@ -51,4 +48,5 @@
       </span>
     <% } %>
   <% } %>
+
 </div>
