@@ -173,6 +173,8 @@
 
   var apiServer = appId.slice(-9) !== '-MdYXbMMI' ? serverUrl : `https://${appId.slice(0, 8).toLowerCase()}.api.lncldglobal.com`;
 
+  console.log('apiServer',apiServer);
+
   if (apiServer) {
     fetchData(apiServer);
   } else {
