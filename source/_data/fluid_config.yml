@@ -1,24 +1,24 @@
 index:
-  banner_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
+  banner_img: https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260
   banner_img_height: 100
 post:
-  banner_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
+  banner_img: https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260
   banner_img_height: 30
-  default_index_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
+  default_index_img: https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260
 archive:
-  banner_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
+  banner_img: https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260
   banner_img_height: 30
 category:
-  banner_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
+  banner_img: https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260
   banner_img_height: 30
 tag:
-  banner_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
+  banner_img: https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260
   banner_img_height: 30
 about:
-  banner_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
+  banner_img: https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260
   banner_img_height: 30
 links:
-  banner_img: https://cdn.pixabay.com/photo/2022/01/17/09/01/binary-6944162_960_720.jpg
+  banner_img: https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260
   banner_img_height: 30
   items:
     - title: 小丁的个人博客
